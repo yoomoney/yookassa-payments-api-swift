@@ -1,0 +1,83 @@
+{
+  "items": [
+    {
+      "payment_method_type": "webmoney",
+      "confirmation_types": [
+        "redirect"
+      ],
+      "charge": {
+        "value": "2.00",
+        "currency": "RUB"
+      }
+    },
+    {
+      "payment_method_type": "alfabank",
+      "confirmation_types": [
+        "external"
+      ],
+      "charge": {
+        "value": "2.00",
+        "currency": "RUB"
+      }
+    },
+    {
+      "payment_method_type": "yandex_money",
+      "confirmation_types": [
+        "redirect"
+      ],
+      "charge": {
+        "value": "2.00",
+        "currency": "RUB"
+      }
+    },
+    {
+      "payment_method_type": "cash",
+      "confirmation_types": [
+        "redirect"
+      ],
+      "charge": {
+        "value": "2.00",
+        "currency": "RUB"
+      }
+    },
+    {
+      "payment_method_type": "bank_card",
+      "confirmation_types": [
+        "redirect"
+      ],
+      "charge": {
+        "value": "2.00",
+        "currency": "RUB"
+      }
+    },
+    {
+      "payment_method_type": "apple_pay",
+      "confirmation_types": [],
+      "charge": {
+        "value": "2.00",
+        "currency":"RUB"
+      }
+    },
+    {
+      "payment_method_type": "qiwi",
+      "confirmation_types": [
+        "redirect"
+      ],
+      "charge": {
+        "value": "2.00",
+        "currency": "RUB"
+      }
+    },
+    {
+      "payment_method_type": "sberbank",
+      "confirmation_types": [
+        "redirect",
+        "external"
+      ],
+      "charge": {
+        "value": "2.00",
+        "currency": "RUB"
+      }
+    }
+  ]
+}

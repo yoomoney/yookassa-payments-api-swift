@@ -1,0 +1,10 @@
+{
+  "type": "bank_card",
+  "card": {
+    "number": "4444444444444448",
+    "expiry_month": "01",
+    "expiry_year": "2020",
+    "cardholder": "MRS CARDHOLDERESS",
+    "csc": "000"
+  }
+}

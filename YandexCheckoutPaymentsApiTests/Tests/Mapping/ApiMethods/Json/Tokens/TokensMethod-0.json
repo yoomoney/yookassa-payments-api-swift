@@ -1,0 +1,17 @@
+{
+  "payment_method_data": {
+    "type": "bank_card",
+    "card": {
+      "number": "4444444444444448",
+      "expiry_month": "01",
+      "expiry_year": "2020",
+      "cardholder": "MRS CARDHOLDERESS",
+      "csc": "000"
+    }
+  },
+  "amount": {
+    "value": "10",
+    "currency": "RUB"
+  },
+  "tmx_session_id": "tmx_1da5c87d-0984-50e8-a7f3-8de646dd9ec9"
+}

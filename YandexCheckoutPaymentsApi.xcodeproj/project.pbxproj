@@ -1,0 +1,1652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		244F732D34F20A323968ED0E /* PaymentMethodData-0.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F76CE454C8C64B781C6BC /* PaymentMethodData-0.json */; };
+		244F75EE2965F92FF75E52A8 /* DecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F74D15F05704BC3BD413B /* DecodingError.swift */; };
+		244F7AFB9CD5891A8807E7E7 /* PaymentMethodData-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F73AA166A256B53855038 /* PaymentMethodData-2.json */; };
+		244F7CB2542B3EF09EA998FE /* PaymentMethodDataMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7BE14167D41EF95F6A99 /* PaymentMethodDataMappingTests.swift */; };
+		244F7E36A14DD920B1490D2D /* PaymentMethodData-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F71E54E6FD012B31BF319 /* PaymentMethodData-1.json */; };
+		244F7FA7E5210CCF1A820157 /* PaymentMethodData-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F776A7FCE158C194DE11A /* PaymentMethodData-3.json */; };
+		2B7669250F8488506CC3ABA8 /* Pods_YandexCheckoutPaymentsApiExamplePods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A87E407B2CD6AE959FD979 /* Pods_YandexCheckoutPaymentsApiExamplePods.framework */; };
+		30EF407E2004D86C00660322 /* YandexCheckoutPaymentsApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EF40742004D86C00660322 /* YandexCheckoutPaymentsApi.framework */; };
+		30EF40852004D86C00660322 /* YandexCheckoutPaymentsApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 30EF40772004D86C00660322 /* YandexCheckoutPaymentsApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30EF40BE2004E3DB00660322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF40BD2004E3DB00660322 /* AppDelegate.swift */; };
+		30EF40C02004E3DB00660322 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF40BF2004E3DB00660322 /* ViewController.swift */; };
+		30EF40C32004E3DB00660322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30EF40C12004E3DB00660322 /* Main.storyboard */; };
+		30EF40C52004E3DB00660322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EF40C42004E3DB00660322 /* Assets.xcassets */; };
+		30EF40C82004E3DB00660322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30EF40C62004E3DB00660322 /* LaunchScreen.storyboard */; };
+		30EF40D02004E3EB00660322 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF40BF2004E3DB00660322 /* ViewController.swift */; };
+		30EF40D12004E3EB00660322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF40BD2004E3DB00660322 /* AppDelegate.swift */; };
+		30EF40D42004E3EB00660322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30EF40C62004E3DB00660322 /* LaunchScreen.storyboard */; };
+		30EF40D52004E3EB00660322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EF40C42004E3DB00660322 /* Assets.xcassets */; };
+		30EF40D62004E3EB00660322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30EF40C12004E3DB00660322 /* Main.storyboard */; };
+		30F30367200516C7009DC40B /* YandexCheckoutPaymentsApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EF40742004D86C00660322 /* YandexCheckoutPaymentsApi.framework */; };
+		30F3039C200518B7009DC40B /* FunctionalSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F30397200518B7009DC40B /* FunctionalSwift.framework */; };
+		30F3039D200518B7009DC40B /* YandexMoneyCoreApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F30398200518B7009DC40B /* YandexMoneyCoreApi.framework */; };
+		30F303C420051918009DC40B /* FunctionalSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F30397200518B7009DC40B /* FunctionalSwift.framework */; };
+		30F303C520051918009DC40B /* FunctionalSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30F30397200518B7009DC40B /* FunctionalSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30F303C620051918009DC40B /* YandexMoneyCoreApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F30398200518B7009DC40B /* YandexMoneyCoreApi.framework */; };
+		30F303C720051918009DC40B /* YandexMoneyCoreApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30F30398200518B7009DC40B /* YandexMoneyCoreApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35B0D2E60F3F31A3EC4D76D7 /* Pods_YandexCheckoutPaymentsApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74657303D3F4818437910744 /* Pods_YandexCheckoutPaymentsApiTests.framework */; };
+		402EB00C7BE2A88B6C7F6383 /* CurrencyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBA08E538867916E2DCB7 /* CurrencyCode.swift */; };
+		402EB094AF10CD9F78F88E27 /* PaymentInstrumentYandexMoneyWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBF05B92B53179C6309E0 /* PaymentInstrumentYandexMoneyWallet.swift */; };
+		402EB09D589F505B0786B02E /* PaymentMethodDataApplePay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB1D54FE5EFF58B62DD38 /* PaymentMethodDataApplePay.swift */; };
+		402EB0B869542545DA341A94 /* PaymentMethodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBB58FFAC248928354D07 /* PaymentMethodData.swift */; };
+		402EB15A87B4E1BFBA4DBB45 /* PaymentOptionYandexMoneyInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9311AE424A5B15916F7 /* PaymentOptionYandexMoneyInstrument.swift */; };
+		402EB1760CBFB8FF595A39CE /* MonetaryAmount.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EB4F3FB79C28E711C3FE6 /* MonetaryAmount.json */; };
+		402EB1BF3E5BC0319F8525CF /* PaymentsApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB7EF21FC9A498D6F93BE /* PaymentsApiResponse.swift */; };
+		402EB1DF5C41B7B645D54ED7 /* PaymentOptionsMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB364135ABC5618B604E0 /* PaymentOptionsMethodTests.swift */; };
+		402EB2570B31381D645E52D5 /* PaymentsErrorApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB3E3253F85BBE0572DC8 /* PaymentsErrorApiResponse.swift */; };
+		402EB2DB96E90A25FA529808 /* PaymentInstrumentDataYandexMoneyLinkedBankCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBCC5F4D137FC24B87845 /* PaymentInstrumentDataYandexMoneyLinkedBankCard.swift */; };
+		402EB312AAFFB72DC5FF3780 /* PaymentMethodDataSberbank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9E78B175DB2903000FE /* PaymentMethodDataSberbank.swift */; };
+		402EB3BBB6C5F3BF37AF2C51 /* PaymentMappingApiMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBFAE8637EC8ACDD40C51 /* PaymentMappingApiMethods.swift */; };
+		402EB40E344D742193BFFDC6 /* YandexMoneyInstrumentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB816FF053F2EB03FDBD7 /* YandexMoneyInstrumentType.swift */; };
+		402EB4B4DCC4C2D502B9B92B /* MonetaryAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBF1770DFC7671CA0E6E6 /* MonetaryAmount.swift */; };
+		402EB513DCCDCF1097A4F313 /* PaymentOptionsResponseSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EB42092333A3FC23433F1 /* PaymentOptionsResponseSuccess.json */; };
+		402EB59C98AEBC71637F5720 /* TokensResponseSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EB63F45F20865E9336BBB /* TokensResponseSuccess.json */; };
+		402EB5D722632C207FEB091B /* TokensMethod-0.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EBF027D085C3F62C685D6 /* TokensMethod-0.json */; };
+		402EB7B0F732BC741522AD7D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB24AEB4FCACE1B3FCA5C /* Constants.swift */; };
+		402EB7FB54AE7E180324F6FE /* PaymentInstrumentYandexMoneyLinkedBankCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB1F9EF033464DA3CFB57 /* PaymentInstrumentYandexMoneyLinkedBankCard.swift */; };
+		402EB834A13DF3417CE6C39A /* PaymentOptionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB5B0A9F9FA8F8D7872F0 /* PaymentOptionFactory.swift */; };
+		402EB8F07D1632A4E102F5D2 /* PaymentMethodDataBankCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB8AF0FC7DEF377397CFA /* PaymentMethodDataBankCard.swift */; };
+		402EB8FD98D41B0F8ED654AF /* PaymentsApiErrorMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBA6D70BB13B86AB00E04 /* PaymentsApiErrorMappingTests.swift */; };
+		402EB92C13C952107E9448E8 /* PaymentOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB76AC935BCCE718A0E70 /* PaymentOptions.swift */; };
+		402EBA367638FE5CD0A159FF /* PaymentInstrumentDataYandexMoneyWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBBBC8F6085F8663B9D45 /* PaymentInstrumentDataYandexMoneyWallet.swift */; };
+		402EBAA76E442C75F29E113B /* PaymentMethodDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB867D67E0626FEAC2ECF /* PaymentMethodDataFactory.swift */; };
+		402EBABD0C4EB2DA296C1485 /* PaymentsApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBBF106E7CD359F15589F /* PaymentsApiError.swift */; };
+		402EBACF6758E06E2AA2C9CC /* PaymentsApiError.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EBAED5952729B8358BC5E /* PaymentsApiError.json */; };
+		402EBAE33EBF39A88E37E4F5 /* TokensMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBC4275855D70A22ED580 /* TokensMethodTests.swift */; };
+		402EBB2F374E457E5E4BD93A /* BankCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9DC7E9CA559332A2679 /* BankCard.swift */; };
+		402EBB2F444B88411C35D47C /* IdentificationRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBD3570050EE1BEA3AC54 /* IdentificationRequirement.swift */; };
+		402EBB432DEC9AC6E34A65E9 /* PaymentOptionsMethod-0.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EB03125B8070B94F49BFD /* PaymentOptionsMethod-0.json */; };
+		402EBB82480A7DC8D186E8AA /* ConfirmationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB06C82B162BCE4E2AED5 /* ConfirmationType.swift */; };
+		402EBBBBAD142FF847FBA23D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB24AEB4FCACE1B3FCA5C /* Constants.swift */; };
+		402EBC46D38AE966F943ED7A /* PaymentErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9B6E9D9D635097C18DD /* PaymentErrorCode.swift */; };
+		402EBD3BE4DA2675D72E4DA0 /* PaymentErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBB586BC9E957A5EFC1EA /* PaymentErrorType.swift */; };
+		402EBDE59FA52CA635C7E524 /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB55C2422C4171BB63DEB /* Tokens.swift */; };
+		402EBE121B950A5A8376DDB3 /* MonetaryAmountMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9EC40B2E511AD1AAE9C /* MonetaryAmountMappingTests.swift */; };
+		402EBED480C10CB1A56DAB61 /* PaymentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBC773789B856428409D9 /* PaymentOption.swift */; };
+		402EBF289B20C2C6FE40CD29 /* PaymentMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB2327EFA811046EE1D8F /* PaymentMethodType.swift */; };
+		402EBF6A6F75B617A1726923 /* BankCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBC6BCB33F49D050BF0E6 /* BankCardType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30EF407F2004D86C00660322 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30EF406B2004D86B00660322 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30EF40732004D86C00660322;
+			remoteInfo = YandexCheckoutPaymentsApi;
+		};
+		30F3035920051357009DC40B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30EF406B2004D86B00660322 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30EF40BA2004E3DB00660322;
+			remoteInfo = YandexCheckoutPaymentsApiExamplePods;
+		};
+		30F303C920051998009DC40B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30EF406B2004D86B00660322 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30EF40732004D86C00660322;
+			remoteInfo = YandexCheckoutPaymentsApi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30F303C820051918009DC40B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				30F303C720051918009DC40B /* YandexMoneyCoreApi.framework in Embed Frameworks */,
+				30F303C520051918009DC40B /* FunctionalSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03A87E407B2CD6AE959FD979 /* Pods_YandexCheckoutPaymentsApiExamplePods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YandexCheckoutPaymentsApiExamplePods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		244F71E54E6FD012B31BF319 /* PaymentMethodData-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentMethodData-1.json"; sourceTree = "<group>"; };
+		244F73AA166A256B53855038 /* PaymentMethodData-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentMethodData-2.json"; sourceTree = "<group>"; };
+		244F74D15F05704BC3BD413B /* DecodingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingError.swift; sourceTree = "<group>"; };
+		244F76CE454C8C64B781C6BC /* PaymentMethodData-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentMethodData-0.json"; sourceTree = "<group>"; };
+		244F776A7FCE158C194DE11A /* PaymentMethodData-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentMethodData-3.json"; sourceTree = "<group>"; };
+		244F7BE14167D41EF95F6A99 /* PaymentMethodDataMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodDataMappingTests.swift; sourceTree = "<group>"; };
+		30EF40742004D86C00660322 /* YandexCheckoutPaymentsApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YandexCheckoutPaymentsApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30EF40772004D86C00660322 /* YandexCheckoutPaymentsApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YandexCheckoutPaymentsApi.h; sourceTree = "<group>"; };
+		30EF40782004D86C00660322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30EF407D2004D86C00660322 /* YandexCheckoutPaymentsApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YandexCheckoutPaymentsApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30EF40842004D86C00660322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30EF40BB2004E3DB00660322 /* YandexCheckoutPaymentsApiExamplePods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexCheckoutPaymentsApiExamplePods.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30EF40BD2004E3DB00660322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30EF40BF2004E3DB00660322 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30EF40C22004E3DB00660322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30EF40C42004E3DB00660322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30EF40C72004E3DB00660322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30EF40C92004E3DB00660322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30EF40DB2004E3EB00660322 /* YandexCheckoutPaymentsApiExampleCarthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexCheckoutPaymentsApiExampleCarthage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F3034820051129009DC40B /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		30F3034A20051129009DC40B /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		30F3034B20051129009DC40B /* YandexCheckoutPaymentsApi.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = YandexCheckoutPaymentsApi.podspec; sourceTree = "<group>"; };
+		30F3034C2005112A009DC40B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		30F3034D2005112A009DC40B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		30F30355200512F4009DC40B /* FunctionalSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FunctionalSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F30358200512F4009DC40B /* YandexMoneyCoreApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YandexMoneyCoreApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F30397200518B7009DC40B /* FunctionalSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FunctionalSwift.framework; path = Carthage/Build/iOS/FunctionalSwift.framework; sourceTree = "<group>"; };
+		30F30398200518B7009DC40B /* YandexMoneyCoreApi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YandexMoneyCoreApi.framework; path = Carthage/Build/iOS/YandexMoneyCoreApi.framework; sourceTree = "<group>"; };
+		3A0E016B88072AA9D7C92F9D /* Pods-YandexCheckoutPaymentsApiExamplePods.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexCheckoutPaymentsApiExamplePods.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiExamplePods/Pods-YandexCheckoutPaymentsApiExamplePods.adhoc.xcconfig"; sourceTree = "<group>"; };
+		402EB03125B8070B94F49BFD /* PaymentOptionsMethod-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentOptionsMethod-0.json"; sourceTree = "<group>"; };
+		402EB06C82B162BCE4E2AED5 /* ConfirmationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationType.swift; sourceTree = "<group>"; };
+		402EB1D54FE5EFF58B62DD38 /* PaymentMethodDataApplePay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodDataApplePay.swift; sourceTree = "<group>"; };
+		402EB1F9EF033464DA3CFB57 /* PaymentInstrumentYandexMoneyLinkedBankCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInstrumentYandexMoneyLinkedBankCard.swift; sourceTree = "<group>"; };
+		402EB2327EFA811046EE1D8F /* PaymentMethodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodType.swift; sourceTree = "<group>"; };
+		402EB24AEB4FCACE1B3FCA5C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		402EB364135ABC5618B604E0 /* PaymentOptionsMethodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentOptionsMethodTests.swift; sourceTree = "<group>"; };
+		402EB3E3253F85BBE0572DC8 /* PaymentsErrorApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsErrorApiResponse.swift; sourceTree = "<group>"; };
+		402EB42092333A3FC23433F1 /* PaymentOptionsResponseSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PaymentOptionsResponseSuccess.json; sourceTree = "<group>"; };
+		402EB4F3FB79C28E711C3FE6 /* MonetaryAmount.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MonetaryAmount.json; sourceTree = "<group>"; };
+		402EB55C2422C4171BB63DEB /* Tokens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
+		402EB5B0A9F9FA8F8D7872F0 /* PaymentOptionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentOptionFactory.swift; sourceTree = "<group>"; };
+		402EB63F45F20865E9336BBB /* TokensResponseSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TokensResponseSuccess.json; sourceTree = "<group>"; };
+		402EB76AC935BCCE718A0E70 /* PaymentOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentOptions.swift; sourceTree = "<group>"; };
+		402EB7EF21FC9A498D6F93BE /* PaymentsApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsApiResponse.swift; sourceTree = "<group>"; };
+		402EB816FF053F2EB03FDBD7 /* YandexMoneyInstrumentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YandexMoneyInstrumentType.swift; sourceTree = "<group>"; };
+		402EB867D67E0626FEAC2ECF /* PaymentMethodDataFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodDataFactory.swift; sourceTree = "<group>"; };
+		402EB8AF0FC7DEF377397CFA /* PaymentMethodDataBankCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodDataBankCard.swift; sourceTree = "<group>"; };
+		402EB9311AE424A5B15916F7 /* PaymentOptionYandexMoneyInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentOptionYandexMoneyInstrument.swift; sourceTree = "<group>"; };
+		402EB9B6E9D9D635097C18DD /* PaymentErrorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentErrorCode.swift; sourceTree = "<group>"; };
+		402EB9DC7E9CA559332A2679 /* BankCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankCard.swift; sourceTree = "<group>"; };
+		402EB9E78B175DB2903000FE /* PaymentMethodDataSberbank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodDataSberbank.swift; sourceTree = "<group>"; };
+		402EB9EC40B2E511AD1AAE9C /* MonetaryAmountMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonetaryAmountMappingTests.swift; sourceTree = "<group>"; };
+		402EBA08E538867916E2DCB7 /* CurrencyCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyCode.swift; sourceTree = "<group>"; };
+		402EBA6D70BB13B86AB00E04 /* PaymentsApiErrorMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsApiErrorMappingTests.swift; sourceTree = "<group>"; };
+		402EBAED5952729B8358BC5E /* PaymentsApiError.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PaymentsApiError.json; sourceTree = "<group>"; };
+		402EBB586BC9E957A5EFC1EA /* PaymentErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentErrorType.swift; sourceTree = "<group>"; };
+		402EBB58FFAC248928354D07 /* PaymentMethodData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodData.swift; sourceTree = "<group>"; };
+		402EBBBC8F6085F8663B9D45 /* PaymentInstrumentDataYandexMoneyWallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInstrumentDataYandexMoneyWallet.swift; sourceTree = "<group>"; };
+		402EBBF106E7CD359F15589F /* PaymentsApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsApiError.swift; sourceTree = "<group>"; };
+		402EBC4275855D70A22ED580 /* TokensMethodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokensMethodTests.swift; sourceTree = "<group>"; };
+		402EBC6BCB33F49D050BF0E6 /* BankCardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankCardType.swift; sourceTree = "<group>"; };
+		402EBC773789B856428409D9 /* PaymentOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentOption.swift; sourceTree = "<group>"; };
+		402EBCC5F4D137FC24B87845 /* PaymentInstrumentDataYandexMoneyLinkedBankCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInstrumentDataYandexMoneyLinkedBankCard.swift; sourceTree = "<group>"; };
+		402EBD3570050EE1BEA3AC54 /* IdentificationRequirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentificationRequirement.swift; sourceTree = "<group>"; };
+		402EBF027D085C3F62C685D6 /* TokensMethod-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "TokensMethod-0.json"; sourceTree = "<group>"; };
+		402EBF05B92B53179C6309E0 /* PaymentInstrumentYandexMoneyWallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInstrumentYandexMoneyWallet.swift; sourceTree = "<group>"; };
+		402EBF1770DFC7671CA0E6E6 /* MonetaryAmount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonetaryAmount.swift; sourceTree = "<group>"; };
+		402EBFAE8637EC8ACDD40C51 /* PaymentMappingApiMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMappingApiMethods.swift; sourceTree = "<group>"; };
+		48738F6DC92F2B503276BFDC /* Pods-YandexCheckoutPaymentsApiExamplePods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexCheckoutPaymentsApiExamplePods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiExamplePods/Pods-YandexCheckoutPaymentsApiExamplePods.debug.xcconfig"; sourceTree = "<group>"; };
+		74657303D3F4818437910744 /* Pods_YandexCheckoutPaymentsApiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YandexCheckoutPaymentsApiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E395722CC5CAD64231EE0D7 /* Pods-YandexCheckoutPaymentsApiTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexCheckoutPaymentsApiTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiTests/Pods-YandexCheckoutPaymentsApiTests.adhoc.xcconfig"; sourceTree = "<group>"; };
+		C288BB4EAFD9486ABC18CFC3 /* Pods-YandexCheckoutPaymentsApiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexCheckoutPaymentsApiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiTests/Pods-YandexCheckoutPaymentsApiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD1BD8A65E34C66B69EF70A4 /* Pods-YandexCheckoutPaymentsApiTests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexCheckoutPaymentsApiTests.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiTests/Pods-YandexCheckoutPaymentsApiTests.appstore.xcconfig"; sourceTree = "<group>"; };
+		CDF97EC4AF173D7356D27337 /* Pods-YandexCheckoutPaymentsApiExamplePods.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexCheckoutPaymentsApiExamplePods.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiExamplePods/Pods-YandexCheckoutPaymentsApiExamplePods.appstore.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30EF40702004D86C00660322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30F3039C200518B7009DC40B /* FunctionalSwift.framework in Frameworks */,
+				30F3039D200518B7009DC40B /* YandexMoneyCoreApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF407A2004D86C00660322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EF407E2004D86C00660322 /* YandexCheckoutPaymentsApi.framework in Frameworks */,
+				35B0D2E60F3F31A3EC4D76D7 /* Pods_YandexCheckoutPaymentsApiTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF40B82004E3DB00660322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B7669250F8488506CC3ABA8 /* Pods_YandexCheckoutPaymentsApiExamplePods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF40D22004E3EB00660322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30F303C420051918009DC40B /* FunctionalSwift.framework in Frameworks */,
+				30F30367200516C7009DC40B /* YandexCheckoutPaymentsApi.framework in Frameworks */,
+				30F303C620051918009DC40B /* YandexMoneyCoreApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		244F7759F7A693EEB4771022 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				244F76CE454C8C64B781C6BC /* PaymentMethodData-0.json */,
+				244F71E54E6FD012B31BF319 /* PaymentMethodData-1.json */,
+				244F73AA166A256B53855038 /* PaymentMethodData-2.json */,
+				244F776A7FCE158C194DE11A /* PaymentMethodData-3.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		244F78EE7A121881205EF13B /* PaymentMethodDataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				244F7759F7A693EEB4771022 /* Json */,
+				244F7BE14167D41EF95F6A99 /* PaymentMethodDataMappingTests.swift */,
+			);
+			path = PaymentMethodDataMapping;
+			sourceTree = "<group>";
+		};
+		30EF406A2004D86B00660322 = {
+			isa = PBXGroup;
+			children = (
+				30F3034820051129009DC40B /* Cartfile */,
+				30F3034A20051129009DC40B /* Gemfile */,
+				30F3034C2005112A009DC40B /* Podfile */,
+				30F3034D2005112A009DC40B /* README.md */,
+				30F3034B20051129009DC40B /* YandexCheckoutPaymentsApi.podspec */,
+				30EF40762004D86C00660322 /* YandexCheckoutPaymentsApi */,
+				30EF40812004D86C00660322 /* YandexCheckoutPaymentsApiTests */,
+				30EF40BC2004E3DB00660322 /* YandexCheckoutPaymentsApiExample */,
+				30EF40752004D86C00660322 /* Products */,
+				8A9E7A307380D3A78F739B0B /* Frameworks */,
+				A5A36CAE79D779EF43CD0C1E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		30EF40752004D86C00660322 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30EF40742004D86C00660322 /* YandexCheckoutPaymentsApi.framework */,
+				30EF407D2004D86C00660322 /* YandexCheckoutPaymentsApiTests.xctest */,
+				30EF40BB2004E3DB00660322 /* YandexCheckoutPaymentsApiExamplePods.app */,
+				30EF40DB2004E3EB00660322 /* YandexCheckoutPaymentsApiExampleCarthage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30EF40762004D86C00660322 /* YandexCheckoutPaymentsApi */ = {
+			isa = PBXGroup;
+			children = (
+				30EF40772004D86C00660322 /* YandexCheckoutPaymentsApi.h */,
+				30EF40782004D86C00660322 /* Info.plist */,
+				402EB6812FEFBDE07B6BC857 /* Source */,
+			);
+			path = YandexCheckoutPaymentsApi;
+			sourceTree = "<group>";
+		};
+		30EF40812004D86C00660322 /* YandexCheckoutPaymentsApiTests */ = {
+			isa = PBXGroup;
+			children = (
+				30EF40842004D86C00660322 /* Info.plist */,
+				402EB67975FAFFE7699310CA /* Tests */,
+			);
+			path = YandexCheckoutPaymentsApiTests;
+			sourceTree = "<group>";
+		};
+		30EF40BC2004E3DB00660322 /* YandexCheckoutPaymentsApiExample */ = {
+			isa = PBXGroup;
+			children = (
+				30EF40BD2004E3DB00660322 /* AppDelegate.swift */,
+				30EF40BF2004E3DB00660322 /* ViewController.swift */,
+				30EF40C12004E3DB00660322 /* Main.storyboard */,
+				30EF40C42004E3DB00660322 /* Assets.xcassets */,
+				30EF40C62004E3DB00660322 /* LaunchScreen.storyboard */,
+				30EF40C92004E3DB00660322 /* Info.plist */,
+			);
+			path = YandexCheckoutPaymentsApiExample;
+			sourceTree = "<group>";
+		};
+		402EB0579EFF6CA965A0B916 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				402EB24AEB4FCACE1B3FCA5C /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		402EB14791B75E6AE9E7EC43 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				402EB3E3253F85BBE0572DC8 /* PaymentsErrorApiResponse.swift */,
+				402EBBF106E7CD359F15589F /* PaymentsApiError.swift */,
+				402EB9B6E9D9D635097C18DD /* PaymentErrorCode.swift */,
+				402EBB586BC9E957A5EFC1EA /* PaymentErrorType.swift */,
+				244F74D15F05704BC3BD413B /* DecodingError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		402EB4B642C7443ACEFE4CA3 /* PaymentInstrumentData */ = {
+			isa = PBXGroup;
+			children = (
+				402EBBBC8F6085F8663B9D45 /* PaymentInstrumentDataYandexMoneyWallet.swift */,
+				402EBCC5F4D137FC24B87845 /* PaymentInstrumentDataYandexMoneyLinkedBankCard.swift */,
+			);
+			path = PaymentInstrumentData;
+			sourceTree = "<group>";
+		};
+		402EB4D4FD78EFF844BC02F9 /* PaymentsApiErrorMapping */ = {
+			isa = PBXGroup;
+			children = (
+				402EB86914C39F39E9241599 /* Json */,
+				402EBA6D70BB13B86AB00E04 /* PaymentsApiErrorMappingTests.swift */,
+			);
+			path = PaymentsApiErrorMapping;
+			sourceTree = "<group>";
+		};
+		402EB5AF6ADE15C566955C9A /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				402EB867D67E0626FEAC2ECF /* PaymentMethodDataFactory.swift */,
+				402EB5B0A9F9FA8F8D7872F0 /* PaymentOptionFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		402EB6172A39F60DC160B827 /* PaymentOptions */ = {
+			isa = PBXGroup;
+			children = (
+				402EB364135ABC5618B604E0 /* PaymentOptionsMethodTests.swift */,
+				402EBEA73459FEC06ACE5662 /* JsonResponse */,
+			);
+			path = PaymentOptions;
+			sourceTree = "<group>";
+		};
+		402EB671D13D6EC597B07896 /* MonetaryAmountMapping */ = {
+			isa = PBXGroup;
+			children = (
+				402EB9EC40B2E511AD1AAE9C /* MonetaryAmountMappingTests.swift */,
+				402EBB8FCDFE44669F4F0C75 /* Json */,
+			);
+			path = MonetaryAmountMapping;
+			sourceTree = "<group>";
+		};
+		402EB67975FAFFE7699310CA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				402EB933B3F8ED132D1E8034 /* Mapping */,
+				402EBEE6A10CAF9ED69E2DA3 /* ApiMethods */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		402EB6812FEFBDE07B6BC857 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				402EB7C6BB1C0CB07A04191F /* ApiMethods */,
+				402EB773B09A536410AF2E9E /* Models */,
+				402EBFC821D0676CC857EE6D /* Response */,
+				402EB14791B75E6AE9E7EC43 /* Error */,
+				402EB0579EFF6CA965A0B916 /* Constants */,
+				402EB5AF6ADE15C566955C9A /* Factories */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		402EB6864120C4C25D5DC2AA /* PaymentOptions */ = {
+			isa = PBXGroup;
+			children = (
+				402EB03125B8070B94F49BFD /* PaymentOptionsMethod-0.json */,
+			);
+			path = PaymentOptions;
+			sourceTree = "<group>";
+		};
+		402EB6DC7910A02E6456C96E /* PaymentMethodData */ = {
+			isa = PBXGroup;
+			children = (
+				402EBB58FFAC248928354D07 /* PaymentMethodData.swift */,
+				402EB8AF0FC7DEF377397CFA /* PaymentMethodDataBankCard.swift */,
+				402EB9E78B175DB2903000FE /* PaymentMethodDataSberbank.swift */,
+				402EB1D54FE5EFF58B62DD38 /* PaymentMethodDataApplePay.swift */,
+			);
+			path = PaymentMethodData;
+			sourceTree = "<group>";
+		};
+		402EB7731B9CE514BFF4DC99 /* Tokens */ = {
+			isa = PBXGroup;
+			children = (
+				402EBD352A774E479C172815 /* JsonResponse */,
+				402EBC4275855D70A22ED580 /* TokensMethodTests.swift */,
+			);
+			path = Tokens;
+			sourceTree = "<group>";
+		};
+		402EB773B09A536410AF2E9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				402EB2327EFA811046EE1D8F /* PaymentMethodType.swift */,
+				402EB06C82B162BCE4E2AED5 /* ConfirmationType.swift */,
+				402EBF1770DFC7671CA0E6E6 /* MonetaryAmount.swift */,
+				402EBA08E538867916E2DCB7 /* CurrencyCode.swift */,
+				402EB816FF053F2EB03FDBD7 /* YandexMoneyInstrumentType.swift */,
+				402EBC6BCB33F49D050BF0E6 /* BankCardType.swift */,
+				402EBDA318F1B285F8D1C544 /* PaymentOptionInstrument */,
+				402EB6DC7910A02E6456C96E /* PaymentMethodData */,
+				402EB4B642C7443ACEFE4CA3 /* PaymentInstrumentData */,
+				402EB9DC7E9CA559332A2679 /* BankCard.swift */,
+				402EBD3570050EE1BEA3AC54 /* IdentificationRequirement.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		402EB7C6BB1C0CB07A04191F /* ApiMethods */ = {
+			isa = PBXGroup;
+			children = (
+				402EB76AC935BCCE718A0E70 /* PaymentOptions.swift */,
+				402EB55C2422C4171BB63DEB /* Tokens.swift */,
+			);
+			path = ApiMethods;
+			sourceTree = "<group>";
+		};
+		402EB808DDE4D50307C2257A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				402EB671D13D6EC597B07896 /* MonetaryAmountMapping */,
+				402EB4D4FD78EFF844BC02F9 /* PaymentsApiErrorMapping */,
+				244F78EE7A121881205EF13B /* PaymentMethodDataMapping */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		402EB86914C39F39E9241599 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				402EBAED5952729B8358BC5E /* PaymentsApiError.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		402EB8ADA9FBCF2967B95B4A /* ApiMethods */ = {
+			isa = PBXGroup;
+			children = (
+				402EBFAE8637EC8ACDD40C51 /* PaymentMappingApiMethods.swift */,
+				402EBE524E65A870B9C06C1A /* Json */,
+			);
+			path = ApiMethods;
+			sourceTree = "<group>";
+		};
+		402EB933B3F8ED132D1E8034 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				402EB8ADA9FBCF2967B95B4A /* ApiMethods */,
+				402EB808DDE4D50307C2257A /* Models */,
+			);
+			path = Mapping;
+			sourceTree = "<group>";
+		};
+		402EBB8FCDFE44669F4F0C75 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				402EB4F3FB79C28E711C3FE6 /* MonetaryAmount.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		402EBD352A774E479C172815 /* JsonResponse */ = {
+			isa = PBXGroup;
+			children = (
+				402EB63F45F20865E9336BBB /* TokensResponseSuccess.json */,
+			);
+			path = JsonResponse;
+			sourceTree = "<group>";
+		};
+		402EBD57902484E46EE00045 /* Tokens */ = {
+			isa = PBXGroup;
+			children = (
+				402EBF027D085C3F62C685D6 /* TokensMethod-0.json */,
+			);
+			path = Tokens;
+			sourceTree = "<group>";
+		};
+		402EBDA318F1B285F8D1C544 /* PaymentOptionInstrument */ = {
+			isa = PBXGroup;
+			children = (
+				402EB9311AE424A5B15916F7 /* PaymentOptionYandexMoneyInstrument.swift */,
+				402EBC773789B856428409D9 /* PaymentOption.swift */,
+				402EBF05B92B53179C6309E0 /* PaymentInstrumentYandexMoneyWallet.swift */,
+				402EB1F9EF033464DA3CFB57 /* PaymentInstrumentYandexMoneyLinkedBankCard.swift */,
+			);
+			path = PaymentOptionInstrument;
+			sourceTree = "<group>";
+		};
+		402EBE524E65A870B9C06C1A /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				402EB6864120C4C25D5DC2AA /* PaymentOptions */,
+				402EBD57902484E46EE00045 /* Tokens */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		402EBEA73459FEC06ACE5662 /* JsonResponse */ = {
+			isa = PBXGroup;
+			children = (
+				402EB42092333A3FC23433F1 /* PaymentOptionsResponseSuccess.json */,
+			);
+			path = JsonResponse;
+			sourceTree = "<group>";
+		};
+		402EBEE6A10CAF9ED69E2DA3 /* ApiMethods */ = {
+			isa = PBXGroup;
+			children = (
+				402EB6172A39F60DC160B827 /* PaymentOptions */,
+				402EB7731B9CE514BFF4DC99 /* Tokens */,
+			);
+			path = ApiMethods;
+			sourceTree = "<group>";
+		};
+		402EBFC821D0676CC857EE6D /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				402EB7EF21FC9A498D6F93BE /* PaymentsApiResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		8A9E7A307380D3A78F739B0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30F30355200512F4009DC40B /* FunctionalSwift.framework */,
+				30F30358200512F4009DC40B /* YandexMoneyCoreApi.framework */,
+				30F30397200518B7009DC40B /* FunctionalSwift.framework */,
+				30F30398200518B7009DC40B /* YandexMoneyCoreApi.framework */,
+				03A87E407B2CD6AE959FD979 /* Pods_YandexCheckoutPaymentsApiExamplePods.framework */,
+				74657303D3F4818437910744 /* Pods_YandexCheckoutPaymentsApiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5A36CAE79D779EF43CD0C1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48738F6DC92F2B503276BFDC /* Pods-YandexCheckoutPaymentsApiExamplePods.debug.xcconfig */,
+				3A0E016B88072AA9D7C92F9D /* Pods-YandexCheckoutPaymentsApiExamplePods.adhoc.xcconfig */,
+				CDF97EC4AF173D7356D27337 /* Pods-YandexCheckoutPaymentsApiExamplePods.appstore.xcconfig */,
+				C288BB4EAFD9486ABC18CFC3 /* Pods-YandexCheckoutPaymentsApiTests.debug.xcconfig */,
+				9E395722CC5CAD64231EE0D7 /* Pods-YandexCheckoutPaymentsApiTests.adhoc.xcconfig */,
+				CD1BD8A65E34C66B69EF70A4 /* Pods-YandexCheckoutPaymentsApiTests.appstore.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		30EF40712004D86C00660322 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EF40852004D86C00660322 /* YandexCheckoutPaymentsApi.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		30EF40732004D86C00660322 /* YandexCheckoutPaymentsApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30EF40882004D86C00660322 /* Build configuration list for PBXNativeTarget "YandexCheckoutPaymentsApi" */;
+			buildPhases = (
+				30EF406F2004D86C00660322 /* Sources */,
+				30EF40702004D86C00660322 /* Frameworks */,
+				30EF40712004D86C00660322 /* Headers */,
+				30EF40722004D86C00660322 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YandexCheckoutPaymentsApi;
+			productName = YandexCheckoutPaymentsApi;
+			productReference = 30EF40742004D86C00660322 /* YandexCheckoutPaymentsApi.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		30EF407C2004D86C00660322 /* YandexCheckoutPaymentsApiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30EF408B2004D86C00660322 /* Build configuration list for PBXNativeTarget "YandexCheckoutPaymentsApiTests" */;
+			buildPhases = (
+				2ECC6B53E5A1D0AC6C4A9372 /* [CP] Check Pods Manifest.lock */,
+				30EF40792004D86C00660322 /* Sources */,
+				30EF407A2004D86C00660322 /* Frameworks */,
+				30EF407B2004D86C00660322 /* Resources */,
+				30F3035B20051366009DC40B /* Carthage */,
+				FE033C546F907A09DCDA57D8 /* [CP] Embed Pods Frameworks */,
+				0EFC885B9EB6AB3498B8AE96 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30EF40802004D86C00660322 /* PBXTargetDependency */,
+				30F3035A20051357009DC40B /* PBXTargetDependency */,
+			);
+			name = YandexCheckoutPaymentsApiTests;
+			productName = YandexCheckoutPaymentsApiTests;
+			productReference = 30EF407D2004D86C00660322 /* YandexCheckoutPaymentsApiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		30EF40BA2004E3DB00660322 /* YandexCheckoutPaymentsApiExamplePods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30EF40CA2004E3DB00660322 /* Build configuration list for PBXNativeTarget "YandexCheckoutPaymentsApiExamplePods" */;
+			buildPhases = (
+				E1149EC721B79C70DE9FA4C4 /* [CP] Check Pods Manifest.lock */,
+				30EF40B72004E3DB00660322 /* Sources */,
+				30EF40B82004E3DB00660322 /* Frameworks */,
+				30EF40B92004E3DB00660322 /* Resources */,
+				9D72A62D6536A4B833CFECA4 /* [CP] Embed Pods Frameworks */,
+				C8174FAC2BCC482F125F83F9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YandexCheckoutPaymentsApiExamplePods;
+			productName = YandexCheckoutPaymentsApiExample;
+			productReference = 30EF40BB2004E3DB00660322 /* YandexCheckoutPaymentsApiExamplePods.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30EF40CE2004E3EB00660322 /* YandexCheckoutPaymentsApiExampleCarthage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30EF40D72004E3EB00660322 /* Build configuration list for PBXNativeTarget "YandexCheckoutPaymentsApiExampleCarthage" */;
+			buildPhases = (
+				30EF40CF2004E3EB00660322 /* Sources */,
+				30EF40D22004E3EB00660322 /* Frameworks */,
+				30EF40D32004E3EB00660322 /* Resources */,
+				30F303C820051918009DC40B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30F303CA20051998009DC40B /* PBXTargetDependency */,
+			);
+			name = YandexCheckoutPaymentsApiExampleCarthage;
+			productName = YandexCheckoutPaymentsApiExample;
+			productReference = 30EF40DB2004E3EB00660322 /* YandexCheckoutPaymentsApiExampleCarthage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30EF406B2004D86B00660322 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "NBCO Yandex.Money";
+				TargetAttributes = {
+					30EF40732004D86C00660322 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					30EF407C2004D86C00660322 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					30EF40BA2004E3DB00660322 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					30EF40CE2004E3EB00660322 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 30EF406E2004D86B00660322 /* Build configuration list for PBXProject "YandexCheckoutPaymentsApi" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30EF406A2004D86B00660322;
+			productRefGroup = 30EF40752004D86C00660322 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30EF40732004D86C00660322 /* YandexCheckoutPaymentsApi */,
+				30EF407C2004D86C00660322 /* YandexCheckoutPaymentsApiTests */,
+				30EF40BA2004E3DB00660322 /* YandexCheckoutPaymentsApiExamplePods */,
+				30EF40CE2004E3EB00660322 /* YandexCheckoutPaymentsApiExampleCarthage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30EF40722004D86C00660322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF407B2004D86C00660322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402EBB432DEC9AC6E34A65E9 /* PaymentOptionsMethod-0.json in Resources */,
+				402EB513DCCDCF1097A4F313 /* PaymentOptionsResponseSuccess.json in Resources */,
+				402EB5D722632C207FEB091B /* TokensMethod-0.json in Resources */,
+				402EB1760CBFB8FF595A39CE /* MonetaryAmount.json in Resources */,
+				402EB59C98AEBC71637F5720 /* TokensResponseSuccess.json in Resources */,
+				402EBACF6758E06E2AA2C9CC /* PaymentsApiError.json in Resources */,
+				244F732D34F20A323968ED0E /* PaymentMethodData-0.json in Resources */,
+				244F7E36A14DD920B1490D2D /* PaymentMethodData-1.json in Resources */,
+				244F7AFB9CD5891A8807E7E7 /* PaymentMethodData-2.json in Resources */,
+				244F7FA7E5210CCF1A820157 /* PaymentMethodData-3.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF40B92004E3DB00660322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EF40C82004E3DB00660322 /* LaunchScreen.storyboard in Resources */,
+				30EF40C52004E3DB00660322 /* Assets.xcassets in Resources */,
+				30EF40C32004E3DB00660322 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF40D32004E3EB00660322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EF40D42004E3EB00660322 /* LaunchScreen.storyboard in Resources */,
+				30EF40D52004E3EB00660322 /* Assets.xcassets in Resources */,
+				30EF40D62004E3EB00660322 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EFC885B9EB6AB3498B8AE96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiTests/Pods-YandexCheckoutPaymentsApiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2ECC6B53E5A1D0AC6C4A9372 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YandexCheckoutPaymentsApiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30F3035B20051366009DC40B /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FunctionalSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/YandexMoneyCoreApi.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/FunctionalSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/YandexMoneyCoreApi.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		9D72A62D6536A4B833CFECA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiExamplePods/Pods-YandexCheckoutPaymentsApiExamplePods-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FunctionalSwift/FunctionalSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/YandexCheckoutPaymentsApi/YandexCheckoutPaymentsApi.framework",
+				"${BUILT_PRODUCTS_DIR}/YandexMoneyCoreApi/YandexMoneyCoreApi.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FunctionalSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexCheckoutPaymentsApi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexMoneyCoreApi.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiExamplePods/Pods-YandexCheckoutPaymentsApiExamplePods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8174FAC2BCC482F125F83F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiExamplePods/Pods-YandexCheckoutPaymentsApiExamplePods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1149EC721B79C70DE9FA4C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YandexCheckoutPaymentsApiExamplePods-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE033C546F907A09DCDA57D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiTests/Pods-YandexCheckoutPaymentsApiTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FunctionalSwift/FunctionalSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/YandexMoneyCoreApi/YandexMoneyCoreApi.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/YandexMoneyTestInstrumentsApi/YandexMoneyTestInstrumentsApi.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FunctionalSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexMoneyCoreApi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexMoneyTestInstrumentsApi.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiTests/Pods-YandexCheckoutPaymentsApiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30EF406F2004D86C00660322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402EB92C13C952107E9448E8 /* PaymentOptions.swift in Sources */,
+				402EBF289B20C2C6FE40CD29 /* PaymentMethodType.swift in Sources */,
+				402EBB82480A7DC8D186E8AA /* ConfirmationType.swift in Sources */,
+				402EB4B4DCC4C2D502B9B92B /* MonetaryAmount.swift in Sources */,
+				402EB00C7BE2A88B6C7F6383 /* CurrencyCode.swift in Sources */,
+				402EB40E344D742193BFFDC6 /* YandexMoneyInstrumentType.swift in Sources */,
+				402EBF6A6F75B617A1726923 /* BankCardType.swift in Sources */,
+				402EB1BF3E5BC0319F8525CF /* PaymentsApiResponse.swift in Sources */,
+				402EB2570B31381D645E52D5 /* PaymentsErrorApiResponse.swift in Sources */,
+				402EBABD0C4EB2DA296C1485 /* PaymentsApiError.swift in Sources */,
+				402EBBBBAD142FF847FBA23D /* Constants.swift in Sources */,
+				402EBDE59FA52CA635C7E524 /* Tokens.swift in Sources */,
+				402EB15A87B4E1BFBA4DBB45 /* PaymentOptionYandexMoneyInstrument.swift in Sources */,
+				402EBED480C10CB1A56DAB61 /* PaymentOption.swift in Sources */,
+				402EB094AF10CD9F78F88E27 /* PaymentInstrumentYandexMoneyWallet.swift in Sources */,
+				402EB7FB54AE7E180324F6FE /* PaymentInstrumentYandexMoneyLinkedBankCard.swift in Sources */,
+				402EB0B869542545DA341A94 /* PaymentMethodData.swift in Sources */,
+				402EB8F07D1632A4E102F5D2 /* PaymentMethodDataBankCard.swift in Sources */,
+				402EBB2F374E457E5E4BD93A /* BankCard.swift in Sources */,
+				402EB312AAFFB72DC5FF3780 /* PaymentMethodDataSberbank.swift in Sources */,
+				402EBA367638FE5CD0A159FF /* PaymentInstrumentDataYandexMoneyWallet.swift in Sources */,
+				402EB2DB96E90A25FA529808 /* PaymentInstrumentDataYandexMoneyLinkedBankCard.swift in Sources */,
+				402EBAA76E442C75F29E113B /* PaymentMethodDataFactory.swift in Sources */,
+				402EB834A13DF3417CE6C39A /* PaymentOptionFactory.swift in Sources */,
+				402EBC46D38AE966F943ED7A /* PaymentErrorCode.swift in Sources */,
+				402EBD3BE4DA2675D72E4DA0 /* PaymentErrorType.swift in Sources */,
+				402EBB2F444B88411C35D47C /* IdentificationRequirement.swift in Sources */,
+				402EB09D589F505B0786B02E /* PaymentMethodDataApplePay.swift in Sources */,
+				244F75EE2965F92FF75E52A8 /* DecodingError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF40792004D86C00660322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402EB3BBB6C5F3BF37AF2C51 /* PaymentMappingApiMethods.swift in Sources */,
+				402EB1DF5C41B7B645D54ED7 /* PaymentOptionsMethodTests.swift in Sources */,
+				402EB7B0F732BC741522AD7D /* Constants.swift in Sources */,
+				402EBE121B950A5A8376DDB3 /* MonetaryAmountMappingTests.swift in Sources */,
+				402EBAE33EBF39A88E37E4F5 /* TokensMethodTests.swift in Sources */,
+				402EB8FD98D41B0F8ED654AF /* PaymentsApiErrorMappingTests.swift in Sources */,
+				244F7CB2542B3EF09EA998FE /* PaymentMethodDataMappingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF40B72004E3DB00660322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EF40C02004E3DB00660322 /* ViewController.swift in Sources */,
+				30EF40BE2004E3DB00660322 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF40CF2004E3EB00660322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EF40D02004E3EB00660322 /* ViewController.swift in Sources */,
+				30EF40D12004E3EB00660322 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30EF40802004D86C00660322 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30EF40732004D86C00660322 /* YandexCheckoutPaymentsApi */;
+			targetProxy = 30EF407F2004D86C00660322 /* PBXContainerItemProxy */;
+		};
+		30F3035A20051357009DC40B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30EF40BA2004E3DB00660322 /* YandexCheckoutPaymentsApiExamplePods */;
+			targetProxy = 30F3035920051357009DC40B /* PBXContainerItemProxy */;
+		};
+		30F303CA20051998009DC40B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30EF40732004D86C00660322 /* YandexCheckoutPaymentsApi */;
+			targetProxy = 30F303C920051998009DC40B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30EF40C12004E3DB00660322 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30EF40C22004E3DB00660322 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30EF40C62004E3DB00660322 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30EF40C72004E3DB00660322 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30EF40862004D86C00660322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		30EF40872004D86C00660322 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = AdHoc;
+		};
+		30EF40892004D86C00660322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = YandexCheckoutPaymentsApi/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.api.payments;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30EF408A2004D86C00660322 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yandex LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = YandexCheckoutPaymentsApi/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.api.payments;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = AdHoc;
+		};
+		30EF408C2004D86C00660322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C288BB4EAFD9486ABC18CFC3 /* Pods-YandexCheckoutPaymentsApiTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2752592HU5;
+				INFOPLIST_FILE = YandexCheckoutPaymentsApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.YandexCheckoutPaymentsApi.YandexCheckoutPaymentsApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30EF408D2004D86C00660322 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E395722CC5CAD64231EE0D7 /* Pods-YandexCheckoutPaymentsApiTests.adhoc.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yandex LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2752592HU5;
+				INFOPLIST_FILE = YandexCheckoutPaymentsApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.YandexCheckoutPaymentsApi.YandexCheckoutPaymentsApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = AdHoc;
+		};
+		30EF408E2004DFB000660322 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = AppStore;
+		};
+		30EF408F2004DFB000660322 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = YandexCheckoutPaymentsApi/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.api.payments;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = AppStore;
+		};
+		30EF40902004DFB000660322 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD1BD8A65E34C66B69EF70A4 /* Pods-YandexCheckoutPaymentsApiTests.appstore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2752592HU5;
+				INFOPLIST_FILE = YandexCheckoutPaymentsApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.YandexCheckoutPaymentsApi.YandexCheckoutPaymentsApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = AppStore;
+		};
+		30EF40CB2004E3DB00660322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48738F6DC92F2B503276BFDC /* Pods-YandexCheckoutPaymentsApiExamplePods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2752592HU5;
+				INFOPLIST_FILE = YandexCheckoutPaymentsApiExample/PodsInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.api.paymentsPods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30EF40CC2004E3DB00660322 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A0E016B88072AA9D7C92F9D /* Pods-YandexCheckoutPaymentsApiExamplePods.adhoc.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2752592HU5;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = YandexCheckoutPaymentsApiExample/PodsInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.api.paymentsPods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		30EF40CD2004E3DB00660322 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDF97EC4AF173D7356D27337 /* Pods-YandexCheckoutPaymentsApiExamplePods.appstore.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2752592HU5;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = YandexCheckoutPaymentsApiExample/PodsInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.api.paymentsPods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AppStore;
+		};
+		30EF40D82004E3EB00660322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2752592HU5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/YandexCheckoutPaymentsApiExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.api.paymentsCarthage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30EF40D92004E3EB00660322 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2752592HU5;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/YandexCheckoutPaymentsApiExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.api.paymentsCarthage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		30EF40DA2004E3EB00660322 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2752592HU5;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/YandexCheckoutPaymentsApiExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.api.paymentsCarthage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AppStore;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30EF406E2004D86B00660322 /* Build configuration list for PBXProject "YandexCheckoutPaymentsApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EF40862004D86C00660322 /* Debug */,
+				30EF40872004D86C00660322 /* AdHoc */,
+				30EF408E2004DFB000660322 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = AdHoc;
+		};
+		30EF40882004D86C00660322 /* Build configuration list for PBXNativeTarget "YandexCheckoutPaymentsApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EF40892004D86C00660322 /* Debug */,
+				30EF408A2004D86C00660322 /* AdHoc */,
+				30EF408F2004DFB000660322 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = AdHoc;
+		};
+		30EF408B2004D86C00660322 /* Build configuration list for PBXNativeTarget "YandexCheckoutPaymentsApiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EF408C2004D86C00660322 /* Debug */,
+				30EF408D2004D86C00660322 /* AdHoc */,
+				30EF40902004DFB000660322 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = AdHoc;
+		};
+		30EF40CA2004E3DB00660322 /* Build configuration list for PBXNativeTarget "YandexCheckoutPaymentsApiExamplePods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EF40CB2004E3DB00660322 /* Debug */,
+				30EF40CC2004E3DB00660322 /* AdHoc */,
+				30EF40CD2004E3DB00660322 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = AdHoc;
+		};
+		30EF40D72004E3EB00660322 /* Build configuration list for PBXNativeTarget "YandexCheckoutPaymentsApiExampleCarthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EF40D82004E3EB00660322 /* Debug */,
+				30EF40D92004E3EB00660322 /* AdHoc */,
+				30EF40DA2004E3EB00660322 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = AdHoc;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30EF406B2004D86B00660322 /* Project object */;
+}
