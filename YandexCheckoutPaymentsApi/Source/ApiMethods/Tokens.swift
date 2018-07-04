@@ -79,6 +79,12 @@ public struct Tokens: Codable {
             self.amount = amount
         }
 
+        /// Creates a new instance by decoding from the given decoder.
+        /// This initializer throws an error if reading from the decoder fails,
+        /// or if the data read is corrupted or otherwise invalid.
+        ///
+        /// - Parameters:
+        ///   - decoder: The decoder to read data from.
         public init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
             let tmxSessionId = try container.decode(String.self, forKey: .tmxSessionId)
@@ -94,6 +100,12 @@ public struct Tokens: Codable {
                       amount: amount)
         }
 
+        /// Encodes this value into the given encoder.
+        /// If the value fails to encode anything, encoder will encode an empty keyed container in its place.
+        /// This function throws an error if any values are invalid for the given encoder’s format.
+        ///
+        /// - Parameters:
+        ///   - encoder: The encoder to write data to.
         public func encode(to encoder: Encoder) throws {
             var container = encoder.container(keyedBy: CodingKeys.self)
             try container.encode(tmxSessionId, forKey: .tmxSessionId)
@@ -107,7 +119,10 @@ public struct Tokens: Codable {
             case amount = "amount"
         }
 
+        /// Decoding errors.
         public enum DecodingErrors: Error {
+
+            /// The received payment method is not supported.
             case unsupportedPaymentMethodData
         }
     }
