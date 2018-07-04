@@ -71,6 +71,12 @@ public struct PaymentsApiError: Error, JsonApiResponse, PaymentsErrorApiResponse
 
     // MARK: - Codable
 
+    /// Creates a new instance by decoding from the given decoder.
+    /// This initializer throws an error if reading from the decoder fails,
+    /// or if the data read is corrupted or otherwise invalid.
+    ///
+    /// - Parameters:
+    ///   - decoder: The decoder to read data from.
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let id = try container.decodeIfPresent(String.self, forKey: .id)

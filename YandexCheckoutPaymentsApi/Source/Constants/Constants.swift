@@ -24,6 +24,7 @@
 
 /// Constants
 public enum Constants {
+    /// Key for payments api methods
     public static let paymentsApiMethodsKey = "paymentsApiMethodsKey"
 }
 

@@ -67,6 +67,12 @@ public class PaymentInstrumentYandexMoneyWallet: PaymentOptionYandexMoneyInstrum
 
     // MARK: - Codable
 
+    /// Creates a new instance by decoding from the given decoder.
+    /// This initializer throws an error if reading from the decoder fails,
+    /// or if the data read is corrupted or otherwise invalid.
+    ///
+    /// - Parameters:
+    ///   - decoder: The decoder to read data from.
     public required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         accountId = try container.decode(String.self, forKey: .accountId)
