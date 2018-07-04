@@ -121,7 +121,7 @@ public struct Tokens: Codable {
 
         /// Decoding errors.
         public enum DecodingErrors: Error {
-            
+
             /// The received payment method is not supported.
             case unsupportedPaymentMethodData
         }
