@@ -31,6 +31,7 @@ import YandexMoneyTestInstrumentsApi
 class PaymentOptionsMethodTests: ApiMethodTestCase {
 
     struct PaymentOptionsResponseSuccess: StubsResponse {}
+    struct PaymentOptionsResponseEmpty: StubsResponse {}
 
     func testPaymentOptionsResponseSuccess() {
         validate(PaymentOptionsResponseSuccess.self) {
@@ -39,7 +40,18 @@ class PaymentOptionsMethodTests: ApiMethodTestCase {
                 return
             }
 
-            XCTAssertEqual(response.items.count, 8, "response.items.count wrong")
+            XCTAssertEqual(response.items.count, 5, "response.items.count wrong")
+        }
+    }
+
+    func testPaymentOptionsResponseEmpty() {
+        validate(PaymentOptionsResponseEmpty.self) {
+            guard case .right(let response) = $0 else {
+                XCTFail("Wrong result")
+                return
+            }
+
+            XCTAssertEqual(response.items.count, 0, "response.items.count wrong")
         }
     }
 }
