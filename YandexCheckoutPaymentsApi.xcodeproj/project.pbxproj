@@ -70,6 +70,7 @@
 		402EBBBBAD142FF847FBA23D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB24AEB4FCACE1B3FCA5C /* Constants.swift */; };
 		402EBC46D38AE966F943ED7A /* PaymentErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9B6E9D9D635097C18DD /* PaymentErrorCode.swift */; };
 		402EBD3BE4DA2675D72E4DA0 /* PaymentErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBB586BC9E957A5EFC1EA /* PaymentErrorType.swift */; };
+		402EBD67A17FB0A5E46FDF4F /* TokensMethod-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EBCA043C8DC1669CA6C95 /* TokensMethod-2.json */; };
 		402EBDE59FA52CA635C7E524 /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB55C2422C4171BB63DEB /* Tokens.swift */; };
 		402EBE121B950A5A8376DDB3 /* MonetaryAmountMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9EC40B2E511AD1AAE9C /* MonetaryAmountMappingTests.swift */; };
 		402EBED480C10CB1A56DAB61 /* PaymentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBC773789B856428409D9 /* PaymentOption.swift */; };
@@ -181,6 +182,7 @@
 		402EBC4275855D70A22ED580 /* TokensMethodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokensMethodTests.swift; sourceTree = "<group>"; };
 		402EBC6BCB33F49D050BF0E6 /* BankCardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankCardType.swift; sourceTree = "<group>"; };
 		402EBC773789B856428409D9 /* PaymentOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentOption.swift; sourceTree = "<group>"; };
+		402EBCA043C8DC1669CA6C95 /* TokensMethod-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "TokensMethod-2.json"; sourceTree = "<group>"; };
 		402EBCC5F4D137FC24B87845 /* PaymentInstrumentDataYandexMoneyLinkedBankCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInstrumentDataYandexMoneyLinkedBankCard.swift; sourceTree = "<group>"; };
 		402EBD3570050EE1BEA3AC54 /* IdentificationRequirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentificationRequirement.swift; sourceTree = "<group>"; };
 		402EBF027D085C3F62C685D6 /* TokensMethod-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "TokensMethod-0.json"; sourceTree = "<group>"; };
@@ -513,6 +515,7 @@
 			children = (
 				402EBF027D085C3F62C685D6 /* TokensMethod-0.json */,
 				244F7644C041CC4BC3AA21EA /* TokensMethod-1.json */,
+				402EBCA043C8DC1669CA6C95 /* TokensMethod-2.json */,
 			);
 			path = Tokens;
 			sourceTree = "<group>";
@@ -755,6 +758,7 @@
 				244F7FA7E5210CCF1A820157 /* PaymentMethodData-3.json in Resources */,
 				402EBB6A1F5CEAE7DB24E3C7 /* PaymentOptionsResponseEmpty.json in Resources */,
 				244F70D48469B3E26499605C /* TokensMethod-1.json in Resources */,
+				402EBD67A17FB0A5E46FDF4F /* TokensMethod-2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
