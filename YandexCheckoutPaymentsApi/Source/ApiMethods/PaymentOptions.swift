@@ -101,18 +101,30 @@ extension PaymentOptions: Decodable {
         var itemsContainer = try container.nestedUnkeyedContainer(forKey: .items)
         var items: [PaymentOption] = []
         items.reserveCapacity(itemsContainer.count ?? 0)
+
         while itemsContainer.isAtEnd == false {
-            if let item = PaymentOptionFactory.makePaymentOption(container: itemsContainer) {
+
+            if let item = try? itemsContainer.decode(PaymentInstrumentYandexMoneyWallet.self) {
                 items.append(item)
+            } else if let item = try? itemsContainer.decode(PaymentInstrumentYandexMoneyLinkedBankCard.self) {
+                items.append(item)
+            } else if let item = try? itemsContainer.decode(PaymentOptionYandexMoneyInstrument.self) {
+                items.append(item)
+            } else if let item = try? itemsContainer.decode(PaymentOption.self) {
+                items.append(item)
+            } else {
+                _ = try? itemsContainer.decode(AnyCodable.self)
             }
-            _ = try? itemsContainer.decodeIfPresent(PaymentOption.self)
         }
+
         self.init(items: items)
     }
 
     private enum CodingKeys: String, CodingKey {
         case items
     }
+
+    private struct AnyCodable: Codable {}
 }
 
 // MARK: - PaymentsApiResponse

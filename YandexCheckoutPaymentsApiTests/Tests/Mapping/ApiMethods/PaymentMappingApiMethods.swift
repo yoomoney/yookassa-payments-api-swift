@@ -23,7 +23,8 @@
  */
 
 import XCTest
-@testable import YandexCheckoutPaymentsApi
+@testable
+import YandexCheckoutPaymentsApi
 import YandexMoneyCoreApi
 import YandexMoneyTestInstrumentsApi
 
@@ -33,6 +34,10 @@ class PaymentMappingApiMethods: MappingApiMethods {
     }
 
     func testTokensMethod() {
-        checkApiMethodsParameters(Tokens.Method.self, fileName: "TokensMethod", index: 0)
+        for index in 0..<3 {
+            checkApiMethodsParameters(Tokens.Method.self,
+                                      fileName: "TokensMethod",
+                                      index: index)
+        }
     }
 }

@@ -1,44 +1,34 @@
 {
   "items": [
     {
-      "payment_method_type": "webmoney",
+      "payment_method_type": "yandex_money",
       "confirmation_types": [
         "redirect"
       ],
-      "charge": {
-        "value": "2.00",
+      "balance": {
+        "value": "309363.76",
         "currency": "RUB"
-      }
-    },
-    {
-      "payment_method_type": "alfabank",
-      "confirmation_types": [
-        "external"
-      ],
+      },
       "charge": {
-        "value": "2.00",
+        "value": "5.00",
         "currency": "RUB"
-      }
+      },
+      "id": "238479283749827",
+      "instrument_type": "wallet"
     },
     {
       "payment_method_type": "yandex_money",
       "confirmation_types": [
         "redirect"
       ],
+      "card_mask": "521324******5291",
+      "card_type": "MasterCard",
       "charge": {
-        "value": "2.00",
+        "value": "5.00",
         "currency": "RUB"
-      }
-    },
-    {
-      "payment_method_type": "cash",
-      "confirmation_types": [
-        "redirect"
-      ],
-      "charge": {
-        "value": "2.00",
-        "currency": "RUB"
-      }
+      },
+      "id": "bindId:23984792834",
+      "instrument_type": "linked_bank_card"
     },
     {
       "payment_method_type": "bank_card",
@@ -46,25 +36,7 @@
         "redirect"
       ],
       "charge": {
-        "value": "2.00",
-        "currency": "RUB"
-      }
-    },
-    {
-      "payment_method_type": "apple_pay",
-      "confirmation_types": [],
-      "charge": {
-        "value": "2.00",
-        "currency":"RUB"
-      }
-    },
-    {
-      "payment_method_type": "qiwi",
-      "confirmation_types": [
-        "redirect"
-      ],
-      "charge": {
-        "value": "2.00",
+        "value": "5.00",
         "currency": "RUB"
       }
     },
@@ -75,7 +47,23 @@
         "external"
       ],
       "charge": {
-        "value": "2.00",
+        "value": "5.00",
+        "currency": "RUB"
+      }
+    },
+    {
+      "payment_method_type": "apple_pay",
+      "confirmation_types": [],
+      "charge": {
+        "value": "5.00",
+        "currency": "RUB"
+      }
+    },
+    {
+      "payment_method_type": "google_pay",
+      "confirmation_types": [],
+      "charge": {
+        "value": "5.00",
         "currency": "RUB"
       }
     }
