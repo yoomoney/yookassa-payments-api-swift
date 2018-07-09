@@ -1,0 +1,13 @@
+{
+  "payment_method_data": {
+    "type": "yandex_money",
+    "instrument_type": "linked_bank_card",
+    "id": "1234567890",
+    "csc": "1234"
+  },
+  "amount": {
+    "value": "10",
+    "currency": "RUB"
+  },
+  "tmx_session_id": "tmx_1da5c87d-0984-50e8-a7f3-8de646dd9ec9"
+}

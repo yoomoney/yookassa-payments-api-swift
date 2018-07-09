@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		244F70D48469B3E26499605C /* TokensMethod-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F7644C041CC4BC3AA21EA /* TokensMethod-1.json */; };
 		244F732D34F20A323968ED0E /* PaymentMethodData-0.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F76CE454C8C64B781C6BC /* PaymentMethodData-0.json */; };
 		244F75EE2965F92FF75E52A8 /* DecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F74D15F05704BC3BD413B /* DecodingError.swift */; };
 		244F7AFB9CD5891A8807E7E7 /* PaymentMethodData-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F73AA166A256B53855038 /* PaymentMethodData-2.json */; };
@@ -120,6 +121,7 @@
 		244F71E54E6FD012B31BF319 /* PaymentMethodData-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentMethodData-1.json"; sourceTree = "<group>"; };
 		244F73AA166A256B53855038 /* PaymentMethodData-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentMethodData-2.json"; sourceTree = "<group>"; };
 		244F74D15F05704BC3BD413B /* DecodingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingError.swift; sourceTree = "<group>"; };
+		244F7644C041CC4BC3AA21EA /* TokensMethod-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "TokensMethod-1.json"; sourceTree = "<group>"; };
 		244F76CE454C8C64B781C6BC /* PaymentMethodData-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentMethodData-0.json"; sourceTree = "<group>"; };
 		244F776A7FCE158C194DE11A /* PaymentMethodData-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentMethodData-3.json"; sourceTree = "<group>"; };
 		244F7BE14167D41EF95F6A99 /* PaymentMethodDataMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodDataMappingTests.swift; sourceTree = "<group>"; };
@@ -510,6 +512,7 @@
 			isa = PBXGroup;
 			children = (
 				402EBF027D085C3F62C685D6 /* TokensMethod-0.json */,
+				244F7644C041CC4BC3AA21EA /* TokensMethod-1.json */,
 			);
 			path = Tokens;
 			sourceTree = "<group>";
@@ -751,6 +754,7 @@
 				244F7AFB9CD5891A8807E7E7 /* PaymentMethodData-2.json in Resources */,
 				244F7FA7E5210CCF1A820157 /* PaymentMethodData-3.json in Resources */,
 				402EBB6A1F5CEAE7DB24E3C7 /* PaymentOptionsResponseEmpty.json in Resources */,
+				244F70D48469B3E26499605C /* TokensMethod-1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

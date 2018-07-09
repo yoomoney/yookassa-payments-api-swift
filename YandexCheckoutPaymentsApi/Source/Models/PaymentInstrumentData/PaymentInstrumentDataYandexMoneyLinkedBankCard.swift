@@ -70,7 +70,7 @@ public class PaymentInstrumentDataYandexMoneyLinkedBankCard: PaymentMethodData {
         return super.customHeaders().mappend(customHeaders)
     }
 
-    // MARK: - Codable
+    // MARK: - Decodable
 
     /// Creates a new instance by decoding from the given decoder.
     /// This initializer throws an error if reading from the decoder fails,
@@ -95,6 +95,16 @@ public class PaymentInstrumentDataYandexMoneyLinkedBankCard: PaymentMethodData {
                   cardId: cardId,
                   csc: csc,
                   walletAuthorization: "")
+    }
+
+    // MARK: - Encodable
+
+    public override func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(paymentMethodType, forKey: .paymentMethodType)
+        try container.encode(instrumentType, forKey: .instrumentType)
+        try container.encode(cardId, forKey: .cardId)
+        try container.encode(csc, forKey: .csc)
     }
 
     private enum CodingKeys: String, CodingKey {
