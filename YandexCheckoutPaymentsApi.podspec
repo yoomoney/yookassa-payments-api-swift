@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name      = 'YandexCheckoutPaymentsApi'
-  s.version   = '1.0.1'
+  s.version   = '1.1.0'
   s.homepage  = 'https://github.com/yandex-money/yandex-checkout-payments-api-swift'
   s.license   = {
     :type => "MIT",
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   }
 
   s.ios.deployment_target = '8.0'
-  s.swift_version = '4.0'
+  s.swift_version = '4.2'
 
   s.ios.source_files  = 'YandexCheckoutPaymentsApi/**/*.{h,swift}', 'YandexCheckoutPaymentsApi/*.{h,swift}'
 
