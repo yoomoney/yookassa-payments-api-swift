@@ -60,6 +60,9 @@ public struct Tokens: Codable {
         /// Payment amount, the nominal value of the order for the buyer.
         public let amount: MonetaryAmount?
 
+        /// Payment confirmation method.
+        public let confirmation: Confirmation?
+
         /// Creates instance of API method for `Tokens`.
         ///
         /// - Parameters:
@@ -67,16 +70,19 @@ public struct Tokens: Codable {
         ///   - paymentMethodData: Data for payment.
         ///   - tmxSessionId: ThreatMetrix session ID.
         ///   - amount: Payment amount, the nominal value of the order for the buyer.
+        ///   - confirmation: Payment confirmation method.
         ///
         /// - Returns: Instance of API method for `Tokens`.
         public init(oauthToken: String,
                     paymentMethodData: PaymentMethodData,
                     tmxSessionId: String,
-                    amount: MonetaryAmount?) {
+                    amount: MonetaryAmount?,
+                    confirmation: Confirmation?) {
             self.oauthToken = oauthToken
             self.paymentMethodData = paymentMethodData
             self.tmxSessionId = tmxSessionId
             self.amount = amount
+            self.confirmation = confirmation
         }
 
         /// Creates a new instance by decoding from the given decoder.
@@ -88,7 +94,8 @@ public struct Tokens: Codable {
         public init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
             let tmxSessionId = try container.decode(String.self, forKey: .tmxSessionId)
-            let amount = try container.decode(MonetaryAmount.self, forKey: .amount)
+            let amount = try container.decodeIfPresent(MonetaryAmount.self, forKey: .amount)
+            let confirmation = try container.decodeIfPresent(Confirmation.self, forKey: .confirmation)
 
             guard let paymentMethodData = PaymentMethodDataFactory.decodePaymentMethodData(from: decoder) else {
                 throw DecodingErrors.unsupportedPaymentMethodData
@@ -97,7 +104,8 @@ public struct Tokens: Codable {
             self.init(oauthToken: "",
                       paymentMethodData: paymentMethodData,
                       tmxSessionId: tmxSessionId,
-                      amount: amount)
+                      amount: amount,
+                      confirmation: confirmation)
         }
 
         /// Encodes this value into the given encoder.
@@ -109,7 +117,8 @@ public struct Tokens: Codable {
         public func encode(to encoder: Encoder) throws {
             var container = encoder.container(keyedBy: CodingKeys.self)
             try container.encode(tmxSessionId, forKey: .tmxSessionId)
-            try container.encode(amount, forKey: .amount)
+            try container.encodeIfPresent(amount, forKey: .amount)
+            try container.encodeIfPresent(confirmation, forKey: .confirmation)
             try PaymentMethodDataFactory.encodePaymentMethodData(paymentMethodData, to: encoder)
         }
 
@@ -117,6 +126,7 @@ public struct Tokens: Codable {
             case paymentMethodData = "payment_method_data"
             case tmxSessionId = "tmx_session_id"
             case amount = "amount"
+            case confirmation
         }
 
         /// Decoding errors.

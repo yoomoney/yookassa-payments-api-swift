@@ -1,7 +1,7 @@
 /*
- * The MIT License
+ * The MIT License (MIT)
  *
- * Copyright (c) 2007—2018 NBCO Yandex.Money LLC
+ * Copyright (c) 2016 NBCO Yandex.Money LLC
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,16 +23,29 @@
  */
 
 import Foundation
+import XCTest
+@testable import YandexCheckoutPaymentsApi
+import YandexMoneyTestInstrumentsApi
 
-/// Type of custom payment confirmation process.
-/// Read more about the scenarios of [confirmation of payment](https://kassa.yandex.ru/docs/guides/#confirmation)
-/// by the buyer.
-public enum ConfirmationType: String, Codable {
+class ConfirmationMappingTests: MappingApiModels {
 
-    /// You need to send the user to the partner page.
-    case redirect
+    func testConfirmationMapping() {
 
-    /// The scenario in which the user confirms the payment without your participation.
-    /// for example, responds to the SMS sent by the Bank.
-    case external
+        let count = 2
+
+        guard let confirmationMock = mockWithType(Confirmation.self, number: count),
+              confirmationMock.count == count else {
+            XCTFail("Confirmation mock not loaded")
+            return
+        }
+
+        let redirect = confirmationMock[0].instance
+        XCTAssertEqual(redirect.type, .redirect, "type is not mapped")
+        XCTAssertEqual(redirect.returnUrl, "checkout://return", "returnUrl is not mapped")
+        XCTAssertEqualJsonRepresentation(redirect, data: confirmationMock[0].data)
+
+        let external = confirmationMock[1].instance
+        XCTAssertEqual(external.type, .external, "type is not mapped")
+        XCTAssertEqualJsonRepresentation(external, data: confirmationMock[1].data)
+    }
 }
