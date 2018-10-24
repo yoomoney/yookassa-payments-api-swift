@@ -40,7 +40,7 @@ class PaymentOptionsMethodTests: ApiMethodTestCase {
                 return
             }
 
-            XCTAssertEqual(response.items.count, 5, "response.items.count wrong")
+            XCTAssertEqual(response.items.count, 6, "response.items.count wrong")
         }
     }
 

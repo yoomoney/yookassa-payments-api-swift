@@ -40,7 +40,7 @@ public class PaymentOption: Codable {
     /// Read more about the scenarios of
     /// [confirmation of payment](https://kassa.yandex.ru/docs/guides/#confirmation) by the buyer.
     /// - Example: redirect
-    public let confirmationType: ConfirmationType?
+    public let confirmationType: [ConfirmationType]?
 
     /// The amount to be paid by the buyer subject to possible currency
     /// conversion and additional fees in excess of the payment amount.
@@ -66,7 +66,7 @@ public class PaymentOption: Codable {
     ///
     /// - Returns: Instance of `PaymentOption`
     public init(paymentMethodType: PaymentMethodType,
-                confirmationType: ConfirmationType?,
+                confirmationType: [ConfirmationType]?,
                 charge: MonetaryAmount,
                 identificationRequirement: IdentificationRequirement?) {
         self.paymentMethodType = paymentMethodType

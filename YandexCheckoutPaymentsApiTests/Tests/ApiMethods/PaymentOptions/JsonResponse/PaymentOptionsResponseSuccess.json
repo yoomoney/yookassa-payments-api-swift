@@ -66,6 +66,13 @@
         "value": "5.00",
         "currency": "RUB"
       }
+    },
+    {
+      "payment_method_type": "apple_pay",
+      "charge": {
+        "value": "5.00",
+        "currency": "RUB"
+      }
     }
   ]
 }

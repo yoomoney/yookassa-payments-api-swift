@@ -64,7 +64,7 @@ public class PaymentInstrumentYandexMoneyLinkedBankCard: PaymentOptionYandexMone
     ///   - cardType: Type of Bank card.
     ///   - identificationRequirement: Required type of user identification.
     public init(paymentMethodType: PaymentMethodType,
-                confirmationType: ConfirmationType?,
+                confirmationType: [ConfirmationType]?,
                 charge: MonetaryAmount,
                 instrumentType: YandexMoneyInstrumentType,
                 cardId: String,

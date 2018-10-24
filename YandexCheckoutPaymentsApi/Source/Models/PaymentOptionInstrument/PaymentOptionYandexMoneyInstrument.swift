@@ -48,7 +48,7 @@ public class PaymentOptionYandexMoneyInstrument: PaymentOption {
     ///
     /// - Returns: Instance of `PaymentOptionYandexMoneyInstrument`.
     public init(paymentMethodType: PaymentMethodType,
-                confirmationType: ConfirmationType?,
+                confirmationType: [ConfirmationType]?,
                 charge: MonetaryAmount,
                 instrumentType: YandexMoneyInstrumentType,
                 identificationRequirement: IdentificationRequirement?) {

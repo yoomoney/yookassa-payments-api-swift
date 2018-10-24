@@ -49,11 +49,13 @@ private extension TokensMethodTests {
     func validate(_ stubsResponse: StubsResponse.Type,
                   verify: @escaping (Result<Tokens>) -> Void) {
         let paymentMethodData = PaymentMethodData(paymentMethodType: .bankCard)
+        let confirmation = Confirmation(type: .redirect, returnUrl: "checkout://return")
         let amount = MonetaryAmount(value: 0, currency: .rub)
         let method = Tokens.Method(oauthToken: "",
                                    paymentMethodData: paymentMethodData,
                                    tmxSessionId: "",
-                                   amount: amount)
+                                   amount: amount,
+                                   confirmation: confirmation)
         validate(method, stubsResponse, TokensMethodTests.self, verify: verify)
     }
 }
