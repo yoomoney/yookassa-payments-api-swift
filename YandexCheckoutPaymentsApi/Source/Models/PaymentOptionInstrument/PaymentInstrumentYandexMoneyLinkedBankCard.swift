@@ -64,7 +64,7 @@ public class PaymentInstrumentYandexMoneyLinkedBankCard: PaymentOptionYandexMone
     ///   - cardType: Type of Bank card.
     ///   - identificationRequirement: Required type of user identification.
     public init(paymentMethodType: PaymentMethodType,
-                confirmationType: ConfirmationType?,
+                confirmationTypes: Set<ConfirmationType>?,
                 charge: MonetaryAmount,
                 instrumentType: YandexMoneyInstrumentType,
                 cardId: String,
@@ -77,7 +77,7 @@ public class PaymentInstrumentYandexMoneyLinkedBankCard: PaymentOptionYandexMone
         self.cardMask = cardMask
         self.cardType = cardType
         super.init(paymentMethodType: paymentMethodType,
-                   confirmationType: confirmationType,
+                   confirmationTypes: confirmationTypes,
                    charge: charge,
                    instrumentType: instrumentType,
                    identificationRequirement: identificationRequirement)

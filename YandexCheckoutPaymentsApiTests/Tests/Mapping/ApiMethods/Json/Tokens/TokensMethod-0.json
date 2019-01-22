@@ -13,5 +13,9 @@
     "value": "10",
     "currency": "RUB"
   },
-  "tmx_session_id": "tmx_1da5c87d-0984-50e8-a7f3-8de646dd9ec9"
+  "tmx_session_id": "tmx_1da5c87d-0984-50e8-a7f3-8de646dd9ec9",
+  "confirmation": {
+    "type": "redirect",
+    "return_url": "checkout://return"
+  }
 }

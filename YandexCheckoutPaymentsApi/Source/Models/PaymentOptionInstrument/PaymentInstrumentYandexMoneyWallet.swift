@@ -50,7 +50,7 @@ public class PaymentInstrumentYandexMoneyWallet: PaymentOptionYandexMoneyInstrum
     ///
     /// - Returns: Instance of `PaymentInstrumentYandexMoneyWallet`.
     public init(paymentMethodType: PaymentMethodType,
-                confirmationType: ConfirmationType?,
+                confirmationTypes: Set<ConfirmationType>?,
                 charge: MonetaryAmount,
                 instrumentType: YandexMoneyInstrumentType,
                 accountId: String,
@@ -59,7 +59,7 @@ public class PaymentInstrumentYandexMoneyWallet: PaymentOptionYandexMoneyInstrum
         self.accountId = accountId
         self.balance = balance
         super.init(paymentMethodType: paymentMethodType,
-                   confirmationType: confirmationType,
+                   confirmationTypes: confirmationTypes,
                    charge: charge,
                    instrumentType: instrumentType,
                    identificationRequirement: identificationRequirement)

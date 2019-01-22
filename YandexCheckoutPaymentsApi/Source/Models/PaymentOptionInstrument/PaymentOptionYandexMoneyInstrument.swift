@@ -48,13 +48,13 @@ public class PaymentOptionYandexMoneyInstrument: PaymentOption {
     ///
     /// - Returns: Instance of `PaymentOptionYandexMoneyInstrument`.
     public init(paymentMethodType: PaymentMethodType,
-                confirmationType: ConfirmationType?,
+                confirmationTypes: Set<ConfirmationType>?,
                 charge: MonetaryAmount,
                 instrumentType: YandexMoneyInstrumentType,
                 identificationRequirement: IdentificationRequirement?) {
         self.instrumentType = instrumentType
         super.init(paymentMethodType: paymentMethodType,
-                   confirmationType: confirmationType,
+                   confirmationTypes: confirmationTypes,
                    charge: charge,
                    identificationRequirement: identificationRequirement)
     }
