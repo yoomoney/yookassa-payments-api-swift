@@ -15,6 +15,9 @@
 		244F7E36A14DD920B1490D2D /* PaymentMethodData-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F71E54E6FD012B31BF319 /* PaymentMethodData-1.json */; };
 		244F7FA7E5210CCF1A820157 /* PaymentMethodData-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F776A7FCE158C194DE11A /* PaymentMethodData-3.json */; };
 		2B7669250F8488506CC3ABA8 /* Pods_YandexCheckoutPaymentsApiExamplePods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A87E407B2CD6AE959FD979 /* Pods_YandexCheckoutPaymentsApiExamplePods.framework */; };
+		30C5623F22AEA2F1004C774C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C5623E22AEA2F1004C774C /* Service.swift */; };
+		30C5624122AEA31C004C774C /* Counterparty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C5624022AEA31C004C774C /* Counterparty.swift */; };
+		30C5624322AEA34D004C774C /* Fee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C5624222AEA34D004C774C /* Fee.swift */; };
 		30EF407E2004D86C00660322 /* YandexCheckoutPaymentsApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EF40742004D86C00660322 /* YandexCheckoutPaymentsApi.framework */; };
 		30EF40852004D86C00660322 /* YandexCheckoutPaymentsApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 30EF40772004D86C00660322 /* YandexCheckoutPaymentsApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30EF40BE2004E3DB00660322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF40BD2004E3DB00660322 /* AppDelegate.swift */; };
@@ -130,6 +133,9 @@
 		244F76CE454C8C64B781C6BC /* PaymentMethodData-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentMethodData-0.json"; sourceTree = "<group>"; };
 		244F776A7FCE158C194DE11A /* PaymentMethodData-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentMethodData-3.json"; sourceTree = "<group>"; };
 		244F7BE14167D41EF95F6A99 /* PaymentMethodDataMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodDataMappingTests.swift; sourceTree = "<group>"; };
+		30C5623E22AEA2F1004C774C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		30C5624022AEA31C004C774C /* Counterparty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counterparty.swift; sourceTree = "<group>"; };
+		30C5624222AEA34D004C774C /* Fee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fee.swift; sourceTree = "<group>"; };
 		30EF40742004D86C00660322 /* YandexCheckoutPaymentsApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YandexCheckoutPaymentsApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30EF40772004D86C00660322 /* YandexCheckoutPaymentsApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YandexCheckoutPaymentsApi.h; sourceTree = "<group>"; };
 		30EF40782004D86C00660322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -145,8 +151,8 @@
 		30EF40DB2004E3EB00660322 /* YandexCheckoutPaymentsApiExampleCarthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexCheckoutPaymentsApiExampleCarthage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F3034820051129009DC40B /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		30F3034A20051129009DC40B /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
-		30F3034B20051129009DC40B /* YandexCheckoutPaymentsApi.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = YandexCheckoutPaymentsApi.podspec; sourceTree = "<group>"; };
-		30F3034C2005112A009DC40B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		30F3034B20051129009DC40B /* YandexCheckoutPaymentsApi.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = YandexCheckoutPaymentsApi.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		30F3034C2005112A009DC40B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		30F3034D2005112A009DC40B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		30F30355200512F4009DC40B /* FunctionalSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FunctionalSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F30358200512F4009DC40B /* YandexMoneyCoreApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YandexMoneyCoreApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -454,6 +460,9 @@
 				402EB9DC7E9CA559332A2679 /* BankCard.swift */,
 				402EBD3570050EE1BEA3AC54 /* IdentificationRequirement.swift */,
 				402EBCD96DA04F368301F253 /* Confirmation.swift */,
+				30C5623E22AEA2F1004C774C /* Service.swift */,
+				30C5624022AEA31C004C774C /* Counterparty.swift */,
+				30C5624222AEA34D004C774C /* Fee.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -661,7 +670,6 @@
 				30EF407A2004D86C00660322 /* Frameworks */,
 				30EF407B2004D86C00660322 /* Resources */,
 				FE033C546F907A09DCDA57D8 /* [CP] Embed Pods Frameworks */,
-				BE6D5F1006D3971521928364 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -683,7 +691,6 @@
 				30EF40B82004E3DB00660322 /* Frameworks */,
 				30EF40B92004E3DB00660322 /* Resources */,
 				9D72A62D6536A4B833CFECA4 /* [CP] Embed Pods Frameworks */,
-				32ABB224F35395C518FCD89F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -832,32 +839,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		32ABB224F35395C518FCD89F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiExamplePods/Pods-YandexCheckoutPaymentsApiExamplePods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9D72A62D6536A4B833CFECA4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiExamplePods/Pods-YandexCheckoutPaymentsApiExamplePods-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-YandexCheckoutPaymentsApiExamplePods/Pods-YandexCheckoutPaymentsApiExamplePods-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FunctionalSwift/FunctionalSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/YandexCheckoutPaymentsApi/YandexCheckoutPaymentsApi.framework",
 				"${BUILT_PRODUCTS_DIR}/YandexMoneyCoreApi/YandexMoneyCoreApi.framework",
@@ -870,26 +858,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiExamplePods/Pods-YandexCheckoutPaymentsApiExamplePods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BE6D5F1006D3971521928364 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiTests/Pods-YandexCheckoutPaymentsApiTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YandexCheckoutPaymentsApiExamplePods/Pods-YandexCheckoutPaymentsApiExamplePods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E1149EC721B79C70DE9FA4C4 /* [CP] Check Pods Manifest.lock */ = {
@@ -916,7 +885,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiTests/Pods-YandexCheckoutPaymentsApiTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-YandexCheckoutPaymentsApiTests/Pods-YandexCheckoutPaymentsApiTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FunctionalSwift/FunctionalSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/YandexMoneyCoreApi/YandexMoneyCoreApi.framework",
 				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
@@ -931,7 +900,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexCheckoutPaymentsApiTests/Pods-YandexCheckoutPaymentsApiTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YandexCheckoutPaymentsApiTests/Pods-YandexCheckoutPaymentsApiTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -958,13 +927,16 @@
 				402EB094AF10CD9F78F88E27 /* PaymentInstrumentYandexMoneyWallet.swift in Sources */,
 				402EB7FB54AE7E180324F6FE /* PaymentInstrumentYandexMoneyLinkedBankCard.swift in Sources */,
 				402EB0B869542545DA341A94 /* PaymentMethodData.swift in Sources */,
+				30C5623F22AEA2F1004C774C /* Service.swift in Sources */,
 				402EB8F07D1632A4E102F5D2 /* PaymentMethodDataBankCard.swift in Sources */,
 				402EBB2F374E457E5E4BD93A /* BankCard.swift in Sources */,
+				30C5624322AEA34D004C774C /* Fee.swift in Sources */,
 				402EB312AAFFB72DC5FF3780 /* PaymentMethodDataSberbank.swift in Sources */,
 				402EBA367638FE5CD0A159FF /* PaymentInstrumentDataYandexMoneyWallet.swift in Sources */,
 				402EB2DB96E90A25FA529808 /* PaymentInstrumentDataYandexMoneyLinkedBankCard.swift in Sources */,
 				402EBAA76E442C75F29E113B /* PaymentMethodDataFactory.swift in Sources */,
 				402EBC46D38AE966F943ED7A /* PaymentErrorCode.swift in Sources */,
+				30C5624122AEA31C004C774C /* Counterparty.swift in Sources */,
 				402EBD3BE4DA2675D72E4DA0 /* PaymentErrorType.swift in Sources */,
 				402EBB2F444B88411C35D47C /* IdentificationRequirement.swift in Sources */,
 				402EB09D589F505B0786B02E /* PaymentMethodDataApplePay.swift in Sources */,
