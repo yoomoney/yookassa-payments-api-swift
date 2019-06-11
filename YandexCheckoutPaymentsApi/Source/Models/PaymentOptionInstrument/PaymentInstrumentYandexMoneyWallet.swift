@@ -47,6 +47,8 @@ public class PaymentInstrumentYandexMoneyWallet: PaymentOptionYandexMoneyInstrum
     ///   - accountId: Wallet account number.
     ///   - balance: The amount in the selected currency.
     ///   - identificationRequirement: Required type of user identification.
+    ///   - fee: Commission from the buyer in excess of the payment amount.
+    ///          The field is present if there are commissions in excess of the payment amount.
     ///
     /// - Returns: Instance of `PaymentInstrumentYandexMoneyWallet`.
     public init(paymentMethodType: PaymentMethodType,
@@ -55,14 +57,16 @@ public class PaymentInstrumentYandexMoneyWallet: PaymentOptionYandexMoneyInstrum
                 instrumentType: YandexMoneyInstrumentType,
                 accountId: String,
                 balance: MonetaryAmount,
-                identificationRequirement: IdentificationRequirement?) {
+                identificationRequirement: IdentificationRequirement?,
+                fee: Fee?) {
         self.accountId = accountId
         self.balance = balance
         super.init(paymentMethodType: paymentMethodType,
                    confirmationTypes: confirmationTypes,
                    charge: charge,
                    instrumentType: instrumentType,
-                   identificationRequirement: identificationRequirement)
+                   identificationRequirement: identificationRequirement,
+                   fee: fee)
     }
 
     // MARK: - Codable

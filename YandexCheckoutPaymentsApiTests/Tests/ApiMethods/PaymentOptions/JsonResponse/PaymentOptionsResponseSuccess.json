@@ -38,7 +38,17 @@
       "charge": {
         "value": "5.00",
         "currency": "RUB"
-      }
+      },
+      "fee": {
+          "service": {
+              "value": "10.00",
+              "currency": "RUB"
+          },
+          "counterparty": {
+              "value": "10.00",
+              "currency": "RUB"
+          }
+      },
     },
     {
       "payment_method_type": "sberbank",

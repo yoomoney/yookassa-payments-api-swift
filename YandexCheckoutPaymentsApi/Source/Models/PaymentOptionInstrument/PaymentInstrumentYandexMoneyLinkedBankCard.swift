@@ -63,6 +63,8 @@ public class PaymentInstrumentYandexMoneyLinkedBankCard: PaymentOptionYandexMone
     ///   - cardMask: Masked (6/4) card number.
     ///   - cardType: Type of Bank card.
     ///   - identificationRequirement: Required type of user identification.
+    ///   - fee: Commission from the buyer in excess of the payment amount.
+    ///          The field is present if there are commissions in excess of the payment amount.
     public init(paymentMethodType: PaymentMethodType,
                 confirmationTypes: Set<ConfirmationType>?,
                 charge: MonetaryAmount,
@@ -71,7 +73,8 @@ public class PaymentInstrumentYandexMoneyLinkedBankCard: PaymentOptionYandexMone
                 cardName: String?,
                 cardMask: String,
                 cardType: BankCardType,
-                identificationRequirement: IdentificationRequirement?) {
+                identificationRequirement: IdentificationRequirement?,
+                fee: Fee?) {
         self.cardId = cardId
         self.cardName = cardName
         self.cardMask = cardMask
@@ -80,7 +83,8 @@ public class PaymentInstrumentYandexMoneyLinkedBankCard: PaymentOptionYandexMone
                    confirmationTypes: confirmationTypes,
                    charge: charge,
                    instrumentType: instrumentType,
-                   identificationRequirement: identificationRequirement)
+                   identificationRequirement: identificationRequirement,
+                   fee: fee)
     }
 
     // MARK: - Codable

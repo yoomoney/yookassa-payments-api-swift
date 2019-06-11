@@ -38,25 +38,26 @@ public class PaymentOptionYandexMoneyInstrument: PaymentOption {
     ///                       If payment confirmation is not required, the field is missing.
     ///                       Read more about the scenarios of
     ///                       [confirmation of payment](https://kassa.yandex.ru/docs/guides/#confirmation) by the buyer.
-    ///
-    ///
-    ///
     ///   - charge: The amount to be paid by the buyer subject to possible currency
     ///             conversion and additional fees in excess of the payment amount.
     ///   - instrumentType: The type of the source of funds for payments from the Yandex.Money.
     ///   - identificationRequirement: Required type of user identification.
+    ///   - fee: Commission from the buyer in excess of the payment amount.
+    ///          The field is present if there are commissions in excess of the payment amount.
     ///
     /// - Returns: Instance of `PaymentOptionYandexMoneyInstrument`.
     public init(paymentMethodType: PaymentMethodType,
                 confirmationTypes: Set<ConfirmationType>?,
                 charge: MonetaryAmount,
                 instrumentType: YandexMoneyInstrumentType,
-                identificationRequirement: IdentificationRequirement?) {
+                identificationRequirement: IdentificationRequirement?,
+                fee: Fee?) {
         self.instrumentType = instrumentType
         super.init(paymentMethodType: paymentMethodType,
                    confirmationTypes: confirmationTypes,
                    charge: charge,
-                   identificationRequirement: identificationRequirement)
+                   identificationRequirement: identificationRequirement,
+                   fee: fee)
     }
 
     // MARK: - Codable

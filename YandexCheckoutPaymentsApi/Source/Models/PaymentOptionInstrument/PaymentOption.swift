@@ -49,6 +49,10 @@ public class PaymentOption: Codable {
     /// Required type of user identification.
     public let identificationRequirement: IdentificationRequirement?
 
+    /// Commission from the buyer in excess of the payment amount.
+    /// The field is present if there are commissions in excess of the payment amount.
+    public let fee: Fee?
+
     /// Creates instance of `PaymentOption`.
     ///
     /// - Parameters:
@@ -57,22 +61,23 @@ public class PaymentOption: Codable {
     ///                       If payment confirmation is not required, the field is missing.
     ///                       Read more about the scenarios of
     ///                       [confirmation of payment](https://kassa.yandex.ru/docs/guides/#confirmation) by the buyer.
-    ///
-    ///
-    ///
     ///   - charge: The amount to be paid by the buyer subject to possible currency
     ///             conversion and additional fees in excess of the payment amount.
     ///   - identificationRequirement: Required type of user identification.
+    ///   - fee: Commission from the buyer in excess of the payment amount.
+    ///          The field is present if there are commissions in excess of the payment amount.
     ///
     /// - Returns: Instance of `PaymentOption`
     public init(paymentMethodType: PaymentMethodType,
                 confirmationTypes: Set<ConfirmationType>?,
                 charge: MonetaryAmount,
-                identificationRequirement: IdentificationRequirement?) {
+                identificationRequirement: IdentificationRequirement?,
+                fee: Fee?) {
         self.paymentMethodType = paymentMethodType
         self.confirmationTypes = confirmationTypes
         self.charge = charge
         self.identificationRequirement = identificationRequirement
+        self.fee = fee
     }
 
     private enum CodingKeys: String, CodingKey {
@@ -80,5 +85,6 @@ public class PaymentOption: Codable {
         case confirmationTypes = "confirmation_types"
         case charge
         case identificationRequirement = "identification_requirement"
+        case fee
     }
 }
