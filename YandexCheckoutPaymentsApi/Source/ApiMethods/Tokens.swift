@@ -51,38 +51,20 @@ public struct Tokens: Codable {
         /// Client application key.
         public let oauthToken: String
 
-        /// Data for payment.
-        public let paymentMethodData: PaymentMethodData
-
-        /// ThreatMetrix session ID.
-        public let tmxSessionId: String
-
-        /// Payment amount, the nominal value of the order for the buyer.
-        public let amount: MonetaryAmount?
-
-        /// Payment confirmation method.
-        public let confirmation: Confirmation?
+        /// Request for tokenization of the buyer's payment data for subsequent payment.
+        public let tokensRequest: TokensRequest
 
         /// Creates instance of API method for `Tokens`.
         ///
         /// - Parameters:
         ///   - oauthToken: Client application key.
-        ///   - paymentMethodData: Data for payment.
-        ///   - tmxSessionId: ThreatMetrix session ID.
-        ///   - amount: Payment amount, the nominal value of the order for the buyer.
-        ///   - confirmation: Payment confirmation method.
+        ///   - tokensRequest: Request for tokenization of the buyer's payment data for subsequent payment.
         ///
         /// - Returns: Instance of API method for `Tokens`.
         public init(oauthToken: String,
-                    paymentMethodData: PaymentMethodData,
-                    tmxSessionId: String,
-                    amount: MonetaryAmount?,
-                    confirmation: Confirmation?) {
+                    tokensRequest: TokensRequest) {
             self.oauthToken = oauthToken
-            self.paymentMethodData = paymentMethodData
-            self.tmxSessionId = tmxSessionId
-            self.amount = amount
-            self.confirmation = confirmation
+            self.tokensRequest = tokensRequest
         }
 
         /// Creates a new instance by decoding from the given decoder.
@@ -92,20 +74,10 @@ public struct Tokens: Codable {
         /// - Parameters:
         ///   - decoder: The decoder to read data from.
         public init(from decoder: Decoder) throws {
-            let container = try decoder.container(keyedBy: CodingKeys.self)
-            let tmxSessionId = try container.decode(String.self, forKey: .tmxSessionId)
-            let amount = try container.decodeIfPresent(MonetaryAmount.self, forKey: .amount)
-            let confirmation = try container.decodeIfPresent(Confirmation.self, forKey: .confirmation)
-
-            guard let paymentMethodData = PaymentMethodDataFactory.decodePaymentMethodData(from: decoder) else {
-                throw DecodingErrors.unsupportedPaymentMethodData
+            guard let tokensRequest = TokensRequestFactory.decodeTokensRequest(from: decoder) else {
+                throw DecodingErrors.unsupportedTokensRequest
             }
-
-            self.init(oauthToken: "",
-                      paymentMethodData: paymentMethodData,
-                      tmxSessionId: tmxSessionId,
-                      amount: amount,
-                      confirmation: confirmation)
+            self.init(oauthToken: "", tokensRequest: tokensRequest)
         }
 
         /// Encodes this value into the given encoder.
@@ -115,25 +87,14 @@ public struct Tokens: Codable {
         /// - Parameters:
         ///   - encoder: The encoder to write data to.
         public func encode(to encoder: Encoder) throws {
-            var container = encoder.container(keyedBy: CodingKeys.self)
-            try container.encode(tmxSessionId, forKey: .tmxSessionId)
-            try container.encodeIfPresent(amount, forKey: .amount)
-            try container.encodeIfPresent(confirmation, forKey: .confirmation)
-            try PaymentMethodDataFactory.encodePaymentMethodData(paymentMethodData, to: encoder)
-        }
-
-        private enum CodingKeys: String, CodingKey {
-            case paymentMethodData = "payment_method_data"
-            case tmxSessionId = "tmx_session_id"
-            case amount = "amount"
-            case confirmation
+            try TokensRequestFactory.encodeTokensRequest(tokensRequest, to: encoder)
         }
 
         /// Decoding errors.
         public enum DecodingErrors: Error {
 
             /// The received payment method is not supported.
-            case unsupportedPaymentMethodData
+            case unsupportedTokensRequest
         }
     }
 }
@@ -169,7 +130,7 @@ extension Tokens.Method: ApiMethod {
             AuthorizationConstants.authorization: AuthorizationConstants.basicAuthorizationPrefix + oauthToken,
         ])
 
-        return requiredHeaders.mappend(paymentMethodData.customHeaders())
+        return requiredHeaders.mappend(tokensRequest.customHeaders())
     }
 
     public func urlInfo(from hostProvider: HostProvider) throws -> URLInfo {

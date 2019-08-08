@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright (c) 2007—2018 NBCO Yandex.Money LLC
+ * Copyright (c) 2007—2019 NBCO Yandex.Money LLC
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,22 +22,34 @@
  * THE SOFTWARE.
  */
 
-import XCTest
-@testable
-import YandexCheckoutPaymentsApi
-import YandexMoneyCoreApi
-import YandexMoneyTestInstrumentsApi
+import Foundation
 
-class PaymentMappingApiMethods: MappingApiMethods {
-    func testPaymentOptionsMethod() {
-        checkApiMethodsParameters(PaymentOptions.Method.self, fileName: "PaymentOptionsMethod", index: 0)
+enum TokensRequestFactory {
+    static func decodeTokensRequest(from decoder: Decoder) -> TokensRequest? {
+        guard let container = try? decoder.singleValueContainer() else {
+            return nil
+        }
+
+        if let response = try? container.decode(TokensRequestPaymentMethodData.self) {
+            return response
+        } else if let response = try? container.decode(TokensRequestPaymentMethodId.self) {
+            return response
+        } else {
+            return nil
+        }
     }
 
-    func testTokensMethod() {
-        for index in 0..<4 {
-            checkApiMethodsParameters(Tokens.Method.self,
-                                      fileName: "TokensMethod",
-                                      index: index)
+    static func encodeTokensRequest(
+        _ tokensRequest: TokensRequest, to encoder: Encoder) throws {
+
+        var container = encoder.singleValueContainer()
+        switch tokensRequest {
+        case let response as TokensRequestPaymentMethodData:
+            try container.encode(response)
+        case let response as TokensRequestPaymentMethodId:
+            try container.encode(response)
+        default:
+            try container.encode(tokensRequest)
         }
     }
 }
