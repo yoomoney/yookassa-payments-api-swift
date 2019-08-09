@@ -1,0 +1,15 @@
+{
+  "type": "bank_card",
+  "id": "1da5c87d-0984-50e8-a7f3-8de646dd9ec9",
+  "saved": true,
+  "title": "Основная карта",
+  "csc_required": true,
+  "card": {
+    "first6": "427918",
+    "last4": "7918",
+    "expiry_year": "2017",
+    "expiry_month": "07",
+    "card_type": "MasterCard",
+    "source": "google_pay"
+  }
+}
