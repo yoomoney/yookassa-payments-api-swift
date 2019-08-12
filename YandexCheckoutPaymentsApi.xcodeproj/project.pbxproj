@@ -50,6 +50,7 @@
 		402EB2DB96E90A25FA529808 /* PaymentInstrumentDataYandexMoneyLinkedBankCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBCC5F4D137FC24B87845 /* PaymentInstrumentDataYandexMoneyLinkedBankCard.swift */; };
 		402EB312AAFFB72DC5FF3780 /* PaymentMethodDataSberbank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9E78B175DB2903000FE /* PaymentMethodDataSberbank.swift */; };
 		402EB32A6D00D8C02B772FF7 /* MonetaryAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB27A245F6B935D57F72E /* MonetaryAmount.swift */; };
+		402EB33C9A4E53CB31A42DB5 /* PaymentMethodBankCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBF78027C123521DE1F7F /* PaymentMethodBankCard.swift */; };
 		402EB3BBB6C5F3BF37AF2C51 /* PaymentMappingApiMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBFAE8637EC8ACDD40C51 /* PaymentMappingApiMethods.swift */; };
 		402EB3C29FA39A8A187BFEE6 /* IdentificationRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB2CBECAC89B3DD7E2939 /* IdentificationRequirement.swift */; };
 		402EB48498774D0E13CF3082 /* ConfirmationMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB372392C163B6BE58755 /* ConfirmationMappingTests.swift */; };
@@ -79,12 +80,15 @@
 		402EBB432DEC9AC6E34A65E9 /* PaymentOptionsMethod-0.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EB03125B8070B94F49BFD /* PaymentOptionsMethod-0.json */; };
 		402EBB6A1F5CEAE7DB24E3C7 /* PaymentOptionsResponseEmpty.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EBB7B7BB50BE4D9FE3376 /* PaymentOptionsResponseEmpty.json */; };
 		402EBBBBAD142FF847FBA23D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB24AEB4FCACE1B3FCA5C /* Constants.swift */; };
+		402EBBF532F033688AC96EC5 /* PaymentMethodResponseSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EB818291A551BCA98127C /* PaymentMethodResponseSuccess.json */; };
+		402EBC3238136591C81DE0C0 /* PaymentMethodMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBBD06B5911A637572EFF /* PaymentMethodMethodTests.swift */; };
 		402EBC46D38AE966F943ED7A /* PaymentErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9B6E9D9D635097C18DD /* PaymentErrorCode.swift */; };
 		402EBC5285FC28FF77EC7AA8 /* BankCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBB600AB465B1D3544C1C /* BankCard.swift */; };
 		402EBD3BE4DA2675D72E4DA0 /* PaymentErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBB586BC9E957A5EFC1EA /* PaymentErrorType.swift */; };
 		402EBD67A17FB0A5E46FDF4F /* TokensMethod-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EBCA043C8DC1669CA6C95 /* TokensMethod-2.json */; };
 		402EBDE59FA52CA635C7E524 /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB55C2422C4171BB63DEB /* Tokens.swift */; };
 		402EBE121B950A5A8376DDB3 /* MonetaryAmountMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9EC40B2E511AD1AAE9C /* MonetaryAmountMappingTests.swift */; };
+		402EBE420CEC36D64A4A3733 /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9234D40061BEC505E85 /* PaymentMethod.swift */; };
 		402EBEA2D60EBC94931922D0 /* TokensMethod-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EBCC39D9F507F5A4A2559 /* TokensMethod-3.json */; };
 		402EBEC28021BC87A04E17CC /* ConfirmationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB19B848CE1382AC0D490 /* ConfirmationType.swift */; };
 		402EBED480C10CB1A56DAB61 /* PaymentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBC773789B856428409D9 /* PaymentOption.swift */; };
@@ -184,8 +188,10 @@
 		402EB7B3D9E440FAD21D54AC /* TokensRequestPaymentMethodId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokensRequestPaymentMethodId.swift; sourceTree = "<group>"; };
 		402EB7EF21FC9A498D6F93BE /* PaymentsApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsApiResponse.swift; sourceTree = "<group>"; };
 		402EB80E39982A5DC8638E8F /* Confirmation0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Confirmation0.json; sourceTree = "<group>"; };
+		402EB818291A551BCA98127C /* PaymentMethodResponseSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PaymentMethodResponseSuccess.json; sourceTree = "<group>"; };
 		402EB867D67E0626FEAC2ECF /* PaymentMethodDataFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodDataFactory.swift; sourceTree = "<group>"; };
 		402EB8AF0FC7DEF377397CFA /* PaymentMethodDataBankCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodDataBankCard.swift; sourceTree = "<group>"; };
+		402EB9234D40061BEC505E85 /* PaymentMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
 		402EB9311AE424A5B15916F7 /* PaymentOptionYandexMoneyInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentOptionYandexMoneyInstrument.swift; sourceTree = "<group>"; };
 		402EB9B6E9D9D635097C18DD /* PaymentErrorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentErrorCode.swift; sourceTree = "<group>"; };
 		402EB9E78B175DB2903000FE /* PaymentMethodDataSberbank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodDataSberbank.swift; sourceTree = "<group>"; };
@@ -199,6 +205,7 @@
 		402EBB600AB465B1D3544C1C /* BankCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankCard.swift; sourceTree = "<group>"; };
 		402EBB7B7BB50BE4D9FE3376 /* PaymentOptionsResponseEmpty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PaymentOptionsResponseEmpty.json; sourceTree = "<group>"; };
 		402EBBBC8F6085F8663B9D45 /* PaymentInstrumentDataYandexMoneyWallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInstrumentDataYandexMoneyWallet.swift; sourceTree = "<group>"; };
+		402EBBD06B5911A637572EFF /* PaymentMethodMethodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodMethodTests.swift; sourceTree = "<group>"; };
 		402EBBF106E7CD359F15589F /* PaymentsApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsApiError.swift; sourceTree = "<group>"; };
 		402EBC4275855D70A22ED580 /* TokensMethodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokensMethodTests.swift; sourceTree = "<group>"; };
 		402EBC773789B856428409D9 /* PaymentOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentOption.swift; sourceTree = "<group>"; };
@@ -210,6 +217,7 @@
 		402EBF027D085C3F62C685D6 /* TokensMethod-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "TokensMethod-0.json"; sourceTree = "<group>"; };
 		402EBF05B92B53179C6309E0 /* PaymentInstrumentYandexMoneyWallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInstrumentYandexMoneyWallet.swift; sourceTree = "<group>"; };
 		402EBF363B2E9880CCDEE790 /* Fee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fee.swift; sourceTree = "<group>"; };
+		402EBF78027C123521DE1F7F /* PaymentMethodBankCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodBankCard.swift; sourceTree = "<group>"; };
 		402EBF7A09C38E5AA5A8BFD0 /* PaymentMethodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodType.swift; sourceTree = "<group>"; };
 		402EBFAE8637EC8ACDD40C51 /* PaymentMappingApiMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMappingApiMethods.swift; sourceTree = "<group>"; };
 		402EBFBFE4F1E309EF0D1371 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -371,6 +379,14 @@
 			path = TokensRequest;
 			sourceTree = "<group>";
 		};
+		402EB3AE4BA5146B7D4B92AC /* JsonResponse */ = {
+			isa = PBXGroup;
+			children = (
+				402EB818291A551BCA98127C /* PaymentMethodResponseSuccess.json */,
+			);
+			path = JsonResponse;
+			sourceTree = "<group>";
+		};
 		402EB4B642C7443ACEFE4CA3 /* PaymentInstrumentData */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,6 +403,15 @@
 				402EBA6D70BB13B86AB00E04 /* PaymentsApiErrorMappingTests.swift */,
 			);
 			path = PaymentsApiError;
+			sourceTree = "<group>";
+		};
+		402EB598A4AA26FB4F58CBB9 /* PaymentMethod */ = {
+			isa = PBXGroup;
+			children = (
+				402EB3AE4BA5146B7D4B92AC /* JsonResponse */,
+				402EBBD06B5911A637572EFF /* PaymentMethodMethodTests.swift */,
+			);
+			path = PaymentMethod;
 			sourceTree = "<group>";
 		};
 		402EB5AF6ADE15C566955C9A /* Factories */ = {
@@ -483,6 +508,7 @@
 			children = (
 				402EB76AC935BCCE718A0E70 /* PaymentOptions.swift */,
 				402EB55C2422C4171BB63DEB /* Tokens.swift */,
+				402EB9234D40061BEC505E85 /* PaymentMethod.swift */,
 			);
 			path = ApiMethods;
 			sourceTree = "<group>";
@@ -603,6 +629,7 @@
 			children = (
 				402EB6172A39F60DC160B827 /* PaymentOptions */,
 				402EB7731B9CE514BFF4DC99 /* Tokens */,
+				402EB598A4AA26FB4F58CBB9 /* PaymentMethod */,
 			);
 			path = ApiMethods;
 			sourceTree = "<group>";
@@ -622,6 +649,7 @@
 				402EB33F8BD2067DD4213BF5 /* YandexMoneyInstrumentType.swift */,
 				402EB46D18C4DDECF66807BF /* BankCardType.swift */,
 				402EBF7A09C38E5AA5A8BFD0 /* PaymentMethodType.swift */,
+				402EBF78027C123521DE1F7F /* PaymentMethodBankCard.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -831,6 +859,7 @@
 				402EB6F0FA4E73806F97AEE7 /* Confirmation0.json in Resources */,
 				402EB6AEA4EC06D8839A1C83 /* Confirmation1.json in Resources */,
 				402EBEA2D60EBC94931922D0 /* TokensMethod-3.json in Resources */,
+				402EBBF532F033688AC96EC5 /* PaymentMethodResponseSuccess.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -982,6 +1011,8 @@
 				402EB20571A3336720FBC5A0 /* TokensRequestFactory.swift in Sources */,
 				402EB53B48E9ABA232511650 /* TokensRequestPaymentMethodData.swift in Sources */,
 				402EB6F1260BC5C152A97AF6 /* TokensRequestPaymentMethodId.swift in Sources */,
+				402EBE420CEC36D64A4A3733 /* PaymentMethod.swift in Sources */,
+				402EB33C9A4E53CB31A42DB5 /* PaymentMethodBankCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -997,6 +1028,7 @@
 				402EB8FD98D41B0F8ED654AF /* PaymentsApiErrorMappingTests.swift in Sources */,
 				244F7CB2542B3EF09EA998FE /* PaymentMethodDataMappingTests.swift in Sources */,
 				402EB48498774D0E13CF3082 /* ConfirmationMappingTests.swift in Sources */,
+				402EBC3238136591C81DE0C0 /* PaymentMethodMethodTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,7 +27,7 @@ import Foundation
 /// Request tokenization of saved payment method data.
 public final class TokensRequestPaymentMethodId: TokensRequest {
 
-    ///
+    /// The ID of the saved payment method.
     public let paymentMethodId: String
 
     /// CVC2/CVV2/CVP2, 3 or 4 symbols printed on the back of the card.

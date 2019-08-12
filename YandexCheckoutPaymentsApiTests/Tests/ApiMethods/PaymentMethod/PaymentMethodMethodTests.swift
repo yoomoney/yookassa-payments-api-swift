@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright (c) 2007—2018 NBCO Yandex.Money LLC
+ * Copyright (c) 2007—2019 NBCO Yandex.Money LLC
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -28,41 +28,44 @@ import XCTest
 @testable import YandexCheckoutPaymentsApi
 import YandexMoneyTestInstrumentsApi
 
-class TokensMethodTests: ApiMethodTestCase {
-    struct TokensResponseSuccess: StubsResponse {}
+class PaymentMethodMethodTests: ApiMethodTestCase {
+    struct PaymentMethodResponseSuccess: StubsResponse {}
 
-    func testTokensResponseSuccess() {
-        validate(TokensResponseSuccess.self) {
+    func testPaymentMethodResponseSuccess() {
+        validate(PaymentMethodResponseSuccess.self) {
             guard case .right(let response) = $0 else {
                 XCTFail("Wrong result")
                 return
             }
 
-            XCTAssertEqual(response.paymentToken, "eyJskfjalksjgka", "paymentToken wrong")
+            XCTAssertEqual(response.type, PaymentMethodType.bankCard, "type wrong")
+            XCTAssertEqual(response.id, "1da5c87d-0984-50e8-a7f3-8de646dd9ec9", "id wrong")
+            XCTAssertEqual(response.saved, true, "saved wrong")
+            XCTAssertEqual(response.title, "Основная карта", "title wrong")
+            XCTAssertEqual(response.cscRequired, true, "title wrong")
+
+            guard let responseCard = response.card else {
+                XCTFail("Card must be")
+                return
+            }
+
+            let mockCard = PaymentMethodBankCard(
+                first6: "427918",
+                last4: "7918",
+                expiryYear: "2017",
+                expiryMonth: "07",
+                cardType: .masterCard
+            )
+
+            XCTAssertEqual(responseCard, mockCard, "card wrong")
         }
     }
 }
 
-private extension TokensMethodTests {
+private extension PaymentMethodMethodTests {
     func validate(_ stubsResponse: StubsResponse.Type,
-                  verify: @escaping (Result<Tokens>) -> Void) {
-        let confirmation = Confirmation(
-            type: .redirect,
-            returnUrl: "checkout://return"
-        )
-        let amount = MonetaryAmount(
-            value: 0,
-            currency: .rub
-        )
-        let tokensRequest = TokensRequest(
-            amount: amount,
-            tmxSessionId: "",
-            confirmation: confirmation
-        )
-        let method = Tokens.Method(
-            oauthToken: "",
-            tokensRequest: tokensRequest
-        )
-        validate(method, stubsResponse, TokensMethodTests.self, verify: verify)
+                  verify: @escaping (Result<PaymentMethod>) -> Void) {
+        let method = PaymentMethod.Method(oauthToken: "", paymentMethodId: "")
+        validate(method, stubsResponse, PaymentMethodMethodTests.self, verify: verify)
     }
 }

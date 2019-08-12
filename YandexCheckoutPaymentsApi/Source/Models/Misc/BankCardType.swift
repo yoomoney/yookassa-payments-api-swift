@@ -25,7 +25,7 @@
 import Foundation
 
 /// Type of Bank card.
-public enum BankCardType: String, Codable {
+public enum BankCardType: String, Codable, Equatable {
     /// MasterCard.
     case masterCard = "MasterCard"
     /// Visa.
