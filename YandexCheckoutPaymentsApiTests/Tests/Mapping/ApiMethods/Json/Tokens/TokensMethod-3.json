@@ -8,8 +8,6 @@
     "type": "redirect",
     "return_url": "checkout://return"
   },
-  "payment_method_data": {
-    "type": "apple_pay",
-    "payment_data": "payment_data_value"
-  }
+  "payment_method_id": "1da5c87d-0984-50e8-a7f3-8de646dd9ec9",
+  "csc": "012"
 }
