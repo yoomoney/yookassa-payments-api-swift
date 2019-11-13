@@ -63,7 +63,8 @@ private extension PaymentOptionsMethodTests {
                                            passportAuthorization: "",
                                            gatewayId: "",
                                            amount: "",
-                                           currency: "")
+                                           currency: "",
+                                           savePaymentMethod: true)
         validate(method, stubsResponse, PaymentOptionsMethodTests.self, verify: verify)
     }
 }

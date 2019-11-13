@@ -15,6 +15,7 @@
 		244F7E36A14DD920B1490D2D /* PaymentMethodData-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F71E54E6FD012B31BF319 /* PaymentMethodData-1.json */; };
 		244F7FA7E5210CCF1A820157 /* PaymentMethodData-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F776A7FCE158C194DE11A /* PaymentMethodData-3.json */; };
 		2B7669250F8488506CC3ABA8 /* Pods_YandexCheckoutPaymentsApiExamplePods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A87E407B2CD6AE959FD979 /* Pods_YandexCheckoutPaymentsApiExamplePods.framework */; };
+		3031FCF6237EF1C300DB0CDC /* SavePaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3031FCF5237EF1C300DB0CDC /* SavePaymentMethod.swift */; };
 		30EF407E2004D86C00660322 /* YandexCheckoutPaymentsApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EF40742004D86C00660322 /* YandexCheckoutPaymentsApi.framework */; };
 		30EF40852004D86C00660322 /* YandexCheckoutPaymentsApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 30EF40772004D86C00660322 /* YandexCheckoutPaymentsApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30EF40BE2004E3DB00660322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF40BD2004E3DB00660322 /* AppDelegate.swift */; };
@@ -142,6 +143,7 @@
 		244F76CE454C8C64B781C6BC /* PaymentMethodData-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentMethodData-0.json"; sourceTree = "<group>"; };
 		244F776A7FCE158C194DE11A /* PaymentMethodData-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentMethodData-3.json"; sourceTree = "<group>"; };
 		244F7BE14167D41EF95F6A99 /* PaymentMethodDataMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodDataMappingTests.swift; sourceTree = "<group>"; };
+		3031FCF5237EF1C300DB0CDC /* SavePaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePaymentMethod.swift; sourceTree = "<group>"; };
 		30EF40742004D86C00660322 /* YandexCheckoutPaymentsApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YandexCheckoutPaymentsApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30EF40772004D86C00660322 /* YandexCheckoutPaymentsApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YandexCheckoutPaymentsApi.h; sourceTree = "<group>"; };
 		30EF40782004D86C00660322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -650,6 +652,7 @@
 				402EB46D18C4DDECF66807BF /* BankCardType.swift */,
 				402EBF7A09C38E5AA5A8BFD0 /* PaymentMethodType.swift */,
 				402EBF78027C123521DE1F7F /* PaymentMethodBankCard.swift */,
+				3031FCF5237EF1C300DB0CDC /* SavePaymentMethod.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -976,6 +979,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				402EB92C13C952107E9448E8 /* PaymentOptions.swift in Sources */,
+				3031FCF6237EF1C300DB0CDC /* SavePaymentMethod.swift in Sources */,
 				402EB1BF3E5BC0319F8525CF /* PaymentsApiResponse.swift in Sources */,
 				402EB2570B31381D645E52D5 /* PaymentsErrorApiResponse.swift in Sources */,
 				402EBABD0C4EB2DA296C1485 /* PaymentsApiError.swift in Sources */,

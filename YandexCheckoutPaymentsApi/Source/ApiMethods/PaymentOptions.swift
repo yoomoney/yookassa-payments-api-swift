@@ -61,6 +61,9 @@ public struct PaymentOptions {
         /// ISO-4217 3-alpha character code of payment currency.
         public let currency: String?
 
+        /// The intention of the merchant to keep payment details, for re-payments.
+        public let savePaymentMethod: Bool?
+
         /// Creates instance of API method for `PaymentOptions`.
         ///
         /// - Parameters:
@@ -70,18 +73,21 @@ public struct PaymentOptions {
         ///   -            The cashier at the division of payment flows within a single account.
         ///   - amount: Payment amount, decimal number with a fixed point in the string view.
         ///   - currency: ISO-4217 3-alpha character code of payment currency.
+        ///   - savePaymentMethod: The intention of the merchant to keep payment details, for re-payments.
         ///
         /// - Returns: Instance of API method for `PaymentOptions`.
         public init(oauthToken: String,
                     passportAuthorization: String?,
                     gatewayId: String?,
                     amount: String?,
-                    currency: String?) {
+                    currency: String?,
+                    savePaymentMethod: Bool?) {
             self.oauthToken = oauthToken
             self.passportAuthorization = passportAuthorization
             self.gatewayId = gatewayId
             self.amount = amount
             self.currency = currency
+            self.savePaymentMethod = savePaymentMethod
         }
     }
 }
@@ -187,6 +193,7 @@ extension PaymentOptions.Method: Encodable, Decodable {
         try container.encodeIfPresent(gatewayId, forKey: .gatewayId)
         try container.encodeIfPresent(amount, forKey: .amount)
         try container.encodeIfPresent(currency, forKey: .currency)
+        try container.encodeIfPresent(savePaymentMethod, forKey: .savePaymentMethod)
     }
 
     /// Creates a new instance by decoding from the given decoder.
@@ -200,16 +207,19 @@ extension PaymentOptions.Method: Encodable, Decodable {
         let gatewayId = try container.decodeIfPresent(String.self, forKey: .gatewayId)
         let amount = try container.decodeIfPresent(String.self, forKey: .amount)
         let currency = try container.decodeIfPresent(String.self, forKey: .currency)
+        let savePaymentMethod = try container.decodeIfPresent(Bool.self, forKey: .savePaymentMethod)
         self.init(oauthToken: "",
                   passportAuthorization: "",
                   gatewayId: gatewayId,
                   amount: amount,
-                  currency: currency)
+                  currency: currency,
+                  savePaymentMethod: savePaymentMethod)
     }
 
     private enum CodingKeys: String, CodingKey {
         case gatewayId = "gateway_id"
         case amount
         case currency
+        case savePaymentMethod = "save_payment_method"
     }
 }
