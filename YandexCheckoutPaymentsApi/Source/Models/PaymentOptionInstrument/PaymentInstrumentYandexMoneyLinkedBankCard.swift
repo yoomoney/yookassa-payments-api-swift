@@ -65,6 +65,9 @@ public class PaymentInstrumentYandexMoneyLinkedBankCard: PaymentOptionYandexMone
     ///   - identificationRequirement: Required type of user identification.
     ///   - fee: Commission from the buyer in excess of the payment amount.
     ///          The field is present if there are commissions in excess of the payment amount.
+    ///   - savePaymentMethodAllowed: Indication of the possibility of saving payment data for repeated payments.
+    ///
+    /// - Returns: Instance of `PaymentInstrumentYandexMoneyLinkedBankCard`.
     public init(paymentMethodType: PaymentMethodType,
                 confirmationTypes: Set<ConfirmationType>?,
                 charge: MonetaryAmount,
@@ -74,7 +77,8 @@ public class PaymentInstrumentYandexMoneyLinkedBankCard: PaymentOptionYandexMone
                 cardMask: String,
                 cardType: BankCardType,
                 identificationRequirement: IdentificationRequirement?,
-                fee: Fee?) {
+                fee: Fee?,
+                savePaymentMethodAllowed: Bool) {
         self.cardId = cardId
         self.cardName = cardName
         self.cardMask = cardMask
@@ -84,7 +88,8 @@ public class PaymentInstrumentYandexMoneyLinkedBankCard: PaymentOptionYandexMone
                    charge: charge,
                    instrumentType: instrumentType,
                    identificationRequirement: identificationRequirement,
-                   fee: fee)
+                   fee: fee,
+                   savePaymentMethodAllowed: savePaymentMethodAllowed)
     }
 
     // MARK: - Codable
