@@ -46,11 +46,13 @@ public final class TokensRequestPaymentMethodData: TokensRequest {
     public init(amount: MonetaryAmount?,
                 tmxSessionId: String,
                 confirmation: Confirmation?,
+                savePaymentMethod: Bool?,
                 paymentMethodData: PaymentMethodData) {
         self.paymentMethodData = paymentMethodData
         super.init(amount: amount,
                    tmxSessionId: tmxSessionId,
-                   confirmation: confirmation)
+                   confirmation: confirmation,
+                   savePaymentMethod: savePaymentMethod)
     }
 
     public override func customHeaders() -> Headers {
@@ -70,6 +72,7 @@ public final class TokensRequestPaymentMethodData: TokensRequest {
         try container.encodeIfPresent(amount, forKey: .amount)
         try container.encode(tmxSessionId, forKey: .tmxSessionId)
         try container.encodeIfPresent(confirmation, forKey: .confirmation)
+        try container.encodeIfPresent(savePaymentMethod, forKey: .savePaymentMethod)
         try PaymentMethodDataFactory.encodePaymentMethodData(paymentMethodData, to: encoder)
     }
 
@@ -85,6 +88,7 @@ public final class TokensRequestPaymentMethodData: TokensRequest {
         let amount = try container.decodeIfPresent(MonetaryAmount.self, forKey: .amount)
         let tmxSessionId = try container.decode(String.self, forKey: .tmxSessionId)
         let confirmation = try container.decodeIfPresent(Confirmation.self, forKey: .confirmation)
+        let savePaymentMethod = try container.decodeIfPresent(Bool.self, forKey: .savePaymentMethod)
 
         guard let paymentMethodData = PaymentMethodDataFactory.decodePaymentMethodData(from: decoder) else {
             throw DecodingErrors.unsupportedPaymentMethodData
@@ -93,6 +97,7 @@ public final class TokensRequestPaymentMethodData: TokensRequest {
         self.init(amount: amount,
                   tmxSessionId: tmxSessionId,
                   confirmation: confirmation,
+                  savePaymentMethod: savePaymentMethod,
                   paymentMethodData: paymentMethodData)
     }
 
@@ -100,6 +105,7 @@ public final class TokensRequestPaymentMethodData: TokensRequest {
         case tmxSessionId = "tmx_session_id"
         case amount = "amount"
         case confirmation
+        case savePaymentMethod = "save_payment_method"
     }
 
     /// Decoding errors.

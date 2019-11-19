@@ -48,13 +48,15 @@ public final class TokensRequestPaymentMethodId: TokensRequest {
     public init(amount: MonetaryAmount?,
                 tmxSessionId: String,
                 confirmation: Confirmation?,
+                savePaymentMethod: Bool?,
                 paymentMethodId: String,
                 csc: String?) {
         self.paymentMethodId = paymentMethodId
         self.csc = csc
         super.init(amount: amount,
                    tmxSessionId: tmxSessionId,
-                   confirmation: confirmation)
+                   confirmation: confirmation,
+                   savePaymentMethod: savePaymentMethod)
     }
 
     public override func encode(to encoder: Encoder) throws {
@@ -62,6 +64,7 @@ public final class TokensRequestPaymentMethodId: TokensRequest {
         try container.encodeIfPresent(amount, forKey: .amount)
         try container.encode(tmxSessionId, forKey: .tmxSessionId)
         try container.encodeIfPresent(confirmation, forKey: .confirmation)
+        try container.encodeIfPresent(savePaymentMethod, forKey: .savePaymentMethod)
         try container.encode(paymentMethodId, forKey: .paymentMethodId)
         try container.encodeIfPresent(csc, forKey: .csc)
     }
@@ -78,12 +81,14 @@ public final class TokensRequestPaymentMethodId: TokensRequest {
         let amount = try container.decodeIfPresent(MonetaryAmount.self, forKey: .amount)
         let tmxSessionId = try container.decode(String.self, forKey: .tmxSessionId)
         let confirmation = try container.decodeIfPresent(Confirmation.self, forKey: .confirmation)
+        let savePaymentMethod = try container.decodeIfPresent(Bool.self, forKey: .savePaymentMethod)
         let paymentMethodId = try container.decode(String.self, forKey: .paymentMethodId)
         let csc = try container.decodeIfPresent(String.self, forKey: .csc)
 
         self.init(amount: amount,
                   tmxSessionId: tmxSessionId,
                   confirmation: confirmation,
+                  savePaymentMethod: savePaymentMethod,
                   paymentMethodId: paymentMethodId,
                   csc: csc)
     }
@@ -92,6 +97,7 @@ public final class TokensRequestPaymentMethodId: TokensRequest {
         case tmxSessionId = "tmx_session_id"
         case amount = "amount"
         case confirmation
+        case savePaymentMethod = "save_payment_method"
         case paymentMethodId = "payment_method_id"
         case csc
     }
