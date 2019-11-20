@@ -37,6 +37,10 @@ public class TokensRequest: Codable {
     /// Payment confirmation method.
     public let confirmation: Confirmation?
 
+    /// Sign of saving payment data for repeated payments,
+    /// confirmed by the user and allowed by the store settings.
+    public let savePaymentMethod: Bool?
+
     /// Creates instance of `TokensRequest`.
     ///
     /// - Parameters:
@@ -47,10 +51,12 @@ public class TokensRequest: Codable {
     /// - Returns: Instance of `TokensRequest`.
     public init(amount: MonetaryAmount?,
                 tmxSessionId: String,
-                confirmation: Confirmation?) {
+                confirmation: Confirmation?,
+                savePaymentMethod: Bool?) {
         self.amount = amount
         self.tmxSessionId = tmxSessionId
         self.confirmation = confirmation
+        self.savePaymentMethod = savePaymentMethod
     }
 
     /// Creates custom headers.

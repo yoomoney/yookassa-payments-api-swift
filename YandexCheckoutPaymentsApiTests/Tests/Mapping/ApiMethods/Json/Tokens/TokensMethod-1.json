@@ -13,5 +13,6 @@
     "instrument_type": "linked_bank_card",
     "id": "1234567890",
     "csc": "1234"
-  }
+  },
+  "save_payment_method": true
 }
