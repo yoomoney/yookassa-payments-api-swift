@@ -44,6 +44,7 @@ public class PaymentOptionYandexMoneyInstrument: PaymentOption {
     ///   - identificationRequirement: Required type of user identification.
     ///   - fee: Commission from the buyer in excess of the payment amount.
     ///          The field is present if there are commissions in excess of the payment amount.
+    ///   - savePaymentMethodAllowed: Indication of the possibility of saving payment data for repeated payments.
     ///
     /// - Returns: Instance of `PaymentOptionYandexMoneyInstrument`.
     public init(paymentMethodType: PaymentMethodType,
@@ -51,13 +52,15 @@ public class PaymentOptionYandexMoneyInstrument: PaymentOption {
                 charge: MonetaryAmount,
                 instrumentType: YandexMoneyInstrumentType,
                 identificationRequirement: IdentificationRequirement?,
-                fee: Fee?) {
+                fee: Fee?,
+                savePaymentMethodAllowed: Bool) {
         self.instrumentType = instrumentType
         super.init(paymentMethodType: paymentMethodType,
                    confirmationTypes: confirmationTypes,
                    charge: charge,
                    identificationRequirement: identificationRequirement,
-                   fee: fee)
+                   fee: fee,
+                   savePaymentMethodAllowed: savePaymentMethodAllowed)
     }
 
     // MARK: - Codable
