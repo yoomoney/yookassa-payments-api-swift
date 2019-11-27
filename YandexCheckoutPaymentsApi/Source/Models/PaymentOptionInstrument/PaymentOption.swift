@@ -54,7 +54,7 @@ public class PaymentOption: Codable {
     public let fee: Fee?
 
     /// Indication of the possibility of saving payment data for repeated payments.
-    public let savePaymentMethodAllowed: Bool
+    public let savePaymentMethod: SavePaymentMethod
 
     /// Creates instance of `PaymentOption`.
     ///
@@ -69,7 +69,7 @@ public class PaymentOption: Codable {
     ///   - identificationRequirement: Required type of user identification.
     ///   - fee: Commission from the buyer in excess of the payment amount.
     ///          The field is present if there are commissions in excess of the payment amount.
-    ///   - savePaymentMethodAllowed: Indication of the possibility of saving payment data for repeated payments.
+    ///   - savePaymentMethod: Indication of the possibility of saving payment data for repeated payments.
     ///
     /// - Returns: Instance of `PaymentOption`
     public init(paymentMethodType: PaymentMethodType,
@@ -77,13 +77,13 @@ public class PaymentOption: Codable {
                 charge: MonetaryAmount,
                 identificationRequirement: IdentificationRequirement?,
                 fee: Fee?,
-                savePaymentMethodAllowed: Bool) {
+                savePaymentMethod: SavePaymentMethod) {
         self.paymentMethodType = paymentMethodType
         self.confirmationTypes = confirmationTypes
         self.charge = charge
         self.identificationRequirement = identificationRequirement
         self.fee = fee
-        self.savePaymentMethodAllowed = savePaymentMethodAllowed
+        self.savePaymentMethod = savePaymentMethod
     }
 
     private enum CodingKeys: String, CodingKey {
@@ -92,6 +92,6 @@ public class PaymentOption: Codable {
         case charge
         case identificationRequirement = "identification_requirement"
         case fee
-        case savePaymentMethodAllowed = "save_payment_method_allowed"
+        case savePaymentMethod = "save_payment_method"
     }
 }

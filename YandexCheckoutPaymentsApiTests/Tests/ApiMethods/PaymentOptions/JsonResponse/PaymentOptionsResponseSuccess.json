@@ -15,7 +15,7 @@
             },
             "id": "238479283749827",
             "instrument_type": "wallet",
-            "save_payment_method_allowed": true
+            "save_payment_method": "allowed"
         },
         {
             "payment_method_type": "yandex_money",
@@ -30,7 +30,7 @@
             },
             "id": "bindId:23984792834",
             "instrument_type": "linked_bank_card",
-            "save_payment_method_allowed": true
+            "save_payment_method": "allowed"
         },
         {
             "payment_method_type": "bank_card",
@@ -51,7 +51,7 @@
                     "currency": "RUB"
                 }
             },
-            "save_payment_method_allowed": true
+            "save_payment_method": "allowed"
         },
         {
             "payment_method_type": "sberbank",
@@ -63,7 +63,7 @@
                 "value": "5.00",
                 "currency": "RUB"
             },
-            "save_payment_method_allowed": true
+            "save_payment_method": "forbidden"
         },
         {
             "payment_method_type": "apple_pay",
@@ -72,7 +72,7 @@
                 "value": "5.00",
                 "currency": "RUB"
             },
-            "save_payment_method_allowed": false
+            "save_payment_method": "forbidden"
         },
         {
             "payment_method_type": "google_pay",
@@ -81,7 +81,7 @@
                 "value": "5.00",
                 "currency": "RUB"
             },
-            "save_payment_method_allowed": false
+            "save_payment_method": "forbidden"
         },
         {
             "payment_method_type": "apple_pay",
@@ -89,7 +89,7 @@
                 "value": "5.00",
                 "currency": "RUB"
             },
-            "save_payment_method_allowed": false
+            "save_payment_method": "forbidden"
         }
     ]
 }
