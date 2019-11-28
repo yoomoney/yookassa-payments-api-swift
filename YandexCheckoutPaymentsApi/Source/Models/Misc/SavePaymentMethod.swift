@@ -24,12 +24,16 @@
 
 import Foundation
 
+/// Indication of the possibility of saving payment data for repeated payments.
 public enum SavePaymentMethod: RawRepresentable, Codable, Equatable {
 
+    /// Allow to save payment method.
     case allowed
+
+    /// Cannot save payment method.
     case forbidden
 
-    /// Unsupported search field type.
+    /// Unsupported field type.
     case unknown(String)
 
     // MARK: - RawRepresentable
