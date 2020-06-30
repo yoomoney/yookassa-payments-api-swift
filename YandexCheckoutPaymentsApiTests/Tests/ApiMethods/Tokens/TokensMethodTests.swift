@@ -52,7 +52,7 @@ private extension TokensMethodTests {
         )
         let amount = MonetaryAmount(
             value: 0,
-            currency: .rub
+            currency: "RUB"
         )
         let tokensRequest = TokensRequest(
             amount: amount,
