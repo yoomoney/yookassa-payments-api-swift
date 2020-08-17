@@ -52,12 +52,13 @@ private extension TokensMethodTests {
         )
         let amount = MonetaryAmount(
             value: 0,
-            currency: .rub
+            currency: "RUB"
         )
         let tokensRequest = TokensRequest(
             amount: amount,
             tmxSessionId: "",
-            confirmation: confirmation
+            confirmation: confirmation,
+            savePaymentMethod: true
         )
         let method = Tokens.Method(
             oauthToken: "",

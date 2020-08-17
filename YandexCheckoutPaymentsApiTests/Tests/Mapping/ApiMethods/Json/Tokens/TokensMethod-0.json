@@ -17,5 +17,6 @@
       "cardholder": "MRS CARDHOLDERESS",
       "csc": "000"
     }
-  }
+  },
+  "save_payment_method": true
 }

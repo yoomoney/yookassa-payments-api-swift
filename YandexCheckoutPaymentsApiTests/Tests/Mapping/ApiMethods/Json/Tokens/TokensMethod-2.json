@@ -11,5 +11,6 @@
   "payment_method_data": {
     "type": "apple_pay",
     "payment_data": "payment_data_value"
-  }
+  },
+  "save_payment_method": true
 }

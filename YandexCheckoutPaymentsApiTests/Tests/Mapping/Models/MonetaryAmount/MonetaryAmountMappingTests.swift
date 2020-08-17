@@ -37,7 +37,7 @@ class MonetaryAmountMappingTests: MappingApiModels {
 
         let monetaryAmount = monetaryAmountMock.instance
         XCTAssertEqual(monetaryAmount.value, 10.37, "value is not mapped")
-        XCTAssertEqual(monetaryAmount.currency, CurrencyCode.rub, "currency is not mapped")
+        XCTAssertEqual(monetaryAmount.currency, "RUB", "currency is not mapped")
         XCTAssertEqualJsonRepresentation(monetaryAmount, data: monetaryAmountMock.data)
     }
 }

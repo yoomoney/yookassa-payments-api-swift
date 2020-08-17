@@ -36,7 +36,6 @@
 		30F303C620051918009DC40B /* YandexMoneyCoreApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F30398200518B7009DC40B /* YandexMoneyCoreApi.framework */; };
 		30F303C720051918009DC40B /* YandexMoneyCoreApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30F30398200518B7009DC40B /* YandexMoneyCoreApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		35B0D2E60F3F31A3EC4D76D7 /* Pods_YandexCheckoutPaymentsApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74657303D3F4818437910744 /* Pods_YandexCheckoutPaymentsApiTests.framework */; };
-		402EB050E80264035DE0F3AF /* CurrencyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBB5EF08A121FEF3F3429 /* CurrencyCode.swift */; };
 		402EB094AF10CD9F78F88E27 /* PaymentInstrumentYandexMoneyWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBF05B92B53179C6309E0 /* PaymentInstrumentYandexMoneyWallet.swift */; };
 		402EB09D589F505B0786B02E /* PaymentMethodDataApplePay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB1D54FE5EFF58B62DD38 /* PaymentMethodDataApplePay.swift */; };
 		402EB0B869542545DA341A94 /* PaymentMethodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBB58FFAC248928354D07 /* PaymentMethodData.swift */; };
@@ -203,7 +202,6 @@
 		402EBAFFC9B8AADE0D63B174 /* Counterparty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Counterparty.swift; sourceTree = "<group>"; };
 		402EBB586BC9E957A5EFC1EA /* PaymentErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentErrorType.swift; sourceTree = "<group>"; };
 		402EBB58FFAC248928354D07 /* PaymentMethodData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodData.swift; sourceTree = "<group>"; };
-		402EBB5EF08A121FEF3F3429 /* CurrencyCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyCode.swift; sourceTree = "<group>"; };
 		402EBB600AB465B1D3544C1C /* BankCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankCard.swift; sourceTree = "<group>"; };
 		402EBB7B7BB50BE4D9FE3376 /* PaymentOptionsResponseEmpty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PaymentOptionsResponseEmpty.json; sourceTree = "<group>"; };
 		402EBBBC8F6085F8663B9D45 /* PaymentInstrumentDataYandexMoneyWallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInstrumentDataYandexMoneyWallet.swift; sourceTree = "<group>"; };
@@ -642,7 +640,6 @@
 				402EBF363B2E9880CCDEE790 /* Fee.swift */,
 				402EB2CBECAC89B3DD7E2939 /* IdentificationRequirement.swift */,
 				402EBE8B1476CFE9D0A69FA3 /* Confirmation.swift */,
-				402EBB5EF08A121FEF3F3429 /* CurrencyCode.swift */,
 				402EBB600AB465B1D3544C1C /* BankCard.swift */,
 				402EB19B848CE1382AC0D490 /* ConfirmationType.swift */,
 				402EBAFFC9B8AADE0D63B174 /* Counterparty.swift */,
@@ -1002,7 +999,6 @@
 				402EB8A5C31981BC490BCC87 /* Fee.swift in Sources */,
 				402EB3C29FA39A8A187BFEE6 /* IdentificationRequirement.swift in Sources */,
 				402EB13FCECE771EEAA52B4E /* Confirmation.swift in Sources */,
-				402EB050E80264035DE0F3AF /* CurrencyCode.swift in Sources */,
 				402EBC5285FC28FF77EC7AA8 /* BankCard.swift in Sources */,
 				402EBEC28021BC87A04E17CC /* ConfirmationType.swift in Sources */,
 				402EB8676F5EEF2AE0245354 /* Counterparty.swift in Sources */,
