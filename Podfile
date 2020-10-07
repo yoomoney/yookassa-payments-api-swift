@@ -8,7 +8,7 @@ target 'YandexCheckoutPaymentsApiExamplePods' do
 end
 
 target 'YandexCheckoutPaymentsApiTests' do
-  pod 'YandexMoneyTestInstrumentsApi', '~> 1.4.0'
+  pod 'YandexMoneyTestInstrumentsApi', '~> 1.5.0'
 end
 
 post_install do |installer|
