@@ -3,12 +3,12 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-target 'YandexCheckoutPaymentsApiExamplePods' do
-  pod 'YandexCheckoutPaymentsApi', :path => './'
+target 'YooKassaPaymentsApiExamplePods' do
+  pod 'YooKassaPaymentsApi', :path => './'
 end
 
-target 'YandexCheckoutPaymentsApiTests' do
-  pod 'YandexMoneyTestInstrumentsApi', '~> 1.5.0'
+target 'YooKassaPaymentsApiTests' do
+  pod 'YooMoneyTestInstrumentsApi', '~> 2.0.0'
 end
 
 post_install do |installer|

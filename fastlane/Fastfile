@@ -6,8 +6,8 @@ platform :ios do
     xcodebuild(
       clean: true,
       build: true,
-      scheme: "YCPaymentsApiExampleFull",
-      workspace: "YandexCheckoutPaymentsApi.xcworkspace",
+      scheme: "YooKassaPaymentsApiExampleFull",
+      workspace: "YooKassaPaymentsApi.xcworkspace",
       xcargs: "CODE_SIGNING_ALLOWED=NO"
     )
   end

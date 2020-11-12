@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fee Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Fee" class="dashAnchor"></a>
+    <a title="Fee Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">YooKassaPaymentsApi 2.2.0 Docs</a> (99% documented)</p>
+        <p class="header-right"><a href="https://github.com/yoomoney/yookassa-payments-api-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fyoomoney.github.io%2Fyookassa-payments-api-swift%2Fdocsets%2FYooKassaPaymentsApi.xml"><img src="../img/dash.png"/>Install in Dash</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">YooKassaPaymentsApi Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Fee Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentInstrumentDataYooMoneyLinkedBankCard.html">PaymentInstrumentDataYooMoneyLinkedBankCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentInstrumentDataYooMoneyWallet.html">PaymentInstrumentDataYooMoneyWallet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentInstrumentYooMoneyLinkedBankCard.html">PaymentInstrumentYooMoneyLinkedBankCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentInstrumentYooMoneyWallet.html">PaymentInstrumentYooMoneyWallet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentMethodData.html">PaymentMethodData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentMethodDataApplePay.html">PaymentMethodDataApplePay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentMethodDataBankCard.html">PaymentMethodDataBankCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentMethodDataSberbank.html">PaymentMethodDataSberbank</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentOption.html">PaymentOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentOptionYooMoneyInstrument.html">PaymentOptionYooMoneyInstrument</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TokensRequest.html">TokensRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TokensRequestPaymentMethodData.html">TokensRequestPaymentMethodData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TokensRequestPaymentMethodData/DecodingErrors.html">– DecodingErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TokensRequestPaymentMethodId.html">TokensRequestPaymentMethodId</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BankCardType.html">BankCardType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConfirmationType.html">ConfirmationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Constants.html">Constants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IdentificationRequirement.html">IdentificationRequirement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PaymentErrorCode.html">PaymentErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PaymentErrorType.html">PaymentErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PaymentMethodType.html">PaymentMethodType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SavePaymentMethod.html">SavePaymentMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/YooMoneyInstrumentType.html">YooMoneyInstrumentType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/PaymentsApiResponse.html">PaymentsApiResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:19YooKassaPaymentsApi0c5ErrorD8ResponseP">PaymentsErrorApiResponse</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/BankCard.html">BankCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Confirmation.html">Confirmation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Counterparty.html">Counterparty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Fee.html">Fee</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MonetaryAmount.html">MonetaryAmount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentMethod.html">PaymentMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentMethod/Method.html">– Method</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentMethodBankCard.html">PaymentMethodBankCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentOptions.html">PaymentOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentOptions/Method.html">– Method</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentsApiError.html">PaymentsApiError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Service.html">Service</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tokens.html">Tokens</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tokens/Method.html">– Method</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Fee</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Fee</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Commission from the buyer in excess of the payment amount.
+The field is present if there are commissions in excess of the payment amount.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19YooKassaPaymentsApi3FeeV7serviceAA7ServiceVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/service" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19YooKassaPaymentsApi3FeeV7serviceAA7ServiceVSgvp">service</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Commission charged by YooKassa.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">service</span><span class="p">:</span> <span class="kt"><a href="../Structs/Service.html">Service</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19YooKassaPaymentsApi3FeeV12counterpartyAA12CounterpartyVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/counterparty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19YooKassaPaymentsApi3FeeV12counterpartyAA12CounterpartyVSgvp">counterparty</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fee charged by the payee.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">counterparty</span><span class="p">:</span> <span class="kt"><a href="../Structs/Counterparty.html">Counterparty</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19YooKassaPaymentsApi3FeeV7service12counterpartyAcA7ServiceVSg_AA12CounterpartyVSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(service:counterparty:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19YooKassaPaymentsApi3FeeV7service12counterpartyAcA7ServiceVSg_AA12CounterpartyVSgtcfc">init(service:<wbr>counterparty:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates instance of <code>Fee</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">service</span><span class="p">:</span> <span class="kt"><a href="../Structs/Service.html">Service</a></span><span class="p">?,</span>
+            <span class="nv">counterparty</span><span class="p">:</span> <span class="kt"><a href="../Structs/Counterparty.html">Counterparty</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>service</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Commission charged by YooKassa.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>counterparty</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Fee charged by the payee.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Instance of <code>Fee</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://github.com/yoomoney" target="_blank" rel="external">YooMoney</a>. All rights reserved. (Last updated: 2020-11-12)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
