@@ -1,0 +1,1746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		244F70D48469B3E26499605C /* TokensMethod-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F7644C041CC4BC3AA21EA /* TokensMethod-1.json */; };
+		244F732D34F20A323968ED0E /* PaymentMethodData-0.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F76CE454C8C64B781C6BC /* PaymentMethodData-0.json */; };
+		244F75EE2965F92FF75E52A8 /* DecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F74D15F05704BC3BD413B /* DecodingError.swift */; };
+		244F7AFB9CD5891A8807E7E7 /* PaymentMethodData-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F73AA166A256B53855038 /* PaymentMethodData-2.json */; };
+		244F7CB2542B3EF09EA998FE /* PaymentMethodDataMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7BE14167D41EF95F6A99 /* PaymentMethodDataMappingTests.swift */; };
+		244F7E36A14DD920B1490D2D /* PaymentMethodData-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F71E54E6FD012B31BF319 /* PaymentMethodData-1.json */; };
+		244F7FA7E5210CCF1A820157 /* PaymentMethodData-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F776A7FCE158C194DE11A /* PaymentMethodData-3.json */; };
+		302D9723255D628A001953C5 /* YooMoneyInstrumentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302D9722255D628A001953C5 /* YooMoneyInstrumentType.swift */; };
+		3031FCF6237EF1C300DB0CDC /* SavePaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3031FCF5237EF1C300DB0CDC /* SavePaymentMethod.swift */; };
+		30EF407E2004D86C00660322 /* YooKassaPaymentsApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EF40742004D86C00660322 /* YooKassaPaymentsApi.framework */; };
+		30EF40852004D86C00660322 /* YooKassaPaymentsApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 30EF40772004D86C00660322 /* YooKassaPaymentsApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30EF40BE2004E3DB00660322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF40BD2004E3DB00660322 /* AppDelegate.swift */; };
+		30EF40C02004E3DB00660322 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF40BF2004E3DB00660322 /* ViewController.swift */; };
+		30EF40C32004E3DB00660322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30EF40C12004E3DB00660322 /* Main.storyboard */; };
+		30EF40C52004E3DB00660322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EF40C42004E3DB00660322 /* Assets.xcassets */; };
+		30EF40C82004E3DB00660322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30EF40C62004E3DB00660322 /* LaunchScreen.storyboard */; };
+		30EF40D02004E3EB00660322 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF40BF2004E3DB00660322 /* ViewController.swift */; };
+		30EF40D12004E3EB00660322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF40BD2004E3DB00660322 /* AppDelegate.swift */; };
+		30EF40D42004E3EB00660322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30EF40C62004E3DB00660322 /* LaunchScreen.storyboard */; };
+		30EF40D52004E3EB00660322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EF40C42004E3DB00660322 /* Assets.xcassets */; };
+		30EF40D62004E3EB00660322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30EF40C12004E3DB00660322 /* Main.storyboard */; };
+		30F30367200516C7009DC40B /* YooKassaPaymentsApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EF40742004D86C00660322 /* YooKassaPaymentsApi.framework */; };
+		30F3039C200518B7009DC40B /* FunctionalSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F30397200518B7009DC40B /* FunctionalSwift.framework */; };
+		30F3039D200518B7009DC40B /* YooMoneyCoreApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F30398200518B7009DC40B /* YooMoneyCoreApi.framework */; };
+		30F303C420051918009DC40B /* FunctionalSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F30397200518B7009DC40B /* FunctionalSwift.framework */; };
+		30F303C520051918009DC40B /* FunctionalSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30F30397200518B7009DC40B /* FunctionalSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30F303C620051918009DC40B /* YooMoneyCoreApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F30398200518B7009DC40B /* YooMoneyCoreApi.framework */; };
+		30F303C720051918009DC40B /* YooMoneyCoreApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30F30398200518B7009DC40B /* YooMoneyCoreApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3C0BE4849E957427E58720C2 /* Pods_YooKassaPaymentsApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03228422485738DE11DC1732 /* Pods_YooKassaPaymentsApiTests.framework */; };
+		402EB094AF10CD9F78F88E27 /* PaymentInstrumentYooMoneyWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBF05B92B53179C6309E0 /* PaymentInstrumentYooMoneyWallet.swift */; };
+		402EB09D589F505B0786B02E /* PaymentMethodDataApplePay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB1D54FE5EFF58B62DD38 /* PaymentMethodDataApplePay.swift */; };
+		402EB0B869542545DA341A94 /* PaymentMethodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBB58FFAC248928354D07 /* PaymentMethodData.swift */; };
+		402EB13FCECE771EEAA52B4E /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBE8B1476CFE9D0A69FA3 /* Confirmation.swift */; };
+		402EB15A87B4E1BFBA4DBB45 /* PaymentOptionYooMoneyInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9311AE424A5B15916F7 /* PaymentOptionYooMoneyInstrument.swift */; };
+		402EB1760CBFB8FF595A39CE /* MonetaryAmount.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EB4F3FB79C28E711C3FE6 /* MonetaryAmount.json */; };
+		402EB1BF3E5BC0319F8525CF /* PaymentsApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB7EF21FC9A498D6F93BE /* PaymentsApiResponse.swift */; };
+		402EB1DF5C41B7B645D54ED7 /* PaymentOptionsMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB364135ABC5618B604E0 /* PaymentOptionsMethodTests.swift */; };
+		402EB20571A3336720FBC5A0 /* TokensRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB589EF5EC6E48E0D3B0C /* TokensRequestFactory.swift */; };
+		402EB2570B31381D645E52D5 /* PaymentsErrorApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB3E3253F85BBE0572DC8 /* PaymentsErrorApiResponse.swift */; };
+		402EB2870860F921E69A07D8 /* PaymentMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBF7A09C38E5AA5A8BFD0 /* PaymentMethodType.swift */; };
+		402EB2DB96E90A25FA529808 /* PaymentInstrumentDataYooMoneyLinkedBankCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBCC5F4D137FC24B87845 /* PaymentInstrumentDataYooMoneyLinkedBankCard.swift */; };
+		402EB312AAFFB72DC5FF3780 /* PaymentMethodDataSberbank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9E78B175DB2903000FE /* PaymentMethodDataSberbank.swift */; };
+		402EB32A6D00D8C02B772FF7 /* MonetaryAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB27A245F6B935D57F72E /* MonetaryAmount.swift */; };
+		402EB33C9A4E53CB31A42DB5 /* PaymentMethodBankCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBF78027C123521DE1F7F /* PaymentMethodBankCard.swift */; };
+		402EB3BBB6C5F3BF37AF2C51 /* PaymentMappingApiMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBFAE8637EC8ACDD40C51 /* PaymentMappingApiMethods.swift */; };
+		402EB3C29FA39A8A187BFEE6 /* IdentificationRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB2CBECAC89B3DD7E2939 /* IdentificationRequirement.swift */; };
+		402EB48498774D0E13CF3082 /* ConfirmationMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB372392C163B6BE58755 /* ConfirmationMappingTests.swift */; };
+		402EB513DCCDCF1097A4F313 /* PaymentOptionsResponseSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EB42092333A3FC23433F1 /* PaymentOptionsResponseSuccess.json */; };
+		402EB53B48E9ABA232511650 /* TokensRequestPaymentMethodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB072BCB5BD719618B8E3 /* TokensRequestPaymentMethodData.swift */; };
+		402EB59C98AEBC71637F5720 /* TokensResponseSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EB63F45F20865E9336BBB /* TokensResponseSuccess.json */; };
+		402EB5D722632C207FEB091B /* TokensMethod-0.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EBF027D085C3F62C685D6 /* TokensMethod-0.json */; };
+		402EB6AEA4EC06D8839A1C83 /* Confirmation1.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EBE71CB290A29BAC052E4 /* Confirmation1.json */; };
+		402EB6F0FA4E73806F97AEE7 /* Confirmation0.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EB80E39982A5DC8638E8F /* Confirmation0.json */; };
+		402EB6F1260BC5C152A97AF6 /* TokensRequestPaymentMethodId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB7B3D9E440FAD21D54AC /* TokensRequestPaymentMethodId.swift */; };
+		402EB7B0F732BC741522AD7D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB24AEB4FCACE1B3FCA5C /* Constants.swift */; };
+		402EB7FB54AE7E180324F6FE /* PaymentInstrumentYooMoneyLinkedBankCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB1F9EF033464DA3CFB57 /* PaymentInstrumentYooMoneyLinkedBankCard.swift */; };
+		402EB8676F5EEF2AE0245354 /* Counterparty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBAFFC9B8AADE0D63B174 /* Counterparty.swift */; };
+		402EB8A5C31981BC490BCC87 /* Fee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBF363B2E9880CCDEE790 /* Fee.swift */; };
+		402EB8A8D50C26FE193DF841 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBFBFE4F1E309EF0D1371 /* Service.swift */; };
+		402EB8F07D1632A4E102F5D2 /* PaymentMethodDataBankCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB8AF0FC7DEF377397CFA /* PaymentMethodDataBankCard.swift */; };
+		402EB8FD98D41B0F8ED654AF /* PaymentsApiErrorMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBA6D70BB13B86AB00E04 /* PaymentsApiErrorMappingTests.swift */; };
+		402EB91C8715B8E5E87A14B6 /* BankCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB46D18C4DDECF66807BF /* BankCardType.swift */; };
+		402EB92C13C952107E9448E8 /* PaymentOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB76AC935BCCE718A0E70 /* PaymentOptions.swift */; };
+		402EBA367638FE5CD0A159FF /* PaymentInstrumentDataYooMoneyWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBBBC8F6085F8663B9D45 /* PaymentInstrumentDataYooMoneyWallet.swift */; };
+		402EBAA76E442C75F29E113B /* PaymentMethodDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB867D67E0626FEAC2ECF /* PaymentMethodDataFactory.swift */; };
+		402EBABD0C4EB2DA296C1485 /* PaymentsApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBBF106E7CD359F15589F /* PaymentsApiError.swift */; };
+		402EBACF6758E06E2AA2C9CC /* PaymentsApiError.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EBAED5952729B8358BC5E /* PaymentsApiError.json */; };
+		402EBAE33EBF39A88E37E4F5 /* TokensMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBC4275855D70A22ED580 /* TokensMethodTests.swift */; };
+		402EBAE96A0578C6CCE61D13 /* TokensRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB147CDFD52E44DE8BFD9 /* TokensRequest.swift */; };
+		402EBB432DEC9AC6E34A65E9 /* PaymentOptionsMethod-0.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EB03125B8070B94F49BFD /* PaymentOptionsMethod-0.json */; };
+		402EBB6A1F5CEAE7DB24E3C7 /* PaymentOptionsResponseEmpty.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EBB7B7BB50BE4D9FE3376 /* PaymentOptionsResponseEmpty.json */; };
+		402EBBBBAD142FF847FBA23D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB24AEB4FCACE1B3FCA5C /* Constants.swift */; };
+		402EBBF532F033688AC96EC5 /* PaymentMethodResponseSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EB818291A551BCA98127C /* PaymentMethodResponseSuccess.json */; };
+		402EBC3238136591C81DE0C0 /* PaymentMethodMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBBD06B5911A637572EFF /* PaymentMethodMethodTests.swift */; };
+		402EBC46D38AE966F943ED7A /* PaymentErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9B6E9D9D635097C18DD /* PaymentErrorCode.swift */; };
+		402EBC5285FC28FF77EC7AA8 /* BankCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBB600AB465B1D3544C1C /* BankCard.swift */; };
+		402EBD3BE4DA2675D72E4DA0 /* PaymentErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBB586BC9E957A5EFC1EA /* PaymentErrorType.swift */; };
+		402EBD67A17FB0A5E46FDF4F /* TokensMethod-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EBCA043C8DC1669CA6C95 /* TokensMethod-2.json */; };
+		402EBDE59FA52CA635C7E524 /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB55C2422C4171BB63DEB /* Tokens.swift */; };
+		402EBE121B950A5A8376DDB3 /* MonetaryAmountMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9EC40B2E511AD1AAE9C /* MonetaryAmountMappingTests.swift */; };
+		402EBE420CEC36D64A4A3733 /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9234D40061BEC505E85 /* PaymentMethod.swift */; };
+		402EBEA2D60EBC94931922D0 /* TokensMethod-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EBCC39D9F507F5A4A2559 /* TokensMethod-3.json */; };
+		402EBEC28021BC87A04E17CC /* ConfirmationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB19B848CE1382AC0D490 /* ConfirmationType.swift */; };
+		402EBED480C10CB1A56DAB61 /* PaymentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBC773789B856428409D9 /* PaymentOption.swift */; };
+		D054FC155D64B341779C429A /* Pods_YooKassaPaymentsApiExamplePods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9F8EF748AEDE094EDFD834 /* Pods_YooKassaPaymentsApiExamplePods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30EF407F2004D86C00660322 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30EF406B2004D86B00660322 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30EF40732004D86C00660322;
+			remoteInfo = YooKassaPaymentsApi;
+		};
+		30F3035920051357009DC40B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30EF406B2004D86B00660322 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30EF40BA2004E3DB00660322;
+			remoteInfo = YooKassaPaymentsApiExamplePods;
+		};
+		30F303C920051998009DC40B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30EF406B2004D86B00660322 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30EF40732004D86C00660322;
+			remoteInfo = YooKassaPaymentsApi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30F303C820051918009DC40B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				30F303C720051918009DC40B /* YooMoneyCoreApi.framework in Embed Frameworks */,
+				30F303C520051918009DC40B /* FunctionalSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03228422485738DE11DC1732 /* Pods_YooKassaPaymentsApiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YooKassaPaymentsApiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1590B62E73D22898118937F1 /* Pods-YooKassaPaymentsApiExamplePods.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YooKassaPaymentsApiExamplePods.appstore.xcconfig"; path = "Target Support Files/Pods-YooKassaPaymentsApiExamplePods/Pods-YooKassaPaymentsApiExamplePods.appstore.xcconfig"; sourceTree = "<group>"; };
+		20AE2A6BF3CB914D48A374CA /* Pods-YooKassaPaymentsApiExamplePods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YooKassaPaymentsApiExamplePods.debug.xcconfig"; path = "Target Support Files/Pods-YooKassaPaymentsApiExamplePods/Pods-YooKassaPaymentsApiExamplePods.debug.xcconfig"; sourceTree = "<group>"; };
+		244F71E54E6FD012B31BF319 /* PaymentMethodData-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentMethodData-1.json"; sourceTree = "<group>"; };
+		244F73AA166A256B53855038 /* PaymentMethodData-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentMethodData-2.json"; sourceTree = "<group>"; };
+		244F74D15F05704BC3BD413B /* DecodingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingError.swift; sourceTree = "<group>"; };
+		244F7644C041CC4BC3AA21EA /* TokensMethod-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "TokensMethod-1.json"; sourceTree = "<group>"; };
+		244F76CE454C8C64B781C6BC /* PaymentMethodData-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentMethodData-0.json"; sourceTree = "<group>"; };
+		244F776A7FCE158C194DE11A /* PaymentMethodData-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentMethodData-3.json"; sourceTree = "<group>"; };
+		244F7BE14167D41EF95F6A99 /* PaymentMethodDataMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodDataMappingTests.swift; sourceTree = "<group>"; };
+		302D9722255D628A001953C5 /* YooMoneyInstrumentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YooMoneyInstrumentType.swift; sourceTree = "<group>"; };
+		3031FCF5237EF1C300DB0CDC /* SavePaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePaymentMethod.swift; sourceTree = "<group>"; };
+		30EF40742004D86C00660322 /* YooKassaPaymentsApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YooKassaPaymentsApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30EF40772004D86C00660322 /* YooKassaPaymentsApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YooKassaPaymentsApi.h; sourceTree = "<group>"; };
+		30EF40782004D86C00660322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30EF407D2004D86C00660322 /* YooKassaPaymentsApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YooKassaPaymentsApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30EF40842004D86C00660322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30EF40BB2004E3DB00660322 /* YooKassaPaymentsApiExamplePods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YooKassaPaymentsApiExamplePods.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30EF40BD2004E3DB00660322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30EF40BF2004E3DB00660322 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30EF40C22004E3DB00660322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30EF40C42004E3DB00660322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30EF40C72004E3DB00660322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30EF40C92004E3DB00660322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30EF40DB2004E3EB00660322 /* YooKassaPaymentsApiExampleCarthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YooKassaPaymentsApiExampleCarthage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F3034820051129009DC40B /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		30F3034A20051129009DC40B /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		30F3034B20051129009DC40B /* YooKassaPaymentsApi.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = YooKassaPaymentsApi.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		30F3034C2005112A009DC40B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		30F3034D2005112A009DC40B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		30F30355200512F4009DC40B /* FunctionalSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FunctionalSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F30358200512F4009DC40B /* YooMoneyCoreApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YooMoneyCoreApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F30397200518B7009DC40B /* FunctionalSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FunctionalSwift.framework; path = Carthage/Build/iOS/FunctionalSwift.framework; sourceTree = "<group>"; };
+		30F30398200518B7009DC40B /* YooMoneyCoreApi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YooMoneyCoreApi.framework; path = Carthage/Build/iOS/YooMoneyCoreApi.framework; sourceTree = "<group>"; };
+		402EB03125B8070B94F49BFD /* PaymentOptionsMethod-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentOptionsMethod-0.json"; sourceTree = "<group>"; };
+		402EB072BCB5BD719618B8E3 /* TokensRequestPaymentMethodData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokensRequestPaymentMethodData.swift; sourceTree = "<group>"; };
+		402EB147CDFD52E44DE8BFD9 /* TokensRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokensRequest.swift; sourceTree = "<group>"; };
+		402EB19B848CE1382AC0D490 /* ConfirmationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationType.swift; sourceTree = "<group>"; };
+		402EB1D54FE5EFF58B62DD38 /* PaymentMethodDataApplePay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodDataApplePay.swift; sourceTree = "<group>"; };
+		402EB1F9EF033464DA3CFB57 /* PaymentInstrumentYooMoneyLinkedBankCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInstrumentYooMoneyLinkedBankCard.swift; sourceTree = "<group>"; };
+		402EB24AEB4FCACE1B3FCA5C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		402EB27A245F6B935D57F72E /* MonetaryAmount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonetaryAmount.swift; sourceTree = "<group>"; };
+		402EB2CBECAC89B3DD7E2939 /* IdentificationRequirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentificationRequirement.swift; sourceTree = "<group>"; };
+		402EB364135ABC5618B604E0 /* PaymentOptionsMethodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentOptionsMethodTests.swift; sourceTree = "<group>"; };
+		402EB372392C163B6BE58755 /* ConfirmationMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationMappingTests.swift; sourceTree = "<group>"; };
+		402EB3E3253F85BBE0572DC8 /* PaymentsErrorApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsErrorApiResponse.swift; sourceTree = "<group>"; };
+		402EB42092333A3FC23433F1 /* PaymentOptionsResponseSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PaymentOptionsResponseSuccess.json; sourceTree = "<group>"; };
+		402EB46D18C4DDECF66807BF /* BankCardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankCardType.swift; sourceTree = "<group>"; };
+		402EB4F3FB79C28E711C3FE6 /* MonetaryAmount.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MonetaryAmount.json; sourceTree = "<group>"; };
+		402EB55C2422C4171BB63DEB /* Tokens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
+		402EB589EF5EC6E48E0D3B0C /* TokensRequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokensRequestFactory.swift; sourceTree = "<group>"; };
+		402EB63F45F20865E9336BBB /* TokensResponseSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TokensResponseSuccess.json; sourceTree = "<group>"; };
+		402EB76AC935BCCE718A0E70 /* PaymentOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentOptions.swift; sourceTree = "<group>"; };
+		402EB7B3D9E440FAD21D54AC /* TokensRequestPaymentMethodId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokensRequestPaymentMethodId.swift; sourceTree = "<group>"; };
+		402EB7EF21FC9A498D6F93BE /* PaymentsApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsApiResponse.swift; sourceTree = "<group>"; };
+		402EB80E39982A5DC8638E8F /* Confirmation0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Confirmation0.json; sourceTree = "<group>"; };
+		402EB818291A551BCA98127C /* PaymentMethodResponseSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PaymentMethodResponseSuccess.json; sourceTree = "<group>"; };
+		402EB867D67E0626FEAC2ECF /* PaymentMethodDataFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodDataFactory.swift; sourceTree = "<group>"; };
+		402EB8AF0FC7DEF377397CFA /* PaymentMethodDataBankCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodDataBankCard.swift; sourceTree = "<group>"; };
+		402EB9234D40061BEC505E85 /* PaymentMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
+		402EB9311AE424A5B15916F7 /* PaymentOptionYooMoneyInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentOptionYooMoneyInstrument.swift; sourceTree = "<group>"; };
+		402EB9B6E9D9D635097C18DD /* PaymentErrorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentErrorCode.swift; sourceTree = "<group>"; };
+		402EB9E78B175DB2903000FE /* PaymentMethodDataSberbank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodDataSberbank.swift; sourceTree = "<group>"; };
+		402EB9EC40B2E511AD1AAE9C /* MonetaryAmountMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonetaryAmountMappingTests.swift; sourceTree = "<group>"; };
+		402EBA6D70BB13B86AB00E04 /* PaymentsApiErrorMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsApiErrorMappingTests.swift; sourceTree = "<group>"; };
+		402EBAED5952729B8358BC5E /* PaymentsApiError.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PaymentsApiError.json; sourceTree = "<group>"; };
+		402EBAFFC9B8AADE0D63B174 /* Counterparty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Counterparty.swift; sourceTree = "<group>"; };
+		402EBB586BC9E957A5EFC1EA /* PaymentErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentErrorType.swift; sourceTree = "<group>"; };
+		402EBB58FFAC248928354D07 /* PaymentMethodData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodData.swift; sourceTree = "<group>"; };
+		402EBB600AB465B1D3544C1C /* BankCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankCard.swift; sourceTree = "<group>"; };
+		402EBB7B7BB50BE4D9FE3376 /* PaymentOptionsResponseEmpty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PaymentOptionsResponseEmpty.json; sourceTree = "<group>"; };
+		402EBBBC8F6085F8663B9D45 /* PaymentInstrumentDataYooMoneyWallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInstrumentDataYooMoneyWallet.swift; sourceTree = "<group>"; };
+		402EBBD06B5911A637572EFF /* PaymentMethodMethodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodMethodTests.swift; sourceTree = "<group>"; };
+		402EBBF106E7CD359F15589F /* PaymentsApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsApiError.swift; sourceTree = "<group>"; };
+		402EBC4275855D70A22ED580 /* TokensMethodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokensMethodTests.swift; sourceTree = "<group>"; };
+		402EBC773789B856428409D9 /* PaymentOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentOption.swift; sourceTree = "<group>"; };
+		402EBCA043C8DC1669CA6C95 /* TokensMethod-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "TokensMethod-2.json"; sourceTree = "<group>"; };
+		402EBCC39D9F507F5A4A2559 /* TokensMethod-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "TokensMethod-3.json"; sourceTree = "<group>"; };
+		402EBCC5F4D137FC24B87845 /* PaymentInstrumentDataYooMoneyLinkedBankCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInstrumentDataYooMoneyLinkedBankCard.swift; sourceTree = "<group>"; };
+		402EBE71CB290A29BAC052E4 /* Confirmation1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Confirmation1.json; sourceTree = "<group>"; };
+		402EBE8B1476CFE9D0A69FA3 /* Confirmation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Confirmation.swift; sourceTree = "<group>"; };
+		402EBF027D085C3F62C685D6 /* TokensMethod-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "TokensMethod-0.json"; sourceTree = "<group>"; };
+		402EBF05B92B53179C6309E0 /* PaymentInstrumentYooMoneyWallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInstrumentYooMoneyWallet.swift; sourceTree = "<group>"; };
+		402EBF363B2E9880CCDEE790 /* Fee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fee.swift; sourceTree = "<group>"; };
+		402EBF78027C123521DE1F7F /* PaymentMethodBankCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodBankCard.swift; sourceTree = "<group>"; };
+		402EBF7A09C38E5AA5A8BFD0 /* PaymentMethodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodType.swift; sourceTree = "<group>"; };
+		402EBFAE8637EC8ACDD40C51 /* PaymentMappingApiMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMappingApiMethods.swift; sourceTree = "<group>"; };
+		402EBFBFE4F1E309EF0D1371 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		6F791ECE1062CD0898B0B77C /* Pods-YooKassaPaymentsApiTests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YooKassaPaymentsApiTests.appstore.xcconfig"; path = "Target Support Files/Pods-YooKassaPaymentsApiTests/Pods-YooKassaPaymentsApiTests.appstore.xcconfig"; sourceTree = "<group>"; };
+		A20F14D4C24F69B5EE76D0B9 /* Pods-YooKassaPaymentsApiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YooKassaPaymentsApiTests.debug.xcconfig"; path = "Target Support Files/Pods-YooKassaPaymentsApiTests/Pods-YooKassaPaymentsApiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A901A6D7339CA4B4947791F6 /* Pods-YooKassaPaymentsApiExamplePods.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YooKassaPaymentsApiExamplePods.adhoc.xcconfig"; path = "Target Support Files/Pods-YooKassaPaymentsApiExamplePods/Pods-YooKassaPaymentsApiExamplePods.adhoc.xcconfig"; sourceTree = "<group>"; };
+		D5DF70A3820355CF8413D627 /* Pods-YooKassaPaymentsApiTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YooKassaPaymentsApiTests.adhoc.xcconfig"; path = "Target Support Files/Pods-YooKassaPaymentsApiTests/Pods-YooKassaPaymentsApiTests.adhoc.xcconfig"; sourceTree = "<group>"; };
+		EC9F8EF748AEDE094EDFD834 /* Pods_YooKassaPaymentsApiExamplePods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YooKassaPaymentsApiExamplePods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30EF40702004D86C00660322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30F3039C200518B7009DC40B /* FunctionalSwift.framework in Frameworks */,
+				30F3039D200518B7009DC40B /* YooMoneyCoreApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF407A2004D86C00660322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EF407E2004D86C00660322 /* YooKassaPaymentsApi.framework in Frameworks */,
+				3C0BE4849E957427E58720C2 /* Pods_YooKassaPaymentsApiTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF40B82004E3DB00660322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D054FC155D64B341779C429A /* Pods_YooKassaPaymentsApiExamplePods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF40D22004E3EB00660322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30F303C420051918009DC40B /* FunctionalSwift.framework in Frameworks */,
+				30F30367200516C7009DC40B /* YooKassaPaymentsApi.framework in Frameworks */,
+				30F303C620051918009DC40B /* YooMoneyCoreApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		244F7759F7A693EEB4771022 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				244F76CE454C8C64B781C6BC /* PaymentMethodData-0.json */,
+				244F71E54E6FD012B31BF319 /* PaymentMethodData-1.json */,
+				244F73AA166A256B53855038 /* PaymentMethodData-2.json */,
+				244F776A7FCE158C194DE11A /* PaymentMethodData-3.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		244F78EE7A121881205EF13B /* PaymentMethodData */ = {
+			isa = PBXGroup;
+			children = (
+				244F7759F7A693EEB4771022 /* Json */,
+				244F7BE14167D41EF95F6A99 /* PaymentMethodDataMappingTests.swift */,
+			);
+			path = PaymentMethodData;
+			sourceTree = "<group>";
+		};
+		30EF406A2004D86B00660322 = {
+			isa = PBXGroup;
+			children = (
+				30F3034820051129009DC40B /* Cartfile */,
+				30F3034A20051129009DC40B /* Gemfile */,
+				30F3034C2005112A009DC40B /* Podfile */,
+				30F3034D2005112A009DC40B /* README.md */,
+				30F3034B20051129009DC40B /* YooKassaPaymentsApi.podspec */,
+				30EF40762004D86C00660322 /* YooKassaPaymentsApi */,
+				30EF40812004D86C00660322 /* YooKassaPaymentsApiTests */,
+				30EF40BC2004E3DB00660322 /* YooKassaPaymentsApiExample */,
+				30EF40752004D86C00660322 /* Products */,
+				8A9E7A307380D3A78F739B0B /* Frameworks */,
+				82E1B236D9D8624796636528 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		30EF40752004D86C00660322 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30EF40742004D86C00660322 /* YooKassaPaymentsApi.framework */,
+				30EF407D2004D86C00660322 /* YooKassaPaymentsApiTests.xctest */,
+				30EF40BB2004E3DB00660322 /* YooKassaPaymentsApiExamplePods.app */,
+				30EF40DB2004E3EB00660322 /* YooKassaPaymentsApiExampleCarthage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30EF40762004D86C00660322 /* YooKassaPaymentsApi */ = {
+			isa = PBXGroup;
+			children = (
+				30EF40772004D86C00660322 /* YooKassaPaymentsApi.h */,
+				30EF40782004D86C00660322 /* Info.plist */,
+				402EB6812FEFBDE07B6BC857 /* Source */,
+			);
+			path = YooKassaPaymentsApi;
+			sourceTree = "<group>";
+		};
+		30EF40812004D86C00660322 /* YooKassaPaymentsApiTests */ = {
+			isa = PBXGroup;
+			children = (
+				30EF40842004D86C00660322 /* Info.plist */,
+				402EB67975FAFFE7699310CA /* Tests */,
+			);
+			path = YooKassaPaymentsApiTests;
+			sourceTree = "<group>";
+		};
+		30EF40BC2004E3DB00660322 /* YooKassaPaymentsApiExample */ = {
+			isa = PBXGroup;
+			children = (
+				30EF40BD2004E3DB00660322 /* AppDelegate.swift */,
+				30EF40BF2004E3DB00660322 /* ViewController.swift */,
+				30EF40C12004E3DB00660322 /* Main.storyboard */,
+				30EF40C42004E3DB00660322 /* Assets.xcassets */,
+				30EF40C62004E3DB00660322 /* LaunchScreen.storyboard */,
+				30EF40C92004E3DB00660322 /* Info.plist */,
+			);
+			path = YooKassaPaymentsApiExample;
+			sourceTree = "<group>";
+		};
+		402EB0579EFF6CA965A0B916 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				402EB24AEB4FCACE1B3FCA5C /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		402EB14791B75E6AE9E7EC43 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				402EB3E3253F85BBE0572DC8 /* PaymentsErrorApiResponse.swift */,
+				402EBBF106E7CD359F15589F /* PaymentsApiError.swift */,
+				402EB9B6E9D9D635097C18DD /* PaymentErrorCode.swift */,
+				402EBB586BC9E957A5EFC1EA /* PaymentErrorType.swift */,
+				244F74D15F05704BC3BD413B /* DecodingError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		402EB1FAFAFEBABD3B3F9B55 /* TokensRequest */ = {
+			isa = PBXGroup;
+			children = (
+				402EB147CDFD52E44DE8BFD9 /* TokensRequest.swift */,
+				402EB072BCB5BD719618B8E3 /* TokensRequestPaymentMethodData.swift */,
+				402EB7B3D9E440FAD21D54AC /* TokensRequestPaymentMethodId.swift */,
+			);
+			path = TokensRequest;
+			sourceTree = "<group>";
+		};
+		402EB3AE4BA5146B7D4B92AC /* JsonResponse */ = {
+			isa = PBXGroup;
+			children = (
+				402EB818291A551BCA98127C /* PaymentMethodResponseSuccess.json */,
+			);
+			path = JsonResponse;
+			sourceTree = "<group>";
+		};
+		402EB4B642C7443ACEFE4CA3 /* PaymentInstrumentData */ = {
+			isa = PBXGroup;
+			children = (
+				402EBBBC8F6085F8663B9D45 /* PaymentInstrumentDataYooMoneyWallet.swift */,
+				402EBCC5F4D137FC24B87845 /* PaymentInstrumentDataYooMoneyLinkedBankCard.swift */,
+			);
+			path = PaymentInstrumentData;
+			sourceTree = "<group>";
+		};
+		402EB4D4FD78EFF844BC02F9 /* PaymentsApiError */ = {
+			isa = PBXGroup;
+			children = (
+				402EB86914C39F39E9241599 /* Json */,
+				402EBA6D70BB13B86AB00E04 /* PaymentsApiErrorMappingTests.swift */,
+			);
+			path = PaymentsApiError;
+			sourceTree = "<group>";
+		};
+		402EB598A4AA26FB4F58CBB9 /* PaymentMethod */ = {
+			isa = PBXGroup;
+			children = (
+				402EB3AE4BA5146B7D4B92AC /* JsonResponse */,
+				402EBBD06B5911A637572EFF /* PaymentMethodMethodTests.swift */,
+			);
+			path = PaymentMethod;
+			sourceTree = "<group>";
+		};
+		402EB5AF6ADE15C566955C9A /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				402EB867D67E0626FEAC2ECF /* PaymentMethodDataFactory.swift */,
+				402EB589EF5EC6E48E0D3B0C /* TokensRequestFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		402EB6172A39F60DC160B827 /* PaymentOptions */ = {
+			isa = PBXGroup;
+			children = (
+				402EB364135ABC5618B604E0 /* PaymentOptionsMethodTests.swift */,
+				402EBEA73459FEC06ACE5662 /* JsonResponse */,
+			);
+			path = PaymentOptions;
+			sourceTree = "<group>";
+		};
+		402EB671D13D6EC597B07896 /* MonetaryAmount */ = {
+			isa = PBXGroup;
+			children = (
+				402EB9EC40B2E511AD1AAE9C /* MonetaryAmountMappingTests.swift */,
+				402EBB8FCDFE44669F4F0C75 /* Json */,
+			);
+			path = MonetaryAmount;
+			sourceTree = "<group>";
+		};
+		402EB67975FAFFE7699310CA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				402EB933B3F8ED132D1E8034 /* Mapping */,
+				402EBEE6A10CAF9ED69E2DA3 /* ApiMethods */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		402EB6812FEFBDE07B6BC857 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				402EB7C6BB1C0CB07A04191F /* ApiMethods */,
+				402EB773B09A536410AF2E9E /* Models */,
+				402EBFC821D0676CC857EE6D /* Response */,
+				402EB14791B75E6AE9E7EC43 /* Error */,
+				402EB0579EFF6CA965A0B916 /* Constants */,
+				402EB5AF6ADE15C566955C9A /* Factories */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		402EB6864120C4C25D5DC2AA /* PaymentOptions */ = {
+			isa = PBXGroup;
+			children = (
+				402EB03125B8070B94F49BFD /* PaymentOptionsMethod-0.json */,
+			);
+			path = PaymentOptions;
+			sourceTree = "<group>";
+		};
+		402EB6DC7910A02E6456C96E /* PaymentMethodData */ = {
+			isa = PBXGroup;
+			children = (
+				402EBB58FFAC248928354D07 /* PaymentMethodData.swift */,
+				402EB8AF0FC7DEF377397CFA /* PaymentMethodDataBankCard.swift */,
+				402EB9E78B175DB2903000FE /* PaymentMethodDataSberbank.swift */,
+				402EB1D54FE5EFF58B62DD38 /* PaymentMethodDataApplePay.swift */,
+			);
+			path = PaymentMethodData;
+			sourceTree = "<group>";
+		};
+		402EB7731B9CE514BFF4DC99 /* Tokens */ = {
+			isa = PBXGroup;
+			children = (
+				402EBD352A774E479C172815 /* JsonResponse */,
+				402EBC4275855D70A22ED580 /* TokensMethodTests.swift */,
+			);
+			path = Tokens;
+			sourceTree = "<group>";
+		};
+		402EB773B09A536410AF2E9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				402EBDA318F1B285F8D1C544 /* PaymentOptionInstrument */,
+				402EB6DC7910A02E6456C96E /* PaymentMethodData */,
+				402EB4B642C7443ACEFE4CA3 /* PaymentInstrumentData */,
+				402EBF4486A0FDBD75868E7E /* Misc */,
+				402EB1FAFAFEBABD3B3F9B55 /* TokensRequest */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		402EB7C6BB1C0CB07A04191F /* ApiMethods */ = {
+			isa = PBXGroup;
+			children = (
+				402EB76AC935BCCE718A0E70 /* PaymentOptions.swift */,
+				402EB55C2422C4171BB63DEB /* Tokens.swift */,
+				402EB9234D40061BEC505E85 /* PaymentMethod.swift */,
+			);
+			path = ApiMethods;
+			sourceTree = "<group>";
+		};
+		402EB808DDE4D50307C2257A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				402EB671D13D6EC597B07896 /* MonetaryAmount */,
+				402EB4D4FD78EFF844BC02F9 /* PaymentsApiError */,
+				244F78EE7A121881205EF13B /* PaymentMethodData */,
+				402EBC727D87E0539581B977 /* Confirmation */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		402EB86914C39F39E9241599 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				402EBAED5952729B8358BC5E /* PaymentsApiError.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		402EB8ADA9FBCF2967B95B4A /* ApiMethods */ = {
+			isa = PBXGroup;
+			children = (
+				402EBFAE8637EC8ACDD40C51 /* PaymentMappingApiMethods.swift */,
+				402EBE524E65A870B9C06C1A /* Json */,
+			);
+			path = ApiMethods;
+			sourceTree = "<group>";
+		};
+		402EB933B3F8ED132D1E8034 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				402EB8ADA9FBCF2967B95B4A /* ApiMethods */,
+				402EB808DDE4D50307C2257A /* Models */,
+			);
+			path = Mapping;
+			sourceTree = "<group>";
+		};
+		402EBB6DBBDD6F84E7F95C9D /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				402EB80E39982A5DC8638E8F /* Confirmation0.json */,
+				402EBE71CB290A29BAC052E4 /* Confirmation1.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		402EBB8FCDFE44669F4F0C75 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				402EB4F3FB79C28E711C3FE6 /* MonetaryAmount.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		402EBC727D87E0539581B977 /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				402EBB6DBBDD6F84E7F95C9D /* Json */,
+				402EB372392C163B6BE58755 /* ConfirmationMappingTests.swift */,
+			);
+			path = Confirmation;
+			sourceTree = "<group>";
+		};
+		402EBD352A774E479C172815 /* JsonResponse */ = {
+			isa = PBXGroup;
+			children = (
+				402EB63F45F20865E9336BBB /* TokensResponseSuccess.json */,
+			);
+			path = JsonResponse;
+			sourceTree = "<group>";
+		};
+		402EBD57902484E46EE00045 /* Tokens */ = {
+			isa = PBXGroup;
+			children = (
+				402EBF027D085C3F62C685D6 /* TokensMethod-0.json */,
+				244F7644C041CC4BC3AA21EA /* TokensMethod-1.json */,
+				402EBCA043C8DC1669CA6C95 /* TokensMethod-2.json */,
+				402EBCC39D9F507F5A4A2559 /* TokensMethod-3.json */,
+			);
+			path = Tokens;
+			sourceTree = "<group>";
+		};
+		402EBDA318F1B285F8D1C544 /* PaymentOptionInstrument */ = {
+			isa = PBXGroup;
+			children = (
+				402EB9311AE424A5B15916F7 /* PaymentOptionYooMoneyInstrument.swift */,
+				402EBC773789B856428409D9 /* PaymentOption.swift */,
+				402EBF05B92B53179C6309E0 /* PaymentInstrumentYooMoneyWallet.swift */,
+				402EB1F9EF033464DA3CFB57 /* PaymentInstrumentYooMoneyLinkedBankCard.swift */,
+			);
+			path = PaymentOptionInstrument;
+			sourceTree = "<group>";
+		};
+		402EBE524E65A870B9C06C1A /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				402EB6864120C4C25D5DC2AA /* PaymentOptions */,
+				402EBD57902484E46EE00045 /* Tokens */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		402EBEA73459FEC06ACE5662 /* JsonResponse */ = {
+			isa = PBXGroup;
+			children = (
+				402EB42092333A3FC23433F1 /* PaymentOptionsResponseSuccess.json */,
+				402EBB7B7BB50BE4D9FE3376 /* PaymentOptionsResponseEmpty.json */,
+			);
+			path = JsonResponse;
+			sourceTree = "<group>";
+		};
+		402EBEE6A10CAF9ED69E2DA3 /* ApiMethods */ = {
+			isa = PBXGroup;
+			children = (
+				402EB6172A39F60DC160B827 /* PaymentOptions */,
+				402EB7731B9CE514BFF4DC99 /* Tokens */,
+				402EB598A4AA26FB4F58CBB9 /* PaymentMethod */,
+			);
+			path = ApiMethods;
+			sourceTree = "<group>";
+		};
+		402EBF4486A0FDBD75868E7E /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				402EBF363B2E9880CCDEE790 /* Fee.swift */,
+				402EB2CBECAC89B3DD7E2939 /* IdentificationRequirement.swift */,
+				402EBE8B1476CFE9D0A69FA3 /* Confirmation.swift */,
+				402EBB600AB465B1D3544C1C /* BankCard.swift */,
+				402EB19B848CE1382AC0D490 /* ConfirmationType.swift */,
+				402EBAFFC9B8AADE0D63B174 /* Counterparty.swift */,
+				402EB27A245F6B935D57F72E /* MonetaryAmount.swift */,
+				402EBFBFE4F1E309EF0D1371 /* Service.swift */,
+				402EB46D18C4DDECF66807BF /* BankCardType.swift */,
+				402EBF7A09C38E5AA5A8BFD0 /* PaymentMethodType.swift */,
+				402EBF78027C123521DE1F7F /* PaymentMethodBankCard.swift */,
+				3031FCF5237EF1C300DB0CDC /* SavePaymentMethod.swift */,
+				302D9722255D628A001953C5 /* YooMoneyInstrumentType.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		402EBFC821D0676CC857EE6D /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				402EB7EF21FC9A498D6F93BE /* PaymentsApiResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		82E1B236D9D8624796636528 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20AE2A6BF3CB914D48A374CA /* Pods-YooKassaPaymentsApiExamplePods.debug.xcconfig */,
+				A901A6D7339CA4B4947791F6 /* Pods-YooKassaPaymentsApiExamplePods.adhoc.xcconfig */,
+				1590B62E73D22898118937F1 /* Pods-YooKassaPaymentsApiExamplePods.appstore.xcconfig */,
+				A20F14D4C24F69B5EE76D0B9 /* Pods-YooKassaPaymentsApiTests.debug.xcconfig */,
+				D5DF70A3820355CF8413D627 /* Pods-YooKassaPaymentsApiTests.adhoc.xcconfig */,
+				6F791ECE1062CD0898B0B77C /* Pods-YooKassaPaymentsApiTests.appstore.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A9E7A307380D3A78F739B0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30F30355200512F4009DC40B /* FunctionalSwift.framework */,
+				30F30358200512F4009DC40B /* YooMoneyCoreApi.framework */,
+				30F30397200518B7009DC40B /* FunctionalSwift.framework */,
+				30F30398200518B7009DC40B /* YooMoneyCoreApi.framework */,
+				EC9F8EF748AEDE094EDFD834 /* Pods_YooKassaPaymentsApiExamplePods.framework */,
+				03228422485738DE11DC1732 /* Pods_YooKassaPaymentsApiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		30EF40712004D86C00660322 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EF40852004D86C00660322 /* YooKassaPaymentsApi.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		30EF40732004D86C00660322 /* YooKassaPaymentsApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30EF40882004D86C00660322 /* Build configuration list for PBXNativeTarget "YooKassaPaymentsApi" */;
+			buildPhases = (
+				30EF406F2004D86C00660322 /* Sources */,
+				30EF40702004D86C00660322 /* Frameworks */,
+				30EF40712004D86C00660322 /* Headers */,
+				30EF40722004D86C00660322 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YooKassaPaymentsApi;
+			productName = YooKassaPaymentsApi;
+			productReference = 30EF40742004D86C00660322 /* YooKassaPaymentsApi.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		30EF407C2004D86C00660322 /* YooKassaPaymentsApiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30EF408B2004D86C00660322 /* Build configuration list for PBXNativeTarget "YooKassaPaymentsApiTests" */;
+			buildPhases = (
+				CF1154E56BA751438BFFDEFB /* [CP] Check Pods Manifest.lock */,
+				30EF40792004D86C00660322 /* Sources */,
+				30EF407A2004D86C00660322 /* Frameworks */,
+				30EF407B2004D86C00660322 /* Resources */,
+				614378D1E8223E4EE0C524BD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30EF40802004D86C00660322 /* PBXTargetDependency */,
+				30F3035A20051357009DC40B /* PBXTargetDependency */,
+			);
+			name = YooKassaPaymentsApiTests;
+			productName = YooKassaPaymentsApiTests;
+			productReference = 30EF407D2004D86C00660322 /* YooKassaPaymentsApiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		30EF40BA2004E3DB00660322 /* YooKassaPaymentsApiExamplePods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30EF40CA2004E3DB00660322 /* Build configuration list for PBXNativeTarget "YooKassaPaymentsApiExamplePods" */;
+			buildPhases = (
+				6BEDDA016345D81541B58898 /* [CP] Check Pods Manifest.lock */,
+				30EF40B72004E3DB00660322 /* Sources */,
+				30EF40B82004E3DB00660322 /* Frameworks */,
+				30EF40B92004E3DB00660322 /* Resources */,
+				CBBE0D88AE81970D03AC1595 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YooKassaPaymentsApiExamplePods;
+			productName = YooKassaPaymentsApiExample;
+			productReference = 30EF40BB2004E3DB00660322 /* YooKassaPaymentsApiExamplePods.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30EF40CE2004E3EB00660322 /* YooKassaPaymentsApiExampleCarthage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30EF40D72004E3EB00660322 /* Build configuration list for PBXNativeTarget "YooKassaPaymentsApiExampleCarthage" */;
+			buildPhases = (
+				30EF40CF2004E3EB00660322 /* Sources */,
+				30EF40D22004E3EB00660322 /* Frameworks */,
+				30EF40D32004E3EB00660322 /* Resources */,
+				30F303C820051918009DC40B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30F303CA20051998009DC40B /* PBXTargetDependency */,
+			);
+			name = YooKassaPaymentsApiExampleCarthage;
+			productName = YooKassaPaymentsApiExample;
+			productReference = 30EF40DB2004E3EB00660322 /* YooKassaPaymentsApiExampleCarthage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30EF406B2004D86B00660322 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = YooMoney;
+				TargetAttributes = {
+					30EF40732004D86C00660322 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1030;
+						ProvisioningStyle = Automatic;
+					};
+					30EF407C2004D86C00660322 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1030;
+						ProvisioningStyle = Automatic;
+					};
+					30EF40BA2004E3DB00660322 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1030;
+						ProvisioningStyle = Automatic;
+					};
+					30EF40CE2004E3EB00660322 = {
+						LastSwiftMigration = 1030;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 30EF406E2004D86B00660322 /* Build configuration list for PBXProject "YooKassaPaymentsApi" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30EF406A2004D86B00660322;
+			productRefGroup = 30EF40752004D86C00660322 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30EF40732004D86C00660322 /* YooKassaPaymentsApi */,
+				30EF407C2004D86C00660322 /* YooKassaPaymentsApiTests */,
+				30EF40BA2004E3DB00660322 /* YooKassaPaymentsApiExamplePods */,
+				30EF40CE2004E3EB00660322 /* YooKassaPaymentsApiExampleCarthage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30EF40722004D86C00660322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF407B2004D86C00660322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402EBB432DEC9AC6E34A65E9 /* PaymentOptionsMethod-0.json in Resources */,
+				402EB513DCCDCF1097A4F313 /* PaymentOptionsResponseSuccess.json in Resources */,
+				402EB5D722632C207FEB091B /* TokensMethod-0.json in Resources */,
+				402EB1760CBFB8FF595A39CE /* MonetaryAmount.json in Resources */,
+				402EB59C98AEBC71637F5720 /* TokensResponseSuccess.json in Resources */,
+				402EBACF6758E06E2AA2C9CC /* PaymentsApiError.json in Resources */,
+				244F732D34F20A323968ED0E /* PaymentMethodData-0.json in Resources */,
+				244F7E36A14DD920B1490D2D /* PaymentMethodData-1.json in Resources */,
+				244F7AFB9CD5891A8807E7E7 /* PaymentMethodData-2.json in Resources */,
+				244F7FA7E5210CCF1A820157 /* PaymentMethodData-3.json in Resources */,
+				402EBB6A1F5CEAE7DB24E3C7 /* PaymentOptionsResponseEmpty.json in Resources */,
+				244F70D48469B3E26499605C /* TokensMethod-1.json in Resources */,
+				402EBD67A17FB0A5E46FDF4F /* TokensMethod-2.json in Resources */,
+				402EB6F0FA4E73806F97AEE7 /* Confirmation0.json in Resources */,
+				402EB6AEA4EC06D8839A1C83 /* Confirmation1.json in Resources */,
+				402EBEA2D60EBC94931922D0 /* TokensMethod-3.json in Resources */,
+				402EBBF532F033688AC96EC5 /* PaymentMethodResponseSuccess.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF40B92004E3DB00660322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EF40C82004E3DB00660322 /* LaunchScreen.storyboard in Resources */,
+				30EF40C52004E3DB00660322 /* Assets.xcassets in Resources */,
+				30EF40C32004E3DB00660322 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF40D32004E3EB00660322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EF40D42004E3EB00660322 /* LaunchScreen.storyboard in Resources */,
+				30EF40D52004E3EB00660322 /* Assets.xcassets in Resources */,
+				30EF40D62004E3EB00660322 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		614378D1E8223E4EE0C524BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YooKassaPaymentsApiTests/Pods-YooKassaPaymentsApiTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FunctionalSwift/FunctionalSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/YooMoneyCoreApi/YooMoneyCoreApi.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/YooMoneyTestInstrumentsApi/YooMoneyTestInstrumentsApi.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FunctionalSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YooMoneyCoreApi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YooMoneyTestInstrumentsApi.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YooKassaPaymentsApiTests/Pods-YooKassaPaymentsApiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BEDDA016345D81541B58898 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YooKassaPaymentsApiExamplePods-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBBE0D88AE81970D03AC1595 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YooKassaPaymentsApiExamplePods/Pods-YooKassaPaymentsApiExamplePods-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FunctionalSwift/FunctionalSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/YooKassaPaymentsApi/YooKassaPaymentsApi.framework",
+				"${BUILT_PRODUCTS_DIR}/YooMoneyCoreApi/YooMoneyCoreApi.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FunctionalSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YooKassaPaymentsApi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YooMoneyCoreApi.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YooKassaPaymentsApiExamplePods/Pods-YooKassaPaymentsApiExamplePods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF1154E56BA751438BFFDEFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YooKassaPaymentsApiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30EF406F2004D86C00660322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402EB92C13C952107E9448E8 /* PaymentOptions.swift in Sources */,
+				3031FCF6237EF1C300DB0CDC /* SavePaymentMethod.swift in Sources */,
+				402EB1BF3E5BC0319F8525CF /* PaymentsApiResponse.swift in Sources */,
+				402EB2570B31381D645E52D5 /* PaymentsErrorApiResponse.swift in Sources */,
+				402EBABD0C4EB2DA296C1485 /* PaymentsApiError.swift in Sources */,
+				402EBBBBAD142FF847FBA23D /* Constants.swift in Sources */,
+				402EBDE59FA52CA635C7E524 /* Tokens.swift in Sources */,
+				402EB15A87B4E1BFBA4DBB45 /* PaymentOptionYooMoneyInstrument.swift in Sources */,
+				402EBED480C10CB1A56DAB61 /* PaymentOption.swift in Sources */,
+				402EB094AF10CD9F78F88E27 /* PaymentInstrumentYooMoneyWallet.swift in Sources */,
+				402EB7FB54AE7E180324F6FE /* PaymentInstrumentYooMoneyLinkedBankCard.swift in Sources */,
+				402EB0B869542545DA341A94 /* PaymentMethodData.swift in Sources */,
+				402EB8F07D1632A4E102F5D2 /* PaymentMethodDataBankCard.swift in Sources */,
+				402EB312AAFFB72DC5FF3780 /* PaymentMethodDataSberbank.swift in Sources */,
+				402EBA367638FE5CD0A159FF /* PaymentInstrumentDataYooMoneyWallet.swift in Sources */,
+				402EB2DB96E90A25FA529808 /* PaymentInstrumentDataYooMoneyLinkedBankCard.swift in Sources */,
+				402EBAA76E442C75F29E113B /* PaymentMethodDataFactory.swift in Sources */,
+				402EBC46D38AE966F943ED7A /* PaymentErrorCode.swift in Sources */,
+				402EBD3BE4DA2675D72E4DA0 /* PaymentErrorType.swift in Sources */,
+				402EB09D589F505B0786B02E /* PaymentMethodDataApplePay.swift in Sources */,
+				244F75EE2965F92FF75E52A8 /* DecodingError.swift in Sources */,
+				402EB8A5C31981BC490BCC87 /* Fee.swift in Sources */,
+				402EB3C29FA39A8A187BFEE6 /* IdentificationRequirement.swift in Sources */,
+				402EB13FCECE771EEAA52B4E /* Confirmation.swift in Sources */,
+				402EBC5285FC28FF77EC7AA8 /* BankCard.swift in Sources */,
+				402EBEC28021BC87A04E17CC /* ConfirmationType.swift in Sources */,
+				402EB8676F5EEF2AE0245354 /* Counterparty.swift in Sources */,
+				402EB32A6D00D8C02B772FF7 /* MonetaryAmount.swift in Sources */,
+				402EB8A8D50C26FE193DF841 /* Service.swift in Sources */,
+				402EB91C8715B8E5E87A14B6 /* BankCardType.swift in Sources */,
+				302D9723255D628A001953C5 /* YooMoneyInstrumentType.swift in Sources */,
+				402EB2870860F921E69A07D8 /* PaymentMethodType.swift in Sources */,
+				402EBAE96A0578C6CCE61D13 /* TokensRequest.swift in Sources */,
+				402EB20571A3336720FBC5A0 /* TokensRequestFactory.swift in Sources */,
+				402EB53B48E9ABA232511650 /* TokensRequestPaymentMethodData.swift in Sources */,
+				402EB6F1260BC5C152A97AF6 /* TokensRequestPaymentMethodId.swift in Sources */,
+				402EBE420CEC36D64A4A3733 /* PaymentMethod.swift in Sources */,
+				402EB33C9A4E53CB31A42DB5 /* PaymentMethodBankCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF40792004D86C00660322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402EB3BBB6C5F3BF37AF2C51 /* PaymentMappingApiMethods.swift in Sources */,
+				402EB1DF5C41B7B645D54ED7 /* PaymentOptionsMethodTests.swift in Sources */,
+				402EB7B0F732BC741522AD7D /* Constants.swift in Sources */,
+				402EBE121B950A5A8376DDB3 /* MonetaryAmountMappingTests.swift in Sources */,
+				402EBAE33EBF39A88E37E4F5 /* TokensMethodTests.swift in Sources */,
+				402EB8FD98D41B0F8ED654AF /* PaymentsApiErrorMappingTests.swift in Sources */,
+				244F7CB2542B3EF09EA998FE /* PaymentMethodDataMappingTests.swift in Sources */,
+				402EB48498774D0E13CF3082 /* ConfirmationMappingTests.swift in Sources */,
+				402EBC3238136591C81DE0C0 /* PaymentMethodMethodTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF40B72004E3DB00660322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EF40C02004E3DB00660322 /* ViewController.swift in Sources */,
+				30EF40BE2004E3DB00660322 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EF40CF2004E3EB00660322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EF40D02004E3EB00660322 /* ViewController.swift in Sources */,
+				30EF40D12004E3EB00660322 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30EF40802004D86C00660322 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30EF40732004D86C00660322 /* YooKassaPaymentsApi */;
+			targetProxy = 30EF407F2004D86C00660322 /* PBXContainerItemProxy */;
+		};
+		30F3035A20051357009DC40B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30EF40BA2004E3DB00660322 /* YooKassaPaymentsApiExamplePods */;
+			targetProxy = 30F3035920051357009DC40B /* PBXContainerItemProxy */;
+		};
+		30F303CA20051998009DC40B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30EF40732004D86C00660322 /* YooKassaPaymentsApi */;
+			targetProxy = 30F303C920051998009DC40B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30EF40C12004E3DB00660322 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30EF40C22004E3DB00660322 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30EF40C62004E3DB00660322 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30EF40C72004E3DB00660322 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30EF40862004D86C00660322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		30EF40872004D86C00660322 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = AdHoc;
+		};
+		30EF40892004D86C00660322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = YooKassaPaymentsApi/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yookassa.api.payments;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30EF408A2004D86C00660322 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = YooKassaPaymentsApi/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yookassa.api.payments;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = AdHoc;
+		};
+		30EF408C2004D86C00660322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20F14D4C24F69B5EE76D0B9 /* Pods-YooKassaPaymentsApiTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = YooKassaPaymentsApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yookassa.api.payments.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30EF408D2004D86C00660322 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5DF70A3820355CF8413D627 /* Pods-YooKassaPaymentsApiTests.adhoc.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = YooKassaPaymentsApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yookassa.api.payments.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = AdHoc;
+		};
+		30EF408E2004DFB000660322 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = AppStore;
+		};
+		30EF408F2004DFB000660322 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = YooKassaPaymentsApi/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yookassa.api.payments;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = AppStore;
+		};
+		30EF40902004DFB000660322 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F791ECE1062CD0898B0B77C /* Pods-YooKassaPaymentsApiTests.appstore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = YooKassaPaymentsApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yookassa.api.payments.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = AppStore;
+		};
+		30EF40CB2004E3DB00660322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20AE2A6BF3CB914D48A374CA /* Pods-YooKassaPaymentsApiExamplePods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = YooKassaPaymentsApiExample/PodsInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yookassa.api.paymentsPods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30EF40CC2004E3DB00660322 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A901A6D7339CA4B4947791F6 /* Pods-YooKassaPaymentsApiExamplePods.adhoc.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = YooKassaPaymentsApiExample/PodsInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yookassa.api.paymentsPods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		30EF40CD2004E3DB00660322 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1590B62E73D22898118937F1 /* Pods-YooKassaPaymentsApiExamplePods.appstore.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = YooKassaPaymentsApiExample/PodsInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yookassa.api.paymentsPods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AppStore;
+		};
+		30EF40D82004E3EB00660322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/YooKassaPaymentsApiExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yookassa.api.paymentsCarthage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30EF40D92004E3EB00660322 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/YooKassaPaymentsApiExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yookassa.api.paymentsCarthage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		30EF40DA2004E3EB00660322 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/YooKassaPaymentsApiExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yookassa.api.paymentsCarthage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AppStore;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30EF406E2004D86B00660322 /* Build configuration list for PBXProject "YooKassaPaymentsApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EF40862004D86C00660322 /* Debug */,
+				30EF40872004D86C00660322 /* AdHoc */,
+				30EF408E2004DFB000660322 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = AdHoc;
+		};
+		30EF40882004D86C00660322 /* Build configuration list for PBXNativeTarget "YooKassaPaymentsApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EF40892004D86C00660322 /* Debug */,
+				30EF408A2004D86C00660322 /* AdHoc */,
+				30EF408F2004DFB000660322 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = AdHoc;
+		};
+		30EF408B2004D86C00660322 /* Build configuration list for PBXNativeTarget "YooKassaPaymentsApiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EF408C2004D86C00660322 /* Debug */,
+				30EF408D2004D86C00660322 /* AdHoc */,
+				30EF40902004DFB000660322 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = AdHoc;
+		};
+		30EF40CA2004E3DB00660322 /* Build configuration list for PBXNativeTarget "YooKassaPaymentsApiExamplePods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EF40CB2004E3DB00660322 /* Debug */,
+				30EF40CC2004E3DB00660322 /* AdHoc */,
+				30EF40CD2004E3DB00660322 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = AdHoc;
+		};
+		30EF40D72004E3EB00660322 /* Build configuration list for PBXNativeTarget "YooKassaPaymentsApiExampleCarthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EF40D82004E3EB00660322 /* Debug */,
+				30EF40D92004E3EB00660322 /* AdHoc */,
+				30EF40DA2004E3EB00660322 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = AdHoc;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30EF406B2004D86B00660322 /* Project object */;
+}
