@@ -172,7 +172,7 @@ extension PaymentOptions.Method: ApiMethod {
 
     public func urlInfo(from hostProvider: HostProvider) throws -> URLInfo {
         return .components(host: try hostProvider.host(for: hostProviderKey),
-                           path: "/frontend-api/v3/payment_options")
+                           path: "/api/frontend/v3/payment_options")
     }
 }
 
