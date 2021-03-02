@@ -35,4 +35,8 @@ public enum ConfirmationType: String, Codable {
     /// The scenario in which the user confirms the payment without your participation.
     /// for example, responds to the SMS sent by the Bank.
     case external
+    
+    /// Data required to initiate a payment confirmation script,
+    /// in which it is necessary to send the user to the appropriate mobile application to complete the payment.
+    case mobileApplication = "mobile_application"
 }

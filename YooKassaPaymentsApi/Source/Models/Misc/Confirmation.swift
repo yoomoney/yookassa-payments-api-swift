@@ -64,10 +64,15 @@ extension Confirmation: Codable {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(type, forKey: .type)
         try container.encodeIfPresent(returnUrl, forKey: .returnUrl)
+        
+        if type == .mobileApplication {
+            try container.encode("ios", forKey: .appOSType)
+        }
     }
 
     private enum CodingKeys: String, CodingKey {
         case type = "type"
         case returnUrl = "return_url"
+        case appOSType = "app_os_type"
     }
 }
