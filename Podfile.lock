@@ -13,7 +13,7 @@ PODS:
   - OHHTTPStubs/NSURLSession (8.0.0):
     - OHHTTPStubs/Core
   - OHHTTPStubs/OHPathHelpers (8.0.0)
-  - YooKassaPaymentsApi (2.4.0):
+  - YooKassaPaymentsApi (2.5.0):
     - FunctionalSwift (~> 1.2.0)
     - YooMoneyCoreApi (~> 1.9.0)
   - YooMoneyCoreApi (1.9.0):
@@ -41,7 +41,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FunctionalSwift: 1b839fcf50b8db067885938df54f818518356dbb
   OHHTTPStubs: 9cbce6364bec557cc3439aa6bb7514670d780881
-  YooKassaPaymentsApi: ec7b105cdb50dac9ec9a0950bbb8aa6b02e318f3
+  YooKassaPaymentsApi: c32f1f256f0d9f7bc69d89348bb480453872337c
   YooMoneyCoreApi: 4f40673a79d11e95af850bb97f264995ac47a873
   YooMoneyTestInstrumentsApi: dab803d47c0f72909719cb53319d25491d0aaba1
 

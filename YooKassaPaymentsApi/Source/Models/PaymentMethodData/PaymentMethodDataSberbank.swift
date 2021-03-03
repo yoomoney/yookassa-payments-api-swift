@@ -30,7 +30,7 @@ public class PaymentMethodDataSberbank: PaymentMethodData {
     /// The phone of the user which is registered in the account in Sberbank Online.
     /// Required to confirm payment by SMS (confirmation script external).
     /// Format specified in ITU-T E. 164 79000000000
-    public let phone: String
+    public let phone: String?
 
     /// Creates instance of PaymentMethodDataSberbank.
     ///
@@ -40,7 +40,7 @@ public class PaymentMethodDataSberbank: PaymentMethodData {
     ///            Format specified in ITU-T E. 164 79000000000.
     ///
     /// - Returns: Instance of `PaymentMethodDataSberbank`.
-    public init(phone: String) {
+    public init(phone: String?) {
         self.phone = phone
         super.init(paymentMethodType: .sberbank)
     }
@@ -61,7 +61,7 @@ public class PaymentMethodDataSberbank: PaymentMethodData {
             throw DecodingError.incorrectType
         }
 
-        let phone = try container.decode(String.self, forKey: .phone)
+        let phone = try container.decodeIfPresent(String.self, forKey: .phone)
         self.init(phone: phone)
     }
 
@@ -73,7 +73,7 @@ public class PaymentMethodDataSberbank: PaymentMethodData {
     ///   - encoder: The encoder to write data to.
     public override func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(phone, forKey: .phone)
+        try container.encodeIfPresent(phone, forKey: .phone)
         try super.encode(to: encoder)
     }
 
