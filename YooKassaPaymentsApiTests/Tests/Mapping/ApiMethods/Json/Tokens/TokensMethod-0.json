@@ -18,5 +18,7 @@
       "csc": "000"
     }
   },
-  "save_payment_method": true
+  "save_payment_method": true,
+  "merchant_customer_id": "merchant_customer_id_value",
+  "save_payment_instrument": true
 }

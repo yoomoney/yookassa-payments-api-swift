@@ -68,28 +68,34 @@ public class PaymentInstrumentYooMoneyLinkedBankCard: PaymentOptionYooMoneyInstr
     ///   - savePaymentMethod: Indication of the possibility of saving payment data for repeated payments.
     ///
     /// - Returns: Instance of `PaymentInstrumentYooMoneyLinkedBankCard`.
-    public init(paymentMethodType: PaymentMethodType,
-                confirmationTypes: Set<ConfirmationType>?,
-                charge: MonetaryAmount,
-                instrumentType: YooMoneyInstrumentType,
-                cardId: String,
-                cardName: String?,
-                cardMask: String,
-                cardType: BankCardType,
-                identificationRequirement: IdentificationRequirement?,
-                fee: Fee?,
-                savePaymentMethod: SavePaymentMethod) {
+    public init(
+        paymentMethodType: PaymentMethodType,
+        confirmationTypes: Set<ConfirmationType>?,
+        charge: MonetaryAmount,
+        instrumentType: YooMoneyInstrumentType,
+        cardId: String,
+        cardName: String?,
+        cardMask: String,
+        cardType: BankCardType,
+        identificationRequirement: IdentificationRequirement?,
+        fee: Fee?,
+        savePaymentMethod: SavePaymentMethod,
+        savePaymentInstrument: Bool?
+    ) {
         self.cardId = cardId
         self.cardName = cardName
         self.cardMask = cardMask
         self.cardType = cardType
-        super.init(paymentMethodType: paymentMethodType,
-                   confirmationTypes: confirmationTypes,
-                   charge: charge,
-                   instrumentType: instrumentType,
-                   identificationRequirement: identificationRequirement,
-                   fee: fee,
-                   savePaymentMethod: savePaymentMethod)
+        super.init(
+            paymentMethodType: paymentMethodType,
+            confirmationTypes: confirmationTypes,
+            charge: charge,
+            instrumentType: instrumentType,
+            identificationRequirement: identificationRequirement,
+            fee: fee,
+            savePaymentMethod: savePaymentMethod,
+            savePaymentInstrument: savePaymentInstrument
+        )
     }
 
     // MARK: - Codable

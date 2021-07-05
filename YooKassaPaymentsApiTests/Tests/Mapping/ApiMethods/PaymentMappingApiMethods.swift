@@ -34,7 +34,7 @@ class PaymentMappingApiMethods: MappingApiMethods {
     }
 
     func testTokensMethod() {
-        for index in 0..<4 {
+        for index in 0..<5 {
             checkApiMethodsParameters(Tokens.Method.self,
                                       fileName: "TokensMethod",
                                       index: index)

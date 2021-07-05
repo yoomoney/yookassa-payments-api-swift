@@ -2,5 +2,6 @@
   "amount": "2.00",
   "currency": "RUB",
   "gateway_id": "352780",
-  "save_payment_method": true
+  "save_payment_method": true,
+  "merchant_customer_id": "merchant_customer_id_value"
 }

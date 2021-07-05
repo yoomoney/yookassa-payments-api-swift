@@ -33,6 +33,15 @@ public final class TokensRequestPaymentMethodData: TokensRequest {
     /// (payment_method) that the user will pay.
     public let paymentMethodData: PaymentMethodData
 
+    /// The unique identifier of the buyer by which the merchant identifies him. It can be represented as:
+    /// - The buyer's phone number.
+    /// - The buyer's email addresses.
+    /// - By some other identifier by which the merchant can uniquely identify the buyer.
+    public let merchantCustomerId: String?
+
+    /// Indicates whether payment data can be saved for repeated payments in merchant stores.
+    public let savePaymentInstrument: Bool?
+
     /// Creates instance of `TokensRequestPaymentMethodData`.
     ///
     /// - Parameters:
@@ -43,16 +52,24 @@ public final class TokensRequestPaymentMethodData: TokensRequest {
     ///                        (payment_method) that the user will pay.
     ///
     /// - Returns: Instance of `TokensRequestPaymentMethodData`
-    public init(amount: MonetaryAmount?,
-                tmxSessionId: String,
-                confirmation: Confirmation?,
-                savePaymentMethod: Bool?,
-                paymentMethodData: PaymentMethodData) {
+    public init(
+        amount: MonetaryAmount?,
+        tmxSessionId: String,
+        confirmation: Confirmation?,
+        savePaymentMethod: Bool?,
+        paymentMethodData: PaymentMethodData,
+        merchantCustomerId: String?,
+        savePaymentInstrument: Bool?
+    ) {
         self.paymentMethodData = paymentMethodData
-        super.init(amount: amount,
-                   tmxSessionId: tmxSessionId,
-                   confirmation: confirmation,
-                   savePaymentMethod: savePaymentMethod)
+        self.merchantCustomerId = merchantCustomerId
+        self.savePaymentInstrument = savePaymentInstrument
+        super.init(
+            amount: amount,
+            tmxSessionId: tmxSessionId,
+            confirmation: confirmation,
+            savePaymentMethod: savePaymentMethod
+        )
     }
 
     public override func customHeaders() -> Headers {
@@ -73,6 +90,8 @@ public final class TokensRequestPaymentMethodData: TokensRequest {
         try container.encode(tmxSessionId, forKey: .tmxSessionId)
         try container.encodeIfPresent(confirmation, forKey: .confirmation)
         try container.encodeIfPresent(savePaymentMethod, forKey: .savePaymentMethod)
+        try container.encodeIfPresent(merchantCustomerId, forKey: .merchantCustomerId)
+        try container.encodeIfPresent(savePaymentInstrument, forKey: .savePaymentInstrument)
         try PaymentMethodDataFactory.encodePaymentMethodData(paymentMethodData, to: encoder)
     }
 
@@ -89,16 +108,22 @@ public final class TokensRequestPaymentMethodData: TokensRequest {
         let tmxSessionId = try container.decode(String.self, forKey: .tmxSessionId)
         let confirmation = try container.decodeIfPresent(Confirmation.self, forKey: .confirmation)
         let savePaymentMethod = try container.decodeIfPresent(Bool.self, forKey: .savePaymentMethod)
+        let merchantCustomerId = try container.decodeIfPresent(String.self, forKey: .merchantCustomerId)
+        let savePaymentInstrument = try container.decodeIfPresent(Bool.self, forKey: .savePaymentInstrument)
 
         guard let paymentMethodData = PaymentMethodDataFactory.decodePaymentMethodData(from: decoder) else {
             throw DecodingErrors.unsupportedPaymentMethodData
         }
 
-        self.init(amount: amount,
-                  tmxSessionId: tmxSessionId,
-                  confirmation: confirmation,
-                  savePaymentMethod: savePaymentMethod,
-                  paymentMethodData: paymentMethodData)
+        self.init(
+            amount: amount,
+            tmxSessionId: tmxSessionId,
+            confirmation: confirmation,
+            savePaymentMethod: savePaymentMethod,
+            paymentMethodData: paymentMethodData,
+            merchantCustomerId: merchantCustomerId,
+            savePaymentInstrument: savePaymentInstrument
+        )
     }
 
     private enum CodingKeys: String, CodingKey {
@@ -106,6 +131,8 @@ public final class TokensRequestPaymentMethodData: TokensRequest {
         case amount = "amount"
         case confirmation
         case savePaymentMethod = "save_payment_method"
+        case merchantCustomerId = "merchant_customer_id"
+        case savePaymentInstrument = "save_payment_instrument"
     }
 
     /// Decoding errors.
