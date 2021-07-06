@@ -62,6 +62,12 @@ public struct PaymentOptions {
 
         /// The intention of the merchant to keep payment details, for re-payments.
         public let savePaymentMethod: Bool?
+        
+        /// The unique identifier of the buyer by which the merchant identifies him. It can be represented as:
+        /// - The buyer's phone number.
+        /// - The buyer's email addresses.
+        /// - By some other identifier by which the merchant can uniquely identify the buyer.
+        public let merchantCustomerId: String?
 
         /// Creates instance of API method for `PaymentOptions`.
         ///
@@ -79,13 +85,15 @@ public struct PaymentOptions {
                     gatewayId: String?,
                     amount: String?,
                     currency: String?,
-                    savePaymentMethod: Bool?) {
+                    savePaymentMethod: Bool?,
+                    merchantCustomerId: String?) {
             self.oauthToken = oauthToken
             self.authorization = authorization
             self.gatewayId = gatewayId
             self.amount = amount
             self.currency = currency
             self.savePaymentMethod = savePaymentMethod
+            self.merchantCustomerId = merchantCustomerId
         }
     }
 }
@@ -113,6 +121,8 @@ extension PaymentOptions: Decodable {
             } else if let item = try? itemsContainer.decode(PaymentInstrumentYooMoneyLinkedBankCard.self) {
                 items.append(item)
             } else if let item = try? itemsContainer.decode(PaymentOptionYooMoneyInstrument.self) {
+                items.append(item)
+            } else if let item = try? itemsContainer.decode(PaymentOptionBankCard.self) {
                 items.append(item)
             } else if let item = try? itemsContainer.decode(PaymentOption.self) {
                 items.append(item)
@@ -192,6 +202,7 @@ extension PaymentOptions.Method: Encodable, Decodable {
         try container.encodeIfPresent(amount, forKey: .amount)
         try container.encodeIfPresent(currency, forKey: .currency)
         try container.encodeIfPresent(savePaymentMethod, forKey: .savePaymentMethod)
+        try container.encodeIfPresent(merchantCustomerId, forKey: .merchantCustomerId)
     }
 
     /// Creates a new instance by decoding from the given decoder.
@@ -206,12 +217,14 @@ extension PaymentOptions.Method: Encodable, Decodable {
         let amount = try container.decodeIfPresent(String.self, forKey: .amount)
         let currency = try container.decodeIfPresent(String.self, forKey: .currency)
         let savePaymentMethod = try container.decodeIfPresent(Bool.self, forKey: .savePaymentMethod)
+        let merchantCustomerId = try container.decodeIfPresent(String.self, forKey: .merchantCustomerId)
         self.init(oauthToken: "",
                   authorization: "",
                   gatewayId: gatewayId,
                   amount: amount,
                   currency: currency,
-                  savePaymentMethod: savePaymentMethod)
+                  savePaymentMethod: savePaymentMethod,
+                  merchantCustomerId: merchantCustomerId)
     }
 
     private enum CodingKeys: String, CodingKey {
@@ -219,5 +232,6 @@ extension PaymentOptions.Method: Encodable, Decodable {
         case amount
         case currency
         case savePaymentMethod = "save_payment_method"
+        case merchantCustomerId = "merchant_customer_id"
     }
 }

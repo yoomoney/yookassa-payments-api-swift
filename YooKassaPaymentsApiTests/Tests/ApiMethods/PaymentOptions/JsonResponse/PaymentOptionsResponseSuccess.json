@@ -51,7 +51,17 @@
                     "currency": "RUB"
                 }
             },
-            "save_payment_method": "allowed"
+            "save_payment_method": "allowed",
+            "save_payment_instrument": true,
+            "payment_instruments": [
+                {
+                    "payment_instrument_id": "payment_instrument_id_value",
+                    "last4": "last4_value",
+                    "first6": "first6_value",
+                    "csc_required": true,
+                    "card_type": "MasterCard"
+                }
+            ]
         },
         {
             "payment_method_type": "sberbank",

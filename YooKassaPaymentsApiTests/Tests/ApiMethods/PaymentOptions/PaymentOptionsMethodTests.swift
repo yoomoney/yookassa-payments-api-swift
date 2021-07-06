@@ -64,7 +64,8 @@ private extension PaymentOptionsMethodTests {
                                            gatewayId: "",
                                            amount: "",
                                            currency: "",
-                                           savePaymentMethod: true)
+                                           savePaymentMethod: true,
+                                           merchantCustomerId: "")
         validate(method, stubsResponse, PaymentOptionsMethodTests.self, verify: verify)
     }
 }

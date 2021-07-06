@@ -24,13 +24,13 @@
 
 import Foundation
 
-/// The type of the source of funds for payments from the YooMoney
-public class PaymentOptionYooMoneyInstrument: PaymentOption {
+/// The payment method is a bank card.
+public class PaymentOptionBankCard: PaymentOption {
 
-    /// The type of the source of funds for payments from the YooMoney.
-    public let instrumentType: YooMoneyInstrumentType
+    /// Data about the payment method using a bank card.
+    public let paymentInstruments: [PaymentInstrumentBankCard]?
 
-    /// Creates instance of `PaymentOptionYooMoneyInstrument`.
+    /// Creates instance of `PaymentOptionBankCard`.
     ///
     /// - Parameters:
     ///   - paymentMethodType: Type of the source of funds for the payment.
@@ -40,24 +40,25 @@ public class PaymentOptionYooMoneyInstrument: PaymentOption {
     ///                       [confirmation of payment](https://yookassa.ru/docs/guides/#confirmation) by the buyer.
     ///   - charge: The amount to be paid by the buyer subject to possible currency
     ///             conversion and additional fees in excess of the payment amount.
-    ///   - instrumentType: The type of the source of funds for payments from the YooMoney.
     ///   - identificationRequirement: Required type of user identification.
     ///   - fee: Commission from the buyer in excess of the payment amount.
     ///          The field is present if there are commissions in excess of the payment amount.
     ///   - savePaymentMethod: Indication of the possibility of saving payment data for repeated payments.
+    ///   - savePaymentInstrument: Indicates whether payment data can be saved for repeated payments in merchant stores.
+    ///   - paymentInstruments: Data about the payment method using a bank card.
     ///
-    /// - Returns: Instance of `PaymentOptionYooMoneyInstrument`.
+    /// - Returns: Instance of `PaymentOptionBankCard`
     public init(
         paymentMethodType: PaymentMethodType,
         confirmationTypes: Set<ConfirmationType>?,
         charge: MonetaryAmount,
-        instrumentType: YooMoneyInstrumentType,
         identificationRequirement: IdentificationRequirement?,
         fee: Fee?,
         savePaymentMethod: SavePaymentMethod,
-        savePaymentInstrument: Bool?
+        savePaymentInstrument: Bool?,
+        paymentInstruments: [PaymentInstrumentBankCard]?
     ) {
-        self.instrumentType = instrumentType
+        self.paymentInstruments = paymentInstruments
         super.init(
             paymentMethodType: paymentMethodType,
             confirmationTypes: confirmationTypes,
@@ -68,7 +69,7 @@ public class PaymentOptionYooMoneyInstrument: PaymentOption {
             savePaymentInstrument: savePaymentInstrument
         )
     }
-    
+
     // MARK: - Codable
 
     /// Creates a new instance by decoding from the given decoder.
@@ -79,11 +80,11 @@ public class PaymentOptionYooMoneyInstrument: PaymentOption {
     ///   - decoder: The decoder to read data from.
     public required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        instrumentType = try container.decode(YooMoneyInstrumentType.self, forKey: .instrumentType)
+        paymentInstruments = try container.decodeIfPresent([PaymentInstrumentBankCard].self, forKey: .paymentInstruments)
         try super.init(from: decoder)
     }
 
     private enum CodingKeys: String, CodingKey {
-        case instrumentType = "instrument_type"
+        case paymentInstruments = "payment_instruments"
     }
 }

@@ -34,6 +34,8 @@ enum TokensRequestFactory {
             return response
         } else if let response = try? container.decode(TokensRequestPaymentMethodId.self) {
             return response
+        } else if let response = try? container.decode(TokensRequestPaymentInstrumentId.self) {
+            return response
         } else {
             return nil
         }
@@ -47,6 +49,8 @@ enum TokensRequestFactory {
         case let response as TokensRequestPaymentMethodData:
             try container.encode(response)
         case let response as TokensRequestPaymentMethodId:
+            try container.encode(response)
+        case let response as TokensRequestPaymentInstrumentId:
             try container.encode(response)
         default:
             try container.encode(tokensRequest)

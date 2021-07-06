@@ -52,24 +52,30 @@ public class PaymentInstrumentYooMoneyWallet: PaymentOptionYooMoneyInstrument {
     ///   - savePaymentMethod: Indication of the possibility of saving payment data for repeated payments.
     ///
     /// - Returns: Instance of `PaymentInstrumentYooMoneyWallet`.
-    public init(paymentMethodType: PaymentMethodType,
-                confirmationTypes: Set<ConfirmationType>?,
-                charge: MonetaryAmount,
-                instrumentType: YooMoneyInstrumentType,
-                accountId: String,
-                balance: MonetaryAmount,
-                identificationRequirement: IdentificationRequirement?,
-                fee: Fee?,
-                savePaymentMethod: SavePaymentMethod) {
+    public init(
+        paymentMethodType: PaymentMethodType,
+        confirmationTypes: Set<ConfirmationType>?,
+        charge: MonetaryAmount,
+        instrumentType: YooMoneyInstrumentType,
+        accountId: String,
+        balance: MonetaryAmount,
+        identificationRequirement: IdentificationRequirement?,
+        fee: Fee?,
+        savePaymentMethod: SavePaymentMethod,
+        savePaymentInstrument: Bool?
+    ) {
         self.accountId = accountId
         self.balance = balance
-        super.init(paymentMethodType: paymentMethodType,
-                   confirmationTypes: confirmationTypes,
-                   charge: charge,
-                   instrumentType: instrumentType,
-                   identificationRequirement: identificationRequirement,
-                   fee: fee,
-                   savePaymentMethod: savePaymentMethod)
+        super.init(
+            paymentMethodType: paymentMethodType,
+            confirmationTypes: confirmationTypes,
+            charge: charge,
+            instrumentType: instrumentType,
+            identificationRequirement: identificationRequirement,
+            fee: fee,
+            savePaymentMethod: savePaymentMethod,
+            savePaymentInstrument: savePaymentInstrument
+        )
     }
 
     // MARK: - Codable

@@ -1,0 +1,14 @@
+{
+  "amount": {
+    "value": "10",
+    "currency": "RUB"
+  },
+  "tmx_session_id": "tmx_1da5c87d-0984-50e8-a7f3-8de646dd9ec9",
+  "confirmation": {
+    "type": "redirect",
+    "return_url": "yookassa://return"
+  },
+  "save_payment_method": true,
+  "payment_instrument_id": "payment_instrument_id_value",
+  "csc": "csc_value"
+}
