@@ -43,6 +43,7 @@
 		402EB13FCECE771EEAA52B4E /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBE8B1476CFE9D0A69FA3 /* Confirmation.swift */; };
 		402EB15A87B4E1BFBA4DBB45 /* PaymentOptionYooMoneyInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9311AE424A5B15916F7 /* PaymentOptionYooMoneyInstrument.swift */; };
 		402EB1760CBFB8FF595A39CE /* MonetaryAmount.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EB4F3FB79C28E711C3FE6 /* MonetaryAmount.json */; };
+		402EB1B7B240D7D7CE47A5F0 /* PaymentInstruments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB7C8DC04AAA3DFAC3075 /* PaymentInstruments.swift */; };
 		402EB1BF3E5BC0319F8525CF /* PaymentsApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB7EF21FC9A498D6F93BE /* PaymentsApiResponse.swift */; };
 		402EB1DF5C41B7B645D54ED7 /* PaymentOptionsMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB364135ABC5618B604E0 /* PaymentOptionsMethodTests.swift */; };
 		402EB20571A3336720FBC5A0 /* TokensRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB589EF5EC6E48E0D3B0C /* TokensRequestFactory.swift */; };
@@ -88,6 +89,7 @@
 		402EBC3238136591C81DE0C0 /* PaymentMethodMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBBD06B5911A637572EFF /* PaymentMethodMethodTests.swift */; };
 		402EBC46D38AE966F943ED7A /* PaymentErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9B6E9D9D635097C18DD /* PaymentErrorCode.swift */; };
 		402EBC5285FC28FF77EC7AA8 /* BankCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBB600AB465B1D3544C1C /* BankCard.swift */; };
+		402EBD1F367D7F1355E62B1B /* PaymentInstrumentsMethod-0.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EBBEDAC63FDB8837E2229 /* PaymentInstrumentsMethod-0.json */; };
 		402EBD3BE4DA2675D72E4DA0 /* PaymentErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBB586BC9E957A5EFC1EA /* PaymentErrorType.swift */; };
 		402EBD67A17FB0A5E46FDF4F /* TokensMethod-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EBCA043C8DC1669CA6C95 /* TokensMethod-2.json */; };
 		402EBDE59FA52CA635C7E524 /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB55C2422C4171BB63DEB /* Tokens.swift */; };
@@ -193,6 +195,7 @@
 		402EB63F45F20865E9336BBB /* TokensResponseSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TokensResponseSuccess.json; sourceTree = "<group>"; };
 		402EB76AC935BCCE718A0E70 /* PaymentOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentOptions.swift; sourceTree = "<group>"; };
 		402EB7B3D9E440FAD21D54AC /* TokensRequestPaymentMethodId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokensRequestPaymentMethodId.swift; sourceTree = "<group>"; };
+		402EB7C8DC04AAA3DFAC3075 /* PaymentInstruments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInstruments.swift; sourceTree = "<group>"; };
 		402EB7EF21FC9A498D6F93BE /* PaymentsApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsApiResponse.swift; sourceTree = "<group>"; };
 		402EB80E39982A5DC8638E8F /* Confirmation0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Confirmation0.json; sourceTree = "<group>"; };
 		402EB818291A551BCA98127C /* PaymentMethodResponseSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PaymentMethodResponseSuccess.json; sourceTree = "<group>"; };
@@ -212,6 +215,7 @@
 		402EBB7B7BB50BE4D9FE3376 /* PaymentOptionsResponseEmpty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PaymentOptionsResponseEmpty.json; sourceTree = "<group>"; };
 		402EBBBC8F6085F8663B9D45 /* PaymentInstrumentDataYooMoneyWallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInstrumentDataYooMoneyWallet.swift; sourceTree = "<group>"; };
 		402EBBD06B5911A637572EFF /* PaymentMethodMethodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodMethodTests.swift; sourceTree = "<group>"; };
+		402EBBEDAC63FDB8837E2229 /* PaymentInstrumentsMethod-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PaymentInstrumentsMethod-0.json"; sourceTree = "<group>"; };
 		402EBBF106E7CD359F15589F /* PaymentsApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsApiError.swift; sourceTree = "<group>"; };
 		402EBC4275855D70A22ED580 /* TokensMethodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokensMethodTests.swift; sourceTree = "<group>"; };
 		402EBC773789B856428409D9 /* PaymentOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentOption.swift; sourceTree = "<group>"; };
@@ -516,6 +520,7 @@
 				402EB76AC935BCCE718A0E70 /* PaymentOptions.swift */,
 				402EB55C2422C4171BB63DEB /* Tokens.swift */,
 				402EB9234D40061BEC505E85 /* PaymentMethod.swift */,
+				402EB7C8DC04AAA3DFAC3075 /* PaymentInstruments.swift */,
 			);
 			path = ApiMethods;
 			sourceTree = "<group>";
@@ -620,6 +625,7 @@
 			children = (
 				402EB6864120C4C25D5DC2AA /* PaymentOptions */,
 				402EBD57902484E46EE00045 /* Tokens */,
+				402EBFEDA2455BF294A59DF6 /* PaymentInstruments */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -670,6 +676,14 @@
 				402EB7EF21FC9A498D6F93BE /* PaymentsApiResponse.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		402EBFEDA2455BF294A59DF6 /* PaymentInstruments */ = {
+			isa = PBXGroup;
+			children = (
+				402EBBEDAC63FDB8837E2229 /* PaymentInstrumentsMethod-0.json */,
+			);
+			path = PaymentInstruments;
 			sourceTree = "<group>";
 		};
 		82E1B236D9D8624796636528 /* Pods */ = {
@@ -873,6 +887,7 @@
 				402EBEA2D60EBC94931922D0 /* TokensMethod-3.json in Resources */,
 				402EBBF532F033688AC96EC5 /* PaymentMethodResponseSuccess.json in Resources */,
 				402EB93A9F4486436A7AD598 /* TokensMethod-4.json in Resources */,
+				402EBD1F367D7F1355E62B1B /* PaymentInstrumentsMethod-0.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1037,6 +1052,7 @@
 				402EB77C5F26CB8EDA8847F4 /* PaymentOptionBankCard.swift in Sources */,
 				402EB7213CDB18722EDC9472 /* PaymentInstrumentBankCard.swift in Sources */,
 				402EB6D637983E87CFD0D7A4 /* TokensRequestPaymentInstrumentId.swift in Sources */,
+				402EB1B7B240D7D7CE47A5F0 /* PaymentInstruments.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
