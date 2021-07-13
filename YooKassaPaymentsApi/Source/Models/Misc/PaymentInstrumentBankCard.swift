@@ -31,7 +31,7 @@ public struct PaymentInstrumentBankCard: Codable, Equatable {
     public let paymentInstrumentId: String
 
     /// The first 6 digits of the card number (BIN).
-    public let first6: String
+    public let first6: String?
 
     /// The last 4 digits of the card number.
     public let last4: String
@@ -54,7 +54,7 @@ public struct PaymentInstrumentBankCard: Codable, Equatable {
     /// - Returns: Instance of `PaymentInstrumentBankCard`
     public init(
         paymentInstrumentId: String,
-        first6: String,
+        first6: String?,
         last4: String,
         cscRequired: Bool,
         cardType: BankCardType
@@ -77,7 +77,7 @@ public struct PaymentInstrumentBankCard: Codable, Equatable {
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(paymentInstrumentId, forKey: .paymentInstrumentId)
-        try container.encode(first6, forKey: .first6)
+        try container.encodeIfPresent(first6, forKey: .first6)
         try container.encode(last4, forKey: .last4)
         try container.encode(cscRequired, forKey: .cscRequired)
         try container.encode(cardType, forKey: .cardType)
@@ -93,7 +93,7 @@ public struct PaymentInstrumentBankCard: Codable, Equatable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
         let paymentInstrumentId = try container.decode(String.self, forKey: .paymentInstrumentId)
-        let first6 = try container.decode(String.self, forKey: .first6)
+        let first6 = try container.decodeIfPresent(String.self, forKey: .first6)
         let last4 = try container.decode(String.self, forKey: .last4)
         let cscRequired = try container.decode(Bool.self, forKey: .cscRequired)
         let cardType = try container.decode(BankCardType.self, forKey: .cardType)

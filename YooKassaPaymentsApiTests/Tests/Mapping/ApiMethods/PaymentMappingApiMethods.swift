@@ -30,14 +30,28 @@ import YooMoneyTestInstrumentsApi
 
 class PaymentMappingApiMethods: MappingApiMethods {
     func testPaymentOptionsMethod() {
-        checkApiMethodsParameters(PaymentOptions.Method.self, fileName: "PaymentOptionsMethod", index: 0)
+        checkApiMethodsParameters(
+            PaymentOptions.Method.self,
+            fileName: "PaymentOptionsMethod",
+            index: 0
+        )
     }
 
     func testTokensMethod() {
         for index in 0..<5 {
-            checkApiMethodsParameters(Tokens.Method.self,
-                                      fileName: "TokensMethod",
-                                      index: index)
+            checkApiMethodsParameters(
+                Tokens.Method.self,
+                fileName: "TokensMethod",
+                index: index
+            )
         }
+    }
+    
+    func testPaymentInstruments() {
+        checkApiMethodsParameters(
+            PaymentInstruments.Method.self, 
+            fileName: "PaymentInstrumentsMethod", 
+            index: 0
+        )
     }
 }
