@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '8.0'
+platform :ios, '10.0'
 use_frameworks!
 
 target 'YooKassaPaymentsApiExamplePods' do
@@ -8,7 +8,7 @@ target 'YooKassaPaymentsApiExamplePods' do
 end
 
 target 'YooKassaPaymentsApiTests' do
-  pod 'YooMoneyTestInstrumentsApi', '~> 2.0.0'
+  pod 'YooMoneyTestInstrumentsApi', '~> 2.1.0'
 end
 
 post_install do |installer|
