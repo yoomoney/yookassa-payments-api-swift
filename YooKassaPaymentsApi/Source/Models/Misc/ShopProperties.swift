@@ -31,6 +31,11 @@ public struct ShopProperties: Codable {
     /// Marks that this shop is a split shop
     let isMarketplace: Bool
 
+    public init(isSafeDeal: Bool, isMarketplace: Bool) {
+        self.isSafeDeal = isSafeDeal
+        self.isMarketplace = isMarketplace
+    }
+
     enum CodingKeys: String, CodingKey {
         case isSafeDeal = "is_safe_deal"
         case isMarketplace = "is_marketplace"
