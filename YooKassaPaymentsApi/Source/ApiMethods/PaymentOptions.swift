@@ -32,14 +32,18 @@ public struct PaymentOptions {
     /// List of payment methods. If there is no suitable way, the list will be empty.
     public let items: [PaymentOption]
 
+    /// Shop properties
+    public let shopProperties: ShopProperties
+
     /// Creates instance of `PaymentOptions`.
     ///
     /// - Parameters:
     ///   - items: List of payment methods. If there is no suitable way, the list will be empty.
     ///
     /// - Returns: Instance of `PaymentOptions`.
-    public init(items: [PaymentOption]) {
+    public init(items: [PaymentOption], shopProperties: ShopProperties) {
         self.items = items
+        self.shopProperties = shopProperties
     }
 
     /// API method for `PaymentOptions`.
@@ -111,6 +115,7 @@ extension PaymentOptions: Decodable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         var itemsContainer = try container.nestedUnkeyedContainer(forKey: .items)
+        let properties = try container.decode(ShopProperties.self, forKey: .shopProperties)
         var items: [PaymentOption] = []
         items.reserveCapacity(itemsContainer.count ?? 0)
 
@@ -131,11 +136,12 @@ extension PaymentOptions: Decodable {
             }
         }
 
-        self.init(items: items)
+        self.init(items: items, shopProperties: properties)
     }
 
     private enum CodingKeys: String, CodingKey {
         case items
+        case shopProperties = "shop_properties"
     }
 
     private struct AnyCodable: Codable {}

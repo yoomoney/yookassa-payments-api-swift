@@ -7,10 +7,6 @@ target 'YooKassaPaymentsApiExamplePods' do
   pod 'YooKassaPaymentsApi', :path => './'
 end
 
-target 'YooKassaPaymentsApiTests' do
-  pod 'YooMoneyTestInstrumentsApi', '~> 2.1.0'
-end
-
 post_install do |installer|
   puts "Turn off build_settings 'Require Only App-Extension-Safe API' on all pods targets"
   puts "Turn on build_settings 'Supress swift warnings' on all pods targets"

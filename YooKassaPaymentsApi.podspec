@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name      = 'YooKassaPaymentsApi'
-  s.version   = '2.7.2'
+  s.version   = '2.8.0'
   s.homepage  = 'https://github.com/yoomoney/yookassa-payments-api-swift'
   s.license   = {
     :type => "MIT",

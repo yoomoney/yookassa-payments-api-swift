@@ -101,5 +101,9 @@
             },
             "save_payment_method": "forbidden"
         }
-    ]
+    ],
+    "shop_properties": {
+      "is_safe_deal": true,
+      "is_marketplace": false
+    }
 }

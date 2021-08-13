@@ -41,6 +41,8 @@ class PaymentOptionsMethodTests: ApiMethodTestCase {
             }
 
             XCTAssertEqual(response.items.count, 6, "response.items.count wrong")
+            XCTAssertEqual(response.shopProperties.isMarketplace, false)
+            XCTAssertEqual(response.shopProperties.isSafeDeal, true)
         }
     }
 
