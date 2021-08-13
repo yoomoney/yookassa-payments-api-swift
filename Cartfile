@@ -1,3 +1,3 @@
 github "yoomoney/functional-swift.git" ~> 1.6.7
 github "yoomoney/core-api-swift" ~> 1.11.4
-github "yoomoney/test-instruments-api-swift" ~> 2.2.5
+github "yoomoney/test-instruments-api-swift" ~> 2.2.4

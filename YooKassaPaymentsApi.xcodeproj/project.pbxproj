@@ -15,10 +15,8 @@
 		244F7E36A14DD920B1490D2D /* PaymentMethodData-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F71E54E6FD012B31BF319 /* PaymentMethodData-1.json */; };
 		244F7FA7E5210CCF1A820157 /* PaymentMethodData-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 244F776A7FCE158C194DE11A /* PaymentMethodData-3.json */; };
 		25B9431226C6535C00B433AA /* ShopProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B9431126C6535C00B433AA /* ShopProperties.swift */; };
-		25B9431826C6700600B433AA /* YooMoneyTestInstrumentsApi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B9431726C6700600B433AA /* YooMoneyTestInstrumentsApi.xcframework */; };
 		25B9431A26C683A000B433AA /* YooMoneyTestInstrumentsApi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B9431726C6700600B433AA /* YooMoneyTestInstrumentsApi.xcframework */; };
-		25B9431C26C683E400B433AA /* OHHTTPStubs.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B9431B26C683E400B433AA /* OHHTTPStubs.xcframework */; };
-		25B9431D26C683EC00B433AA /* OHHTTPStubs.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B9431B26C683E400B433AA /* OHHTTPStubs.xcframework */; };
+		25B9431E26C6B3A900B433AA /* OHHTTPStubs.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B9431B26C683E400B433AA /* OHHTTPStubs.xcframework */; };
 		300A2385269301D700046C0E /* FunctionalSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300A2383269301D700046C0E /* FunctionalSwift.xcframework */; };
 		300A2386269301D700046C0E /* YooMoneyCoreApi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300A2384269301D700046C0E /* YooMoneyCoreApi.xcframework */; };
 		300A2394269302FD00046C0E /* FunctionalSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300A2383269301D700046C0E /* FunctionalSwift.xcframework */; };
@@ -248,8 +246,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				300A2385269301D700046C0E /* FunctionalSwift.xcframework in Frameworks */,
-				25B9431826C6700600B433AA /* YooMoneyTestInstrumentsApi.xcframework in Frameworks */,
-				25B9431C26C683E400B433AA /* OHHTTPStubs.xcframework in Frameworks */,
 				300A2386269301D700046C0E /* YooMoneyCoreApi.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +254,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25B9431E26C6B3A900B433AA /* OHHTTPStubs.xcframework in Frameworks */,
 				30EF407E2004D86C00660322 /* YooKassaPaymentsApi.framework in Frameworks */,
 				25B9431A26C683A000B433AA /* YooMoneyTestInstrumentsApi.xcframework in Frameworks */,
-				25B9431D26C683EC00B433AA /* OHHTTPStubs.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
