@@ -1,6 +1,6 @@
 PODS:
   - FunctionalSwift (1.6.7)
-  - YooKassaPaymentsApi (2.8.0):
+  - YooKassaPaymentsApi (2.10.0):
     - FunctionalSwift (~> 1.6.7)
     - YooMoneyCoreApi (~> 1.11.4)
   - YooMoneyCoreApi (1.11.4):
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FunctionalSwift: b04fa6a40e25c54481796ce37166214028e38fee
-  YooKassaPaymentsApi: a050943455b2453c8529f9864006d807b6f16391
+  YooKassaPaymentsApi: 1de3365a0a10ffca86916fcbc923d922041cca6e
   YooMoneyCoreApi: bbcc2d1836d8a31582f4950e5eebf122ce94b34f
 
 PODFILE CHECKSUM: 92baef8e50d287d216b3922ed3a1f4fa648b6e3a

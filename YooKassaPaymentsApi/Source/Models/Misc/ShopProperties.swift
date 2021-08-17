@@ -26,10 +26,10 @@ import Foundation
 
 public struct ShopProperties: Codable {
     /// Marks that this shop is a safe deal shop
-    let isSafeDeal: Bool
+    public let isSafeDeal: Bool
 
     /// Marks that this shop is a split shop
-    let isMarketplace: Bool
+    public let isMarketplace: Bool
 
     public init(isSafeDeal: Bool, isMarketplace: Bool) {
         self.isSafeDeal = isSafeDeal
