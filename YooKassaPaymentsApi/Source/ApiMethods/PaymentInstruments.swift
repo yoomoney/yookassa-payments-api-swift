@@ -39,18 +39,21 @@ public struct PaymentInstruments {
     /// API method for `PaymentInstruments`.
     public struct Method {
 
+        /// Client application key.
+        public let oauthToken: String
+        
         /// ID of the payment instrument for repeated payments to the merchant's stores.
         public let paymentInstrumentId: String
 
         /// Creates instance of API method for `PaymentInstruments`.
         ///
         /// - Parameters:
+        ///   - oauthToken: Client application key.
         ///   - paymentInstrumentId: ID of the payment instrument for repeated payments to the merchant's stores.
         ///
         /// - Returns: Instance of API method for `PaymentInstruments`.
-        public init(
-            paymentInstrumentId: String
-        ) {
+        public init(oauthToken: String, paymentInstrumentId: String) {
+            self.oauthToken = oauthToken
             self.paymentInstrumentId = paymentInstrumentId
         }
     }
@@ -87,7 +90,9 @@ extension PaymentInstruments.Method: ApiMethod {
     }
 
     public var headers: Headers {
-        return .mempty
+        return Headers([
+            AuthorizationConstants.authorization: AuthorizationConstants.basicAuthorizationPrefix + oauthToken,
+        ])
     }
 
     public func urlInfo(from hostProvider: HostProvider) throws -> URLInfo {
@@ -119,7 +124,7 @@ extension PaymentInstruments.Method: Encodable, Decodable {
     /// - Parameters:
     ///   - decoder: The decoder to read data from.
     public init(from decoder: Decoder) throws {
-        self.init(paymentInstrumentId: "")
+        self.init(oauthToken: "", paymentInstrumentId: "")
     }
 
     private enum CodingKeys: CodingKey {}

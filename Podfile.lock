@@ -1,16 +1,16 @@
 PODS:
-  - FunctionalSwift (1.6.7)
-  - YooKassaPaymentsApi (2.10.0):
-    - FunctionalSwift (~> 1.6.7)
-    - YooMoneyCoreApi (~> 1.11.4)
-  - YooMoneyCoreApi (1.11.4):
-    - FunctionalSwift (~> 1.6.7)
+  - FunctionalSwift (1.7.3)
+  - YooKassaPaymentsApi (2.11.0):
+    - FunctionalSwift
+    - YooMoneyCoreApi (~> 2.0.1)
+  - YooMoneyCoreApi (2.0.1):
+    - FunctionalSwift (~> 1.7.3)
 
 DEPENDENCIES:
   - YooKassaPaymentsApi (from `./`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  "git@github.com:yoomoney/cocoa-pod-specs.git":
     - FunctionalSwift
     - YooMoneyCoreApi
 
@@ -19,10 +19,10 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  FunctionalSwift: b04fa6a40e25c54481796ce37166214028e38fee
-  YooKassaPaymentsApi: 1de3365a0a10ffca86916fcbc923d922041cca6e
-  YooMoneyCoreApi: bbcc2d1836d8a31582f4950e5eebf122ce94b34f
+  FunctionalSwift: 856da67cf3fb812341445d4e28f05875904d8da0
+  YooKassaPaymentsApi: e3cc486f75dc6c2475595616d0f63beac68773dd
+  YooMoneyCoreApi: 80f30f988f1dc19a397baf246db64cbbca077fd6
 
-PODFILE CHECKSUM: 92baef8e50d287d216b3922ed3a1f4fa648b6e3a
+PODFILE CHECKSUM: f1ce500a6e93deec6d2a51a417190e759231ca8c
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2
